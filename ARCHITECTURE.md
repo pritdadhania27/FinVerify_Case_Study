@@ -178,36 +178,6 @@ code is not a clean room.
 
 ---
 
-## Where the design could still be wrong
-
-Stated here because an architecture document that lists only its strengths is a
-sales document.
-
-- **Independence is cross-vendor** as of 2026-08-29 (D21, RX-014): Groq for
-  Channel A, NVIDIA NIM for Channel B. Different vendor, serving stack, lab and
-  model family. H4 tests whether that diversity earns anything beyond prompt and
-  modality difference. *Latency* on the NVIDIA endpoint is not reportable —
-  identical prompts returned in 0.42s and 12.5s.
-- **Shared retrieval and a shared `QuestionSpec`** are irreducible common-mode
-  failure paths. Measured by stratification (H2, D19), not solved.
-- **Retrieval bounds everything, and it does not transfer.** 0.909 evidence
-  accuracy is an **Infosys** figure - the document every retrieval decision was
-  tuned on. Corpus-wide it is 0.38-0.61 (RX-015). On those questions no
-  downstream component can be correct, and the channels' agreement measures
-  nothing. *Why* it does not transfer is still open: RX-015 ruled out vocabulary
-  coverage and RX-017 ruled out question phrasing, leaving statement hints,
-  chunk granularity and RRF weighting untested.
-- **Retrieval is measured on questions that carry their own definition.**
-  FinVerify-IND pins each metric's definition in a parenthetical, for
-  disambiguation (D22). RX-017 found that gloss is worth **0.250** evidence
-  accuracy - without it Reliance collapses from 0.438 to 0.062. Every retrieval
-  figure here is therefore an upper bound **conditioned on the question format**;
-  a bare "what were advances?" would do materially worse. This is a property of
-  the benchmark, not of the retriever, and neither may be reported as the other.
-- **The risk weights are provisional.** They are calibration parameters, not
-  validated ones, and the score says so.
-
----
 
 *Verification detail: [`VERIFICATION.md`](VERIFICATION.md) · Retrieval:
 [`RAG.md`](RAG.md) · Decisions: [`DECISIONS.md`](DECISIONS.md) · Deployment:
