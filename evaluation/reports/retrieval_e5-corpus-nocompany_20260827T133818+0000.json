@@ -1,0 +1,470 @@
+{
+  "set_id": "retrieval-eval-infosys-fy24-v1",
+  "split": "validation",
+  "arm": "e5-corpus-nocompany",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "chunks_indexed": 22930,
+  "evaluated_at": "2026-08-27T13:38:18+00:00",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "arms": {
+    "hybrid": {
+      "1": {
+        "questions": 22,
+        "recall_at_k": 0.18181818181818182,
+        "precision_at_k": 0.18181818181818182,
+        "mrr": 0.18181818181818182,
+        "evidence_retrieval_accuracy": 0.18181818181818182
+      },
+      "3": {
+        "questions": 22,
+        "recall_at_k": 0.36363636363636365,
+        "precision_at_k": 0.13636363636363635,
+        "mrr": 0.26515151515151514,
+        "evidence_retrieval_accuracy": 0.36363636363636365
+      },
+      "5": {
+        "questions": 22,
+        "recall_at_k": 0.4090909090909091,
+        "precision_at_k": 0.1,
+        "mrr": 0.27424242424242423,
+        "evidence_retrieval_accuracy": 0.4090909090909091
+      },
+      "10": {
+        "questions": 22,
+        "recall_at_k": 0.5227272727272727,
+        "precision_at_k": 0.07727272727272727,
+        "mrr": 0.29285714285714287,
+        "evidence_retrieval_accuracy": 0.5
+      }
+    },
+    "planned": {
+      "1": {
+        "questions": 22,
+        "recall_at_k": 0.13636363636363635,
+        "precision_at_k": 0.13636363636363635,
+        "mrr": 0.13636363636363635,
+        "evidence_retrieval_accuracy": 0.13636363636363635
+      },
+      "3": {
+        "questions": 22,
+        "recall_at_k": 0.5227272727272727,
+        "precision_at_k": 0.19696969696969696,
+        "mrr": 0.3181818181818182,
+        "evidence_retrieval_accuracy": 0.5
+      },
+      "5": {
+        "questions": 22,
+        "recall_at_k": 0.6136363636363636,
+        "precision_at_k": 0.16363636363636364,
+        "mrr": 0.3386363636363636,
+        "evidence_retrieval_accuracy": 0.5909090909090909
+      },
+      "10": {
+        "questions": 22,
+        "recall_at_k": 0.75,
+        "precision_at_k": 0.11363636363636365,
+        "mrr": 0.3566738816738817,
+        "evidence_retrieval_accuracy": 0.7272727272727273
+      }
+    }
+  },
+  "per_question": {
+    "hybrid": [
+      {
+        "qid": "R01",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "trade_payables_fy24"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup_multi_location",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "cash_fy24"
+        ]
+      },
+      {
+        "qid": "R08",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R09",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup_narrative",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "pbt_fy24"
+        ]
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "employee_expenses_fy24"
+        ]
+      },
+      {
+        "qid": "R13",
+        "question_type": "two_year_comparison",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R14",
+        "question_type": "cross_statement_multi_hop",
+        "recall": 0.5,
+        "first_relevant_rank": 10,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R15",
+        "question_type": "cross_table_multi_hop",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "goodwill_fy24",
+          "total_assets_fy24_b"
+        ]
+      },
+      {
+        "qid": "R16",
+        "question_type": "distractor_heavy",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_other_fin_liabilities_fy24"
+        ]
+      },
+      {
+        "qid": "R17",
+        "question_type": "unit_trap",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "basic_eps_fy24"
+        ]
+      },
+      {
+        "qid": "R18",
+        "question_type": "deep_note",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R19",
+        "question_type": "paraphrase",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R20",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R21",
+        "question_type": "near_miss_distractor",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "trade_receivables_fy24"
+        ]
+      },
+      {
+        "qid": "R22",
+        "question_type": "small_value",
+        "recall": 1.0,
+        "first_relevant_rank": 6,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      }
+    ],
+    "planned": [
+      {
+        "qid": "R01",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 9,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "trade_payables_fy24"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup_multi_location",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "cash_fy24"
+        ]
+      },
+      {
+        "qid": "R08",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R09",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup_narrative",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R13",
+        "question_type": "two_year_comparison",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R14",
+        "question_type": "cross_statement_multi_hop",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R15",
+        "question_type": "cross_table_multi_hop",
+        "recall": 0.5,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24_b"
+        ]
+      },
+      {
+        "qid": "R16",
+        "question_type": "distractor_heavy",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_other_fin_liabilities_fy24"
+        ]
+      },
+      {
+        "qid": "R17",
+        "question_type": "unit_trap",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R18",
+        "question_type": "deep_note",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R19",
+        "question_type": "paraphrase",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R20",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R21",
+        "question_type": "near_miss_distractor",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R22",
+        "question_type": "small_value",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      }
+    ]
+  }
+}

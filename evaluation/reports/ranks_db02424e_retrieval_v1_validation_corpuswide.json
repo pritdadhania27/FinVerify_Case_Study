@@ -1,0 +1,64 @@
+{
+  "set_id": "retrieval-eval-db02424e-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 6
+  },
+  "company": "Tata Motors Limited",
+  "gold_file": "db02424e_retrieval_v1_validation.json",
+  "scope": "corpus-wide",
+  "deep": 300,
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "evidence_groups": 6,
+  "band_counts": {
+    "71-300": 3,
+    "21-70": 2,
+    "11-20": 1
+  },
+  "cumulative_recall": {
+    "top 10 (a hit today)": 0.0,
+    "11-20": 0.16666666666666666,
+    "21-70": 0.5,
+    "71-300": 1.0
+  },
+  "per_group": [
+    {
+      "qid": "R01",
+      "group_id": "total income_2024",
+      "rank": 76,
+      "band": "71-300"
+    },
+    {
+      "qid": "R02",
+      "group_id": "profit for the year_2024",
+      "rank": 61,
+      "band": "21-70"
+    },
+    {
+      "qid": "R03",
+      "group_id": "profit for the year_2023",
+      "rank": 61,
+      "band": "21-70"
+    },
+    {
+      "qid": "R04",
+      "group_id": "exceptional items_2023",
+      "rank": 11,
+      "band": "11-20"
+    },
+    {
+      "qid": "R05",
+      "group_id": "total income_2023",
+      "rank": 76,
+      "band": "71-300"
+    },
+    {
+      "qid": "R06",
+      "group_id": "total expenses_2023",
+      "rank": 84,
+      "band": "71-300"
+    }
+  ],
+  "note": "Cumulative recall is the ceiling a reranker works against, not a promise. RX-035 measured that ceiling and the reranker scored BELOW the baseline."
+}

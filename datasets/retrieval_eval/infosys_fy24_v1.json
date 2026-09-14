@@ -1,0 +1,821 @@
+{
+  "set_id": "retrieval-eval-infosys-fy24-v1",
+  "split": "validation",
+  "document_id": "f356fc75d6d63fa3",
+  "company": "Infosys Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/infosys_ar_2023-24_consolidated.pdf",
+  "source_sha256": "f356fc75d6d63fa369a96b65d0183f95d3bd421493c9aabd0597523cd309573b",
+  "created_on": "2026-08-23",
+  "notes": [
+    "This is a RETRIEVAL set. It grades whether the evidence needed to answer reaches the top-K; it does not grade answers. Numerical gold answers belong to FinVerify-IND (Module 26) and are validated separately.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records. `printed_page` is the number printed on the page (287-365 in this extract of the annual report) and exists so a human can find the page in the PDF viewer. The two are not equal and confusing them silently invalidates every span.",
+    "Every anchor was copied from the PyMuPDF text of the stated page and is re-verified by `scripts/evaluate_retrieval.py --validate-gold`, which fails loudly if an anchor is not literally present.",
+    "Anchors keep the source's digit grouping. The Infosys P&L is internally inconsistent - revenue is printed '153,670' (western grouping) while total income on the same table is '1,58,381' (Indian grouping) - so an anchor that normalised separators would hide exactly the kind of transcription error this corpus is meant to expose.",
+    "This set is VALIDATION. It is used to choose the embedding model and settle decision D2. It must never be reported as a test result.",
+    "Evidence groups were COMPLETED against the source PDF on 2026-08-23: every page that states the same labelled figure was added as an alternative location. Before this, the set listed only the location chosen by hand, so the metrics were measuring 'did retrieval find my page' rather than 'did retrieval find the evidence' - Infosys' revenue figure alone is stated on four pages. `--validate-gold` now re-runs this audit and warns if a group is incomplete again."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "How much were trade payables as at March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "3,956 crore. Deliberately ambiguous in location, not in value.",
+      "evidence": [
+        {
+          "group_id": "trade_payables_fy24",
+          "note": "Reported twice: consolidated balance sheet (printed p.298) and note 2.14 (printed p.337). Either is correct evidence.",
+          "any_of": [
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 37,
+              "printed_page": 323,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 44,
+              "printed_page": 330,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 51,
+              "printed_page": 337,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "How much did the company owe its suppliers at the end of the financial year?",
+      "question_type": "paraphrase",
+      "answer_note": "Same fact as R01 with no lexical overlap - 'owe' and 'suppliers' appear nowhere in the evidence. This is the query the BM25 leg cannot serve.",
+      "evidence": [
+        {
+          "group_id": "trade_payables_fy24",
+          "note": "Same evidence as R01.",
+          "any_of": [
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 37,
+              "printed_page": 323,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 44,
+              "printed_page": 330,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            },
+            {
+              "page": 51,
+              "printed_page": 337,
+              "anchors": [
+                "Trade payables",
+                "3,956"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "What was revenue from operations for the year ended March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "153,670 crore, printed with western grouping in a table whose other rows use Indian grouping.",
+      "evidence": [
+        {
+          "group_id": "revenue_fy24",
+          "note": "Consolidated Statement of Profit and Loss, printed p.299.",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Revenue from operations",
+                "153,670"
+              ]
+            },
+            {
+              "page": 57,
+              "printed_page": 343,
+              "anchors": [
+                "Revenue from operations",
+                "153,670"
+              ]
+            },
+            {
+              "page": 77,
+              "printed_page": 363,
+              "anchors": [
+                "Revenue from operations",
+                "153,670"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Revenue from operations",
+                "153,670"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R04",
+      "question": "What was the profit for the year ended March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "26,248 crore. Distinct from total comprehensive income (26,768) on the same page - a retriever that returns the page is not enough; the answer depends on reading the right row.",
+      "evidence": [
+        {
+          "group_id": "profit_for_year_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 17,
+              "printed_page": 303,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 20,
+              "printed_page": 306,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R05",
+      "question": "What were total assets as at March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "1,37,814 crore - Indian digit grouping, which western tokenizers split differently from 137,814.",
+      "evidence": [
+        {
+          "group_id": "total_assets_fy24",
+          "any_of": [
+            {
+              "page": 11,
+              "printed_page": 297,
+              "anchors": [
+                "Total assets",
+                "1,37,814"
+              ]
+            },
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Total equity and liabilities",
+                "1,37,814"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R06",
+      "question": "What was the total equity attributable to equity holders of the Company as at March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "88,116 crore, which is not the same as total equity (88,461) including non-controlling interests.",
+      "evidence": [
+        {
+          "group_id": "equity_attributable_fy24",
+          "any_of": [
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Total equity attributable to equity holders",
+                "88,116"
+              ]
+            },
+            {
+              "page": 18,
+              "printed_page": 304,
+              "anchors": [
+                "Total equity attributable to equity holders",
+                "88,116"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R07",
+      "question": "How much cash and cash equivalents did the group hold at the end of March 2024?",
+      "question_type": "lookup_multi_location",
+      "answer_note": "14,786 crore, stated on the balance sheet, in the cash flow statement, and in note 2.9.",
+      "evidence": [
+        {
+          "group_id": "cash_fy24",
+          "note": "Three legitimate locations; any one is sufficient evidence.",
+          "any_of": [
+            {
+              "page": 11,
+              "printed_page": 297,
+              "anchors": [
+                "Cash and cash equivalents",
+                "14,786"
+              ]
+            },
+            {
+              "page": 21,
+              "printed_page": 307,
+              "anchors": [
+                "Cash and cash equivalents at the end of the year",
+                "14,786"
+              ]
+            },
+            {
+              "page": 35,
+              "printed_page": 321,
+              "anchors": [
+                "Total cash and cash equivalents",
+                "14,786"
+              ]
+            },
+            {
+              "page": 37,
+              "printed_page": 323,
+              "anchors": [
+                "Cash and cash equivalents",
+                "14,786"
+              ]
+            },
+            {
+              "page": 43,
+              "printed_page": 329,
+              "anchors": [
+                "Cash and cash equivalents",
+                "14,786"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R08",
+      "question": "What was the net cash used in financing activities during the year ended March 31, 2024?",
+      "question_type": "negative_value",
+      "answer_note": "(17,504) crore, i.e. -17,504. An outflow written in accounting parentheses.",
+      "evidence": [
+        {
+          "group_id": "financing_cash_fy24",
+          "any_of": [
+            {
+              "page": 21,
+              "printed_page": 307,
+              "anchors": [
+                "Net cash used in financing activities",
+                "(17,504)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R09",
+      "question": "How much was paid out as dividends during the year ended March 31, 2024?",
+      "question_type": "negative_value",
+      "answer_note": "(14,692) crore.",
+      "evidence": [
+        {
+          "group_id": "dividends_paid_fy24",
+          "any_of": [
+            {
+              "page": 21,
+              "printed_page": 307,
+              "anchors": [
+                "Payment of dividends",
+                "(14,692)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R10",
+      "question": "How much of the group's cash and bank balances were restricted as at March 31, 2024?",
+      "question_type": "lookup_narrative",
+      "answer_note": "348 crore. Stated in the supplementary line of the cash flow statement and again in the prose of note 2.9 - the prose form is the one a table-only retriever misses.",
+      "evidence": [
+        {
+          "group_id": "restricted_cash_fy24",
+          "any_of": [
+            {
+              "page": 21,
+              "printed_page": 307,
+              "anchors": [
+                "Restricted cash balance",
+                "348"
+              ]
+            },
+            {
+              "page": 35,
+              "printed_page": 321,
+              "anchors": [
+                "restricted cash and bank balances",
+                "348"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R11",
+      "question": "What was the profit before tax for the year ended March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "35,988 crore.",
+      "evidence": [
+        {
+          "group_id": "pbt_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Profit before tax",
+                "35,988"
+              ]
+            },
+            {
+              "page": 78,
+              "printed_page": 364,
+              "anchors": [
+                "Profit before tax",
+                "35,988"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Profit before tax",
+                "35,988"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R12",
+      "question": "What were employee benefit expenses for the year ended March 31, 2024?",
+      "question_type": "lookup_single",
+      "answer_note": "82,620 crore.",
+      "evidence": [
+        {
+          "group_id": "employee_expenses_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Employee benefit expenses",
+                "82,620"
+              ]
+            },
+            {
+              "page": 59,
+              "printed_page": 345,
+              "anchors": [
+                "Employee benefit expenses",
+                "82,620"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R13",
+      "question": "By how much did revenue from operations grow between the year ended March 31, 2023 and March 31, 2024?",
+      "question_type": "two_year_comparison",
+      "answer_note": "Needs both 153,670 and 146,767, which sit in the same row of the same table - so a single retrieved chunk can satisfy it, provided the chunk keeps both year columns together.",
+      "evidence": [
+        {
+          "group_id": "revenue_both_years",
+          "note": "Both figures must be in the retrieved chunk. A chunk split that separated the two year columns would fail this and should.",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Revenue from operations",
+                "153,670",
+                "146,767"
+              ]
+            },
+            {
+              "page": 57,
+              "printed_page": 343,
+              "anchors": [
+                "Revenue from operations",
+                "153,670",
+                "146,767"
+              ]
+            },
+            {
+              "page": 77,
+              "printed_page": 363,
+              "anchors": [
+                "Revenue from operations",
+                "153,670",
+                "146,767"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Revenue from operations",
+                "153,670",
+                "146,767"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R14",
+      "question": "What was the company's return on equity for the year ended March 31, 2024?",
+      "question_type": "cross_statement_multi_hop",
+      "answer_note": "Requires profit for the year (26,248, P&L, PDF p.13) AND total equity (88,461, balance sheet, PDF p.12). Two separate statements: this is the case where retrieving one of two numbers yields a confident wrong answer.",
+      "evidence": [
+        {
+          "group_id": "profit_for_year_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 17,
+              "printed_page": 303,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 20,
+              "printed_page": 306,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Profit for the year",
+                "26,248"
+              ]
+            }
+          ]
+        },
+        {
+          "group_id": "total_equity_fy24",
+          "any_of": [
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Total equity",
+                "88,461"
+              ]
+            },
+            {
+              "page": 18,
+              "printed_page": 304,
+              "anchors": [
+                "Total equity",
+                "88,461"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R15",
+      "question": "What share of total assets did goodwill represent as at March 31, 2024?",
+      "question_type": "cross_table_multi_hop",
+      "answer_note": "Requires goodwill (7,303) and total assets (1,37,814). Both are on PDF p.11, but at opposite ends of a long balance sheet, so whether one chunk holds both depends on the table split.",
+      "evidence": [
+        {
+          "group_id": "goodwill_fy24",
+          "any_of": [
+            {
+              "page": 11,
+              "printed_page": 297,
+              "anchors": [
+                "Goodwill",
+                "7,303"
+              ]
+            },
+            {
+              "page": 28,
+              "printed_page": 314,
+              "anchors": [
+                "Goodwill",
+                "7,303"
+              ]
+            }
+          ]
+        },
+        {
+          "group_id": "total_assets_fy24_b",
+          "any_of": [
+            {
+              "page": 11,
+              "printed_page": 297,
+              "anchors": [
+                "Total assets",
+                "1,37,814"
+              ]
+            },
+            {
+              "page": 12,
+              "printed_page": 298,
+              "anchors": [
+                "Total equity and liabilities",
+                "1,37,814"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R16",
+      "question": "What were total other financial liabilities as at March 31, 2024?",
+      "question_type": "distractor_heavy",
+      "answer_note": "19,089 crore. Note 2.13 (PDF p.51) contains 'other financial liabilities' four times with different values (2,130 non-current, 16,959 current, 19,089 total), and the balance sheet lists two more. Retrieving the right chunk is necessary but not sufficient.",
+      "evidence": [
+        {
+          "group_id": "total_other_fin_liabilities_fy24",
+          "any_of": [
+            {
+              "page": 51,
+              "printed_page": 337,
+              "anchors": [
+                "Total other financial liabilities",
+                "19,089"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R17",
+      "question": "What was basic earnings per share for the year ended March 31, 2024?",
+      "question_type": "unit_trap",
+      "answer_note": "63.39 rupees per share - NOT crore. The page is declared '(In crore, except equity share and per equity share data)', so the chunk's unit banner is correct for the table but wrong for this row.",
+      "evidence": [
+        {
+          "group_id": "basic_eps_fy24",
+          "any_of": [
+            {
+              "page": 14,
+              "printed_page": 300,
+              "anchors": [
+                "Basic",
+                "63.39"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R18",
+      "question": "What were the gratuity benefit obligations at the beginning of the year ended March 31, 2024?",
+      "question_type": "deep_note",
+      "answer_note": "1,778 crore. Buried in note 2.22.1, far from the primary statements, in a table with side-by-side Gratuity and Pension columns.",
+      "evidence": [
+        {
+          "group_id": "gratuity_opening_fy24",
+          "any_of": [
+            {
+              "page": 63,
+              "printed_page": 349,
+              "anchors": [
+                "Benefit obligations at the beginning",
+                "1,778"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R19",
+      "question": "How much did the group spend on technical sub-contractors during the year ended March 31, 2024?",
+      "question_type": "paraphrase",
+      "answer_note": "12,232 crore. Note the direction of change - this expense FELL from 14,062, against a rising revenue line.",
+      "evidence": [
+        {
+          "group_id": "subcontractors_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Cost of technical sub-contractors",
+                "12,232"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R20",
+      "question": "What was the depreciation and amortization expense for the year ended March 31, 2024?",
+      "question_type": "lookup_multi_location",
+      "answer_note": "4,678 crore, in the P&L and again as an unallocable expense in the segment note.",
+      "evidence": [
+        {
+          "group_id": "depreciation_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Depreciation and amortization expenses",
+                "4,678"
+              ]
+            },
+            {
+              "page": 78,
+              "printed_page": 364,
+              "anchors": [
+                "Unallocable expenses",
+                "4,678"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R21",
+      "question": "What were trade receivables as at March 31, 2024?",
+      "question_type": "near_miss_distractor",
+      "answer_note": "30,193 crore. 'Trade receivables' and 'trade payables' differ by two characters and sit in the same document; a lexical retriever that stems aggressively will confuse them.",
+      "evidence": [
+        {
+          "group_id": "trade_receivables_fy24",
+          "any_of": [
+            {
+              "page": 11,
+              "printed_page": 297,
+              "anchors": [
+                "Trade receivables",
+                "30,193"
+              ]
+            },
+            {
+              "page": 34,
+              "printed_page": 320,
+              "anchors": [
+                "Trade receivables",
+                "30,193"
+              ]
+            },
+            {
+              "page": 37,
+              "printed_page": 323,
+              "anchors": [
+                "Trade receivables",
+                "30,193"
+              ]
+            },
+            {
+              "page": 43,
+              "printed_page": 329,
+              "anchors": [
+                "Trade receivables",
+                "30,193"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R22",
+      "question": "What was the finance cost for the year ended March 31, 2024?",
+      "question_type": "small_value",
+      "answer_note": "470 crore. A three-digit figure in a table dominated by five- and six-digit ones; short numerals are weak retrieval signals.",
+      "evidence": [
+        {
+          "group_id": "finance_cost_fy24",
+          "any_of": [
+            {
+              "page": 13,
+              "printed_page": 299,
+              "anchors": [
+                "Finance cost",
+                "470"
+              ]
+            },
+            {
+              "page": 20,
+              "printed_page": 306,
+              "anchors": [
+                "Finance cost",
+                "470"
+              ]
+            },
+            {
+              "page": 78,
+              "printed_page": 364,
+              "anchors": [
+                "Finance cost",
+                "470"
+              ]
+            },
+            {
+              "page": 79,
+              "printed_page": 365,
+              "anchors": [
+                "Finance cost",
+                "470"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

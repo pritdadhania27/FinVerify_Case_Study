@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "updated_at": "2026-08-23T16:39:02+00:00",
+  "documents": [
+    {
+      "document_id": "f356fc75d6d63fa3",
+      "filename": "infosys_ar_2023-24_consolidated.pdf",
+      "path": "documents/raw/infosys_ar_2023-24_consolidated.pdf",
+      "sha256": "f356fc75d6d63fa369a96b65d0183f95d3bd421493c9aabd0597523cd309573b",
+      "byte_size": 715158,
+      "page_count": 79,
+      "status": "valid",
+      "text_coverage": 1.0,
+      "company": "Infosys Limited",
+      "fiscal_year": "2023-24",
+      "title": null,
+      "source_url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/2023-24/consolidated.pdf",
+      "retrieved_at": "2026-08-23",
+      "registered_at": "2026-08-23T16:38:18+00:00",
+      "problems": [],
+      "notes": [],
+      "metadata": {
+        "format": "PDF 1.5",
+        "creator": "Adobe InDesign 19.4 (Macintosh)",
+        "producer": "Adobe PDF Library 17.0",
+        "creationDate": "D:20240603162027+05'30'",
+        "modDate": "D:20240603162052+05'30'"
+      }
+    },
+    {
+      "document_id": "40f73920a8b153ec",
+      "filename": "hdfc_bank_iar_2023-24.pdf",
+      "path": "documents/raw/hdfc_bank_iar_2023-24.pdf",
+      "sha256": "40f73920a8b153ecb04a826db8d916e904da9f99ba6dd1e054a9a2da60524793",
+      "byte_size": 15692637,
+      "page_count": 585,
+      "status": "valid",
+      "text_coverage": 0.9829,
+      "company": "HDFC Bank Limited",
+      "fiscal_year": "2023-24",
+      "title": null,
+      "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/pdf/annual-reports/2023-24/integrated-annual-report-2023-24.pdf",
+      "retrieved_at": "2026-08-23",
+      "registered_at": "2026-08-23T16:38:30+00:00",
+      "problems": [],
+      "notes": [
+        "10 of 585 pages have little or no text - likely scanned inserts; OCR needed for those pages"
+      ],
+      "metadata": {
+        "format": "PDF 1.7",
+        "creator": "Adobe InDesign 19.5 (Windows)",
+        "producer": "Adobe PDF Library 17.0",
+        "creationDate": "D:20240718132618+05'30'",
+        "modDate": "D:20240720131451+05'30'"
+      }
+    },
+    {
+      "document_id": "d8e3739d2e06f09b",
+      "filename": "reliance_iar_2023-24.pdf",
+      "path": "documents/raw/reliance_iar_2023-24.pdf",
+      "sha256": "d8e3739d2e06f09b83a192e00cefda0113b5da778483e31018cb35429e72eafe",
+      "byte_size": 15471517,
+      "page_count": 159,
+      "status": "valid",
+      "text_coverage": 1.0,
+      "company": "Reliance Industries Limited",
+      "fiscal_year": "2023-24",
+      "title": null,
+      "source_url": "https://www.ril.com/ar2023-24/pdf/RIL_IAR_2024.pdf",
+      "retrieved_at": "2026-08-23",
+      "registered_at": "2026-08-23T16:38:43+00:00",
+      "problems": [],
+      "notes": [],
+      "metadata": {
+        "format": "PDF 1.4",
+        "creator": "Adobe InDesign 19.5 (Windows)",
+        "producer": "Adobe PDF Library 17.0",
+        "creationDate": "D:20240807115542+05'30'",
+        "modDate": "D:20240807115955+05'30'"
+      }
+    },
+    {
+      "document_id": "cca3bdde342aa160",
+      "filename": "sun_pharma_ar_2023-24.pdf",
+      "path": "documents/raw/sun_pharma_ar_2023-24.pdf",
+      "sha256": "cca3bdde342aa160a874bc3d711365d116c4d73612afd35472558cae3433a0d6",
+      "byte_size": 9652646,
+      "page_count": 312,
+      "status": "valid",
+      "text_coverage": 0.9904,
+      "company": "Sun Pharmaceutical Industries Limited",
+      "fiscal_year": "2023-24",
+      "title": null,
+      "source_url": "https://sunpharma.com/wp-content/uploads/2024/07/SPIL-Annual-Report-2023-24.pdf",
+      "retrieved_at": "2026-08-23",
+      "registered_at": "2026-08-23T16:38:50+00:00",
+      "problems": [],
+      "notes": [
+        "3 of 312 pages have little or no text - likely scanned inserts; OCR needed for those pages"
+      ],
+      "metadata": {
+        "format": "PDF 1.7",
+        "creator": "Adobe InDesign 19.4 (Windows)",
+        "producer": "Adobe PDF Library 17.0",
+        "creationDate": "D:20240706181510+05'30'",
+        "modDate": "D:20240706181716+05'30'"
+      }
+    },
+    {
+      "document_id": "db02424e0ed16204",
+      "filename": "tata_motors_iar_2023-24.pdf",
+      "path": "documents/raw/tata_motors_iar_2023-24.pdf",
+      "sha256": "db02424e0ed1620452e32df320a540f923bf837193e5896757d27e27d24efd48",
+      "byte_size": 20590964,
+      "page_count": 530,
+      "status": "valid",
+      "text_coverage": 0.9962,
+      "company": "Tata Motors Limited",
+      "fiscal_year": "2023-24",
+      "title": null,
+      "source_url": "https://www.tatamotors.com/wp-content/uploads/2024/05/tata-motor-IAR-2023-24.pdf",
+      "retrieved_at": "2026-08-23",
+      "registered_at": "2026-08-23T16:39:02+00:00",
+      "problems": [],
+      "notes": [
+        "2 of 530 pages have little or no text - likely scanned inserts; OCR needed for those pages"
+      ],
+      "metadata": {
+        "format": "PDF 1.6",
+        "creator": "Adobe InDesign 19.3 (Windows)",
+        "producer": "iLovePDF",
+        "creationDate": "D:20240531001818+05'30'",
+        "modDate": "D:20240531012701+05'30'"
+      }
+    }
+  ]
+}

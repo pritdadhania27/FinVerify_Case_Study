@@ -1,0 +1,93 @@
+{
+  "run_id": "campaign_20260831T211058Z",
+  "arms": [
+    {
+      "name": "A",
+      "description": "FinVerify-AI, full system - the proposed arm P",
+      "retrieval": "hybrid",
+      "use_natural": true,
+      "use_program": true,
+      "use_deterministic": true,
+      "use_consistency": true,
+      "use_verification_agent": true,
+      "self_consistency_samples": 0,
+      "iterative_retrieval_rounds": 0,
+      "same_model_both_channels": false,
+      "top_k": 8,
+      "provides_detection_score": true
+    },
+    {
+      "name": "B5",
+      "description": "Self-consistency - n samples of one model in one modality; the SelfCheckGPT-style comparator H1 must beat (D11)",
+      "retrieval": "hybrid",
+      "use_natural": true,
+      "use_program": false,
+      "use_deterministic": false,
+      "use_consistency": false,
+      "use_verification_agent": false,
+      "self_consistency_samples": 5,
+      "iterative_retrieval_rounds": 0,
+      "same_model_both_channels": false,
+      "top_k": 8,
+      "provides_detection_score": true
+    },
+    {
+      "name": "G",
+      "description": "minus the deterministic verifier (tests H3)",
+      "retrieval": "hybrid",
+      "use_natural": true,
+      "use_program": true,
+      "use_deterministic": false,
+      "use_consistency": true,
+      "use_verification_agent": true,
+      "self_consistency_samples": 0,
+      "iterative_retrieval_rounds": 0,
+      "same_model_both_channels": false,
+      "top_k": 8,
+      "provides_detection_score": true
+    },
+    {
+      "name": "H",
+      "description": "same model on both channels - the direct test of D1 and H4. Independence reduces to prompt and modality difference alone",
+      "retrieval": "hybrid",
+      "use_natural": true,
+      "use_program": true,
+      "use_deterministic": true,
+      "use_consistency": true,
+      "use_verification_agent": true,
+      "self_consistency_samples": 0,
+      "iterative_retrieval_rounds": 0,
+      "same_model_both_channels": true,
+      "top_k": 8,
+      "provides_detection_score": true
+    }
+  ],
+  "questions": 2,
+  "question_ids": [
+    "FI0560ee2f",
+    "FI19b399ca"
+  ],
+  "budget": {
+    "questions": 2,
+    "per_arm": {
+      "A": 6,
+      "B5": 10,
+      "G": 6,
+      "H": 6
+    },
+    "total_requests": 28,
+    "estimated_tokens": 164528,
+    "arbiter_upper_bound": 6,
+    "note": "the arbiter fires only on disagreement, so the total is an upper bound; the realised count is recorded per run"
+  },
+  "natural_model": "qwen/qwen3.6-27b",
+  "program_model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "verifier_model": "qwen/qwen3.6-27b",
+  "temperature": 0.0,
+  "split": "validation",
+  "dataset": "D:\\Claude_Cowork_Code\\AS\\Case_Study\\datasets\\finverify_ind\\finverify_ind_v1.json",
+  "include_ambiguous": false,
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "independence": "cross-provider: groq/qwen/qwen3.6-27b vs nvidia/nvidia/nemotron-3-ultra-550b-a55b"
+}

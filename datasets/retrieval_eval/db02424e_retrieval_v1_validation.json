@@ -1,0 +1,183 @@
+{
+  "set_id": "retrieval-eval-db02424e-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 6
+  },
+  "document_id": "db02424e0ed16204",
+  "company": "Tata Motors Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/tata_motors_iar_2023-24.pdf",
+  "source_sha256": "db02424e0ed1620452e32df320a540f923bf837193e5896757d27e27d24efd48",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "The `split` field is DERIVED from the source questions, not declared. It was hardcoded 'validation' until 2026-09-12 while source questions were drawn from every split, which put 43 of the 76 sealed test questions into sets labelled validation and let `evaluate_retrieval.py`'s seal gate pass on a label that did not describe the contents. `split_composition` now states the breakdown so the claim is checkable rather than asserted.",
+    "A set whose split is anything other than 'validation' must be treated as test-bearing: it needs FINVERIFY_ALLOW_TEST=1, the access is logged, and any figure from it is a one-shot result that cannot be used to tune anything."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 443877.69 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI223250a2",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "total income_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 281,
+              "anchors": [
+                "Total income (I+II)",
+                "443,877.69"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were profit for the year (profit for the year attributable to owners of the company)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 31399.09 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI5d61cd35",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "profit for the year_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 281,
+              "anchors": [
+                "Profit for the year (IX-X)",
+                "31,399.09"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were profit for the year (profit for the year attributable to owners of the company)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2414.29 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI8fdff60d",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "profit for the year_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 281,
+              "anchors": [
+                "Profit for the year (IX-X)",
+                "2,414.29"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R04",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were exceptional items (exceptional items as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure -1590.53 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIae47e20f",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "exceptional items_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Exceptional items",
+                "(1,590.53)"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Exceptional items",
+                "(1,590.53)"
+              ]
+            },
+            {
+              "page": 348,
+              "anchors": [
+                "Exceptional items",
+                "(1,590.53)"
+              ]
+            },
+            {
+              "page": 372,
+              "anchors": [
+                "Exceptional items",
+                "1,590.53"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R05",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were total income (total income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 350600.15 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIaf51dbd9",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "total income_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 281,
+              "anchors": [
+                "Total income (I+II)",
+                "350,600.15"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R06",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were total expenses (total expenses as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 349133.13 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIdbfdd691",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "total expenses_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 281,
+              "anchors": [
+                "Total expenses (IV)",
+                "349,133.13"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "n": 5,
+  "refinement_used": 5,
+  "metrics_agreement": 0.0,
+  "year_agreement": 1.0,
+  "raised": 0,
+  "latency_median_seconds": 1.735,
+  "latency_max_seconds": 2.375
+}

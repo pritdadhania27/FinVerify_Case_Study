@@ -1,0 +1,380 @@
+{
+  "arms": {
+    "B3": {
+      "arm": "B3",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.24444444444444444,
+        "numerical_accuracy": 0.28888888888888886,
+        "execution_accuracy": 0.28888888888888886,
+        "abstention_rate": 0.4888888888888889,
+        "parse_failure_rate": 0.2,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.28888888888888886,
+          "0.005": 0.28888888888888886,
+          "0.01": 0.28888888888888886,
+          "0.05": 0.3111111111111111
+        },
+        "mismatch_counts": {
+          "none": 13,
+          "missing_prediction": 31,
+          "magnitude": 1
+        },
+        "notes": []
+      },
+      "detection": null,
+      "detection_by_provenance": {},
+      "agreement_x_correctness": {},
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 97.406,
+        "latency_p95_seconds": 266.1747999999999,
+        "tokens_per_question": 0.0,
+        "tokens_by_channel": {},
+        "calls_per_question": 0.0,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.0,
+        "cost_usd": 0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": 0,
+        "quota_requests": 0,
+        "notes": [
+          "no row in this arm recorded token usage, so tokens_per_question is 0 by absence rather than by measurement"
+        ],
+        "rows_with_token_usage": 0
+      },
+      "error_analysis": {
+        "arm": "B3",
+        "questions": 45,
+        "errors": 32,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 0,
+          "rate_among_agreed": null,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 44,
+            "errors": 32
+          },
+          "reasoning_caused": {
+            "questions": 1,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 26,
+          "question_understanding": 6
+        },
+        "by_kind": {
+          "unsupported_claim": 31,
+          "unclassified": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 6
+          },
+          "retrieval": {
+            "unclassified": 1,
+            "unsupported_claim": 25
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.5,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 1,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "B3",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "B3",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "program",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI26192dd3",
+            "arm": "B3",
+            "question": "For Infosys Limited, as reported for the year ended March 31, 2024, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12370",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "B3",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "B3",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12798.00",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "B3",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI66c8e58d",
+            "arm": "B3",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were revenue from operations (revenue from operations, excluding other income)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "891311",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "B3",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "B3",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "B3",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": [
+        "B3 produces no risk score, so it is a QA baseline only. It is absent from the detection table rather than entered at AUROC 0.5, which would read as a measurement"
+      ]
+    }
+  },
+  "questions_in_gold": 188,
+  "operating_threshold": null,
+  "tau": "0.005",
+  "resamples": 10000,
+  "hypotheses": {
+    "verdicts": {
+      "H1": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and B5; not enough to test this",
+        "rationale": "cross-modality disagreement vs same-model self-consistency, at matched cost"
+      },
+      "H4": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and H; not enough to test this",
+        "rationale": "cross-model channels vs the same model on both channels - the direct test of D1"
+      },
+      "H3": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and G; not enough to test this",
+        "rationale": "with vs without the deterministic verifier"
+      },
+      "H2": {
+        "testable": false,
+        "reason": "one stratum has too few questions: reasoning_caused=0, retrieval_caused=0",
+        "rationale": "detection should be far better on reasoning-caused errors"
+      }
+    },
+    "family_wise_correction": {},
+    "note": "Holm-Bonferroni across the tested family. Five hypotheses at alpha 0.05 each carries roughly a one-in-four chance of a spurious 'supported'. Untestable hypotheses are excluded from the correction and reported as untestable."
+  },
+  "run_id": "campaign_20260901T071345Z",
+  "threshold_source": "NOT SET - precision/recall/FPR/FNR are omitted rather than computed at an unrecorded threshold",
+  "generated_at": "2026-09-01T09:26:37+00:00"
+}

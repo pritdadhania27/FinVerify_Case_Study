@@ -1,0 +1,11 @@
+{
+  "run_id": "slice_20260829T051434Z",
+  "natural_channel": "groq/qwen/qwen3.6-27b",
+  "program_channel": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "top_k": 8,
+  "temperature": 0.0,
+  "dry_run": false,
+  "document_id": "f356fc75d6d63fa3"
+}

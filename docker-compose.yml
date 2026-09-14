@@ -1,0 +1,42 @@
+# Service stack for FinVerify-AI (spec sections 26, 27, 39).
+# Brings up the two stateful services the research engine depends on.
+# The generated-code sandbox is NOT defined here - it is created per execution
+# by backend/services/sandbox.py so each run gets a fresh, disposable container.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: finverify-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-finverify}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-finverify_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-finverify}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-finverify}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: finverify-qdrant
+    ports:
+      - "${QDRANT_PORT:-6333}:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      # The qdrant image is distroless - no curl/wget - so probe the port from
+      # bash's /dev/tcp instead of adding a healthcheck-only dependency.
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+  qdrant_data:

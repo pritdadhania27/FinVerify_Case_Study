@@ -1,0 +1,818 @@
+{
+  "set_id": "retrieval-eval-cca3bdde-v1",
+  "split": "test",
+  "split_composition": {
+    "test": 13,
+    "train": 9,
+    "validation": 3
+  },
+  "document_id": "cca3bdde342aa160",
+  "company": "Sun Pharmaceutical Industries Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/sun_pharma_ar_2023-24.pdf",
+  "source_sha256": "cca3bdde342aa160a874bc3d711365d116c4d73612afd35472558cae3433a0d6",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "The `split` field is DERIVED from the source questions, not declared. It read 'validation' until 2026-09-12 while the source questions were drawn from every split - see `split_composition`. Because `scripts/evaluate_retrieval.py` gates the test split on exactly this field, that label let every retrieval evaluation run on test-bearing gold with no FINVERIFY_ALLOW_TEST=1 and no entry in experiments/test_set_access.log. Recorded as RX-053.",
+    "This set is TEST-BEARING. It requires FINVERIFY_ALLOW_TEST=1, the access is logged, and any figure from it is a one-shot result that must not be used to tune anything. What it exposes is evidence-span locations and retrieval performance, not gold answers."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were goodwill (goodwill as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12505.5 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0e301c32",
+      "evidence": [
+        {
+          "group_id": "goodwill_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 268,
+              "anchors": [
+                "Goodwill",
+                "12,505.5"
+              ]
+            },
+            {
+              "page": 286,
+              "anchors": [
+                "Goodwill",
+                "12,505.5"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R02",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were finance cost (finance cost as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 4346.9 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI1f0adbf8",
+      "evidence": [
+        {
+          "group_id": "finance cost_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 173,
+              "anchors": [
+                "Interest expense",
+                "4,346"
+              ]
+            },
+            {
+              "page": 201,
+              "anchors": [
+                "Interest expense",
+                "4,346.9"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R03",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were interest income (interest income as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2685.0 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI21afe6f5",
+      "evidence": [
+        {
+          "group_id": "interest income_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 201,
+              "anchors": [
+                "Interest income",
+                "2,685"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R04",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were retained earnings (retained earnings as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 127310.4 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI245411f4",
+      "evidence": [
+        {
+          "group_id": "retained earnings_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 38,
+              "anchors": [
+                "Retained earnings",
+                "127,310.4"
+              ]
+            },
+            {
+              "page": 142,
+              "anchors": [
+                "Retained earnings",
+                "127,310.4"
+              ]
+            },
+            {
+              "page": 169,
+              "anchors": [
+                "Retained earnings",
+                "127,310.4"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R05",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were revenue from contracts with customers (revenue from contracts with customers as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 432788.7 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI2724de93",
+      "evidence": [
+        {
+          "group_id": "revenue from contracts with customers_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 249,
+              "anchors": [
+                "Revenue from contracts with customers",
+                "432,788.7"
+              ]
+            },
+            {
+              "page": 272,
+              "anchors": [
+                "Revenue from contracts with customers",
+                "432,788.7"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R06",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1981.5 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI344372a0",
+      "evidence": [
+        {
+          "group_id": "lease liabilities_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 178,
+              "anchors": [
+                "Lease liabilities",
+                "1,981.5"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Lease liabilities",
+                "1,981.5"
+              ]
+            },
+            {
+              "page": 189,
+              "anchors": [
+                "Lease liabilities",
+                "1,981.5"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R07",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were finance cost (finance cost as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 7622.0 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI59a5f355",
+      "evidence": [
+        {
+          "group_id": "finance cost_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 173,
+              "anchors": [
+                "Interest expense",
+                "7,622"
+              ]
+            },
+            {
+              "page": 201,
+              "anchors": [
+                "Interest expense",
+                "7,622"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R08",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were interest income (interest income as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1720.3 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI63ebeb18",
+      "evidence": [
+        {
+          "group_id": "interest income_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 201,
+              "anchors": [
+                "Interest income",
+                "1,720.3"
+              ]
+            },
+            {
+              "page": 219,
+              "anchors": [
+                "Interest income",
+                "1,720"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R09",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 17960.1 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI79adc878",
+      "evidence": [
+        {
+          "group_id": "other financial liabilities_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 182,
+              "anchors": [
+                "Other financial liabilities",
+                "17,960.1"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R10",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were trade receivables (trade receivables as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 5764.8 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI823a83a4",
+      "evidence": [
+        {
+          "group_id": "trade receivables_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 183,
+              "anchors": [
+                "Trade receivables",
+                "5,764.8"
+              ]
+            },
+            {
+              "page": 265,
+              "anchors": [
+                "Trade receivables",
+                "5,764.8"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R11",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were other financial liabilities (other financial liabilities as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 44519.1 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI8aa54f67",
+      "evidence": [
+        {
+          "group_id": "other financial liabilities_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 182,
+              "anchors": [
+                "Other financial liabilities",
+                "44,519.1"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R12",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were non-controlling interests (non-controlling interests as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 33200.9 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI8dbec08e",
+      "evidence": [
+        {
+          "group_id": "non-controlling interests_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 215,
+              "anchors": [
+                "Non-controlling interests",
+                "33,200.9"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Non-controlling interests",
+                "33,200.9"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R13",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were lease liabilities (lease liabilities as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1803.0 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI95005673",
+      "evidence": [
+        {
+          "group_id": "lease liabilities_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 177,
+              "anchors": [
+                "Lease liabilities",
+                "1,803"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Lease liabilities",
+                "1,803"
+              ]
+            },
+            {
+              "page": 189,
+              "anchors": [
+                "Lease liabilities",
+                "1,803"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R14",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were retained earnings (retained earnings as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 127908.8 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIa1037777",
+      "evidence": [
+        {
+          "group_id": "retained earnings_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 38,
+              "anchors": [
+                "Retained earnings",
+                "127,908.8"
+              ]
+            },
+            {
+              "page": 142,
+              "anchors": [
+                "Retained earnings",
+                "127,908.8"
+              ]
+            },
+            {
+              "page": 169,
+              "anchors": [
+                "Retained earnings",
+                "127,908.8"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R15",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were total equity (total equity as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 671059.7 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIa9d79d75",
+      "evidence": [
+        {
+          "group_id": "total equity_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 215,
+              "anchors": [
+                "Total equity",
+                "671,059.7"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R16",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were total equity (total equity as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 593154.7 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIacdc4b94",
+      "evidence": [
+        {
+          "group_id": "total equity_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 215,
+              "anchors": [
+                "Total equity",
+                "593,154.7"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R17",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were profit before tax (profit before tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 94084.3 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIb5cbfd79",
+      "evidence": [
+        {
+          "group_id": "profit before tax_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 38,
+              "anchors": [
+                "Profit before tax",
+                "94,084.3"
+              ]
+            },
+            {
+              "page": 216,
+              "anchors": [
+                "Profit before tax",
+                "94,084.3"
+              ]
+            },
+            {
+              "page": 219,
+              "anchors": [
+                "Profit before tax",
+                "94,084.3"
+              ]
+            },
+            {
+              "page": 269,
+              "anchors": [
+                "Profit before tax",
+                "94,084.3"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R18",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were trade payables (trade payables as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 31255.8 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIbeb71021",
+      "evidence": [
+        {
+          "group_id": "trade payables_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 178,
+              "anchors": [
+                "Trade payables",
+                "31,255.8"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Trade payables",
+                "31,255.8"
+              ]
+            },
+            {
+              "page": 185,
+              "anchors": [
+                "Trade payables",
+                "31,255.8"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R19",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were non-controlling interests (non-controlling interests as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 34392.2 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIc4b13188",
+      "evidence": [
+        {
+          "group_id": "non-controlling interests_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 215,
+              "anchors": [
+                "Non-controlling interests",
+                "34,392.2"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Non-controlling interests",
+                "34,392.2"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R20",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were revenue from contracts with customers (revenue from contracts with customers as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 477584.5 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIc8f5dc59",
+      "evidence": [
+        {
+          "group_id": "revenue from contracts with customers_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 249,
+              "anchors": [
+                "Revenue from contracts with customers",
+                "477,584.5"
+              ]
+            },
+            {
+              "page": 272,
+              "anchors": [
+                "Revenue from contracts with customers",
+                "477,584.5"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R21",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were profit before tax (profit before tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 110878.9 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIcdeccf7e",
+      "evidence": [
+        {
+          "group_id": "profit before tax_2024",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 38,
+              "anchors": [
+                "Profit before tax",
+                "110,878.9"
+              ]
+            },
+            {
+              "page": 216,
+              "anchors": [
+                "Profit before tax",
+                "110,878.9"
+              ]
+            },
+            {
+              "page": 219,
+              "anchors": [
+                "Profit before tax",
+                "110,878.9"
+              ]
+            },
+            {
+              "page": 269,
+              "anchors": [
+                "Profit before tax",
+                "110,878.9"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R22",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were trade payables (trade payables as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 26195.8 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIcf527315",
+      "evidence": [
+        {
+          "group_id": "trade payables_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 177,
+              "anchors": [
+                "Trade payables",
+                "26,195.8"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Trade payables",
+                "26,195.8"
+              ]
+            },
+            {
+              "page": 185,
+              "anchors": [
+                "Trade payables",
+                "26,195.8"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R23",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were goodwill (goodwill as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 16041.5 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIe54c9edd",
+      "evidence": [
+        {
+          "group_id": "goodwill_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 286,
+              "anchors": [
+                "Goodwill",
+                "16,041.5"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R24",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were borrowings (the 'Borrowings' line item as reported on the standalone balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 110466.1 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIeb1fe7eb",
+      "evidence": [
+        {
+          "group_id": "borrowings_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 144,
+              "anchors": [
+                "Borrowings",
+                "110,466.1"
+              ]
+            },
+            {
+              "page": 177,
+              "anchors": [
+                "Borrowings",
+                "110,466.1"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Borrowings",
+                "110,466.1"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R25",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were borrowings (the 'Borrowings' line item as reported on the standalone balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 75926.7 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIf53fedac",
+      "evidence": [
+        {
+          "group_id": "borrowings_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 144,
+              "anchors": [
+                "Borrowings",
+                "75,926.7"
+              ]
+            },
+            {
+              "page": 178,
+              "anchors": [
+                "Borrowings",
+                "75,926.7"
+              ]
+            },
+            {
+              "page": 182,
+              "anchors": [
+                "Borrowings",
+                "75,926.7"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    }
+  ]
+}

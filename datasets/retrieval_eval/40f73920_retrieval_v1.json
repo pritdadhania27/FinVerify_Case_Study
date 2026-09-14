@@ -1,0 +1,734 @@
+{
+  "set_id": "retrieval-eval-40f73920-v1",
+  "split": "test",
+  "split_composition": {
+    "test": 10,
+    "train": 8,
+    "validation": 7
+  },
+  "document_id": "40f73920a8b153ec",
+  "company": "HDFC Bank Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/hdfc_bank_iar_2023-24.pdf",
+  "source_sha256": "40f73920a8b153ecb04a826db8d916e904da9f99ba6dd1e054a9a2da60524793",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "The `split` field is DERIVED from the source questions, not declared. It read 'validation' until 2026-09-12 while the source questions were drawn from every split - see `split_composition`. Because `scripts/evaluate_retrieval.py` gates the test split on exactly this field, that label let every retrieval evaluation run on test-bearing gold with no FINVERIFY_ALLOW_TEST=1 and no entry in experiments/test_set_access.log. Recorded as RX-053.",
+    "This set is TEST-BEARING. It requires FINVERIFY_ALLOW_TEST=1, the access is logged, and any figure from it is a one-shot result that must not be used to tune anything. What it exposes is evidence-span locations and retrieval performance, not gold answers."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were basic earnings per share (basic earnings per share as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 90.42 - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0e3bc749",
+      "evidence": [
+        {
+          "group_id": "basic earnings per share_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 477,
+              "anchors": [
+                "Basic earnings per share (`)",
+                "90.42"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R02",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were diluted earnings per share (diluted earnings per share as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 82.27 - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0fe0af23",
+      "evidence": [
+        {
+          "group_id": "diluted earnings per share_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 477,
+              "anchors": [
+                "Diluted earnings per share (`)",
+                "82.27"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R03",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 511581.71 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI19b399ca",
+      "evidence": [
+        {
+          "group_id": "investments_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Investments",
+                "511,581.71"
+              ]
+            },
+            {
+              "page": 420,
+              "anchors": [
+                "Investments",
+                "511,581.71"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R04",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were diluted earnings per share (diluted earnings per share as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 90.01 - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI1a3114db",
+      "evidence": [
+        {
+          "group_id": "diluted earnings per share_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 477,
+              "anchors": [
+                "Diluted earnings per share (`)",
+                "90.01"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R05",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were total assets (total assets as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 75579.83 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI35d1533d",
+      "evidence": [
+        {
+          "group_id": "total assets_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 332,
+              "anchors": [
+                "Total Assets",
+                "75,579.83"
+              ]
+            },
+            {
+              "page": 379,
+              "anchors": [
+                "Total Assets",
+                "75,579"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R06",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were advances (the 'Advances' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2565891.41 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI364a7d50",
+      "evidence": [
+        {
+          "group_id": "advances_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Advances",
+                "2,565,891.41"
+              ]
+            },
+            {
+              "page": 421,
+              "anchors": [
+                "Advances",
+                "2,565,891.41"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R07",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were advances (the 'Advances' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1661949.29 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI38eddf0c",
+      "evidence": [
+        {
+          "group_id": "advances_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Advances",
+                "1,661,949.29"
+              ]
+            },
+            {
+              "page": 421,
+              "anchors": [
+                "Advances",
+                "1,661,949.29"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R08",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 452982.84 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI40d1603f",
+      "evidence": [
+        {
+          "group_id": "other equity_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Reserves and surplus",
+                "452,982.84"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R09",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12798.00 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI46e02586",
+      "evidence": [
+        {
+          "group_id": "provisions_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 472,
+              "anchors": [
+                "Provisions for non -",
+                "12,798"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R10",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 8282.56 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI560ce9a1",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Fixed assets",
+                "8,282.56"
+              ]
+            },
+            {
+              "page": 422,
+              "anchors": [
+                "Fixed assets",
+                "8,282.56"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R11",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions and contingencies (provisions and contingencies as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 36140.38 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI5a5bd05d",
+      "evidence": [
+        {
+          "group_id": "provisions and contingencies_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 413,
+              "anchors": [
+                "Provisions and contingencies",
+                "36,140.38"
+              ]
+            },
+            {
+              "page": 464,
+              "anchors": [
+                "Provisions and contingencies",
+                "36,140.38"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R12",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were basic earnings per share (basic earnings per share as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 82.64 - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI5b18b38b",
+      "evidence": [
+        {
+          "group_id": "basic earnings per share_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 477,
+              "anchors": [
+                "Basic earnings per share (`)",
+                "82.64"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R13",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were non-controlling interests (non-controlling interests as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 13383.40 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI5be0cde8",
+      "evidence": [
+        {
+          "group_id": "non-controlling interests_2024",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 266,
+              "anchors": [
+                "Minority interest",
+                "13,383.4"
+              ]
+            },
+            {
+              "page": 412,
+              "anchors": [
+                "Minority interest",
+                "13,383.4"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Minority interest",
+                "13,383.4"
+              ]
+            },
+            {
+              "page": 480,
+              "anchors": [
+                "Minority interest",
+                "13,383.4"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R14",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were other equity (other equity as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 287762.33 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI5dbee63d",
+      "evidence": [
+        {
+          "group_id": "other equity_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Reserves and surplus",
+                "287,762.33"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R15",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1005681.63 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI676579d8",
+      "evidence": [
+        {
+          "group_id": "investments_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Investments",
+                "1,005,681.63"
+              ]
+            },
+            {
+              "page": 420,
+              "anchors": [
+                "Investments",
+                "1,005,681.63"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R16",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were total assets (total assets as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 63136.81 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI68ab4cd9",
+      "evidence": [
+        {
+          "group_id": "total assets_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 332,
+              "anchors": [
+                "Total Assets",
+                "63,136.81"
+              ]
+            },
+            {
+              "page": 473,
+              "anchors": [
+                "Total Assets",
+                "63,136.81"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R17",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were deferred tax (deferred tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 9301.96 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI6d4f1b3c",
+      "evidence": [
+        {
+          "group_id": "deferred tax_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 423,
+              "anchors": [
+                "Deferred Tax Assets",
+                "9,301.96"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R18",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were non-controlling interests (non-controlling interests as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 860.26 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI81744692",
+      "evidence": [
+        {
+          "group_id": "non-controlling interests_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Minority interest",
+                "860.26"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Minority interest",
+                "860.26"
+              ]
+            },
+            {
+              "page": 481,
+              "anchors": [
+                "Minority interest",
+                "860.26"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R19",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were deposits (the 'Deposits' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2376887.28 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI8c6359a7",
+      "evidence": [
+        {
+          "group_id": "deposits_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Deposits",
+                "2,376,887.28"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Deposits",
+                "2,376,887.28"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R20",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were borrowings (the 'Borrowings' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 256548.66 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI936e8856",
+      "evidence": [
+        {
+          "group_id": "borrowings_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Borrowings",
+                "256,548.66"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Borrowings",
+                "256,548.66"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R21",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2344487.73 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI9676d18d",
+      "evidence": [
+        {
+          "group_id": "contingent liabilities_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Contingent liabilities",
+                "2,344,487.73"
+              ]
+            },
+            {
+              "page": 423,
+              "anchors": [
+                "Contingent liabilities",
+                "2,344,487.73"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "validation"
+    },
+    {
+      "qid": "R22",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1750953.81 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIa4906a2d",
+      "evidence": [
+        {
+          "group_id": "contingent liabilities_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Contingent liabilities",
+                "1,750,953.81"
+              ]
+            },
+            {
+              "page": 423,
+              "anchors": [
+                "Contingent liabilities",
+                "1,750,953.81"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    },
+    {
+      "qid": "R23",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were deferred tax (deferred tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 7292.26 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIa72e7c51",
+      "evidence": [
+        {
+          "group_id": "deferred tax_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 423,
+              "anchors": [
+                "Deferred Tax Assets",
+                "7,292.26"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R24",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other income (other income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 124345.75 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIaa5ea0c7",
+      "evidence": [
+        {
+          "group_id": "other income_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 413,
+              "anchors": [
+                "Other income",
+                "124,345.75"
+              ]
+            },
+            {
+              "page": 424,
+              "anchors": [
+                "Other income",
+                "124,345.75"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "train"
+    },
+    {
+      "qid": "R25",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 33912.05 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIb2f9cc5c",
+      "evidence": [
+        {
+          "group_id": "other income_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 413,
+              "anchors": [
+                "Other income",
+                "33,912.05"
+              ]
+            },
+            {
+              "page": 424,
+              "anchors": [
+                "Other income",
+                "33,912.05"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_split": "test"
+    }
+  ]
+}

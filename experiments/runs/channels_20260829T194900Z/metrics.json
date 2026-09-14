@@ -1,0 +1,17 @@
+{
+  "n": 20,
+  "natural": {
+    "answered": 0.45,
+    "abstained": 0.2,
+    "parse_failure": 0.35,
+    "unavailable": 0.0
+  },
+  "program": {
+    "answered": 0.4,
+    "abstained": 0.25,
+    "parse_failure": 0.2,
+    "unavailable": 0.15
+  },
+  "program_generated": 0.9,
+  "program_executed": 0.65
+}

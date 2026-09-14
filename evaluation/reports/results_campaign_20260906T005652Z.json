@@ -1,0 +1,1047 @@
+{
+  "arms": {
+    "O": {
+      "arm": "O",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.8,
+        "numerical_accuracy": 0.8222222222222222,
+        "execution_accuracy": 0.6444444444444445,
+        "abstention_rate": 0.06666666666666667,
+        "parse_failure_rate": 0.0,
+        "unit_assumption_rate": 0.022222222222222223,
+        "tau_sensitivity": {
+          "0.001": 0.8,
+          "0.005": 0.8222222222222222,
+          "0.01": 0.8222222222222222,
+          "0.05": 0.8222222222222222
+        },
+        "mismatch_counts": {
+          "none": 37,
+          "magnitude": 5,
+          "missing_prediction": 3
+        },
+        "notes": []
+      },
+      "detection": {
+        "n": 45,
+        "positives": 8,
+        "base_error_rate": 0.17777777777777778,
+        "auroc": 0.6554054054054054,
+        "auprc": 0.47110042735042734,
+        "at_threshold": {
+          "threshold": 0.51125,
+          "true_positives": 3,
+          "false_positives": 9,
+          "true_negatives": 28,
+          "false_negatives": 5,
+          "precision": 0.25,
+          "recall": 0.375,
+          "f1": 0.3,
+          "false_positive_rate": 0.24324324324324326,
+          "false_negative_rate": 0.625
+        },
+        "risk_coverage": {
+          "aurc": 0.14386352234735306,
+          "optimal_aurc": 0.018791333466727282,
+          "excess_aurc": 0.12507218888062577,
+          "points": [
+            {
+              "coverage": 0.022222222222222223,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.044444444444444446,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.06666666666666667,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.08888888888888889,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.1111111111111111,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.13333333333333333,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.15555555555555556,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.17777777777777778,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.2,
+              "error_rate": 0.1111111111111111
+            },
+            {
+              "coverage": 0.2222222222222222,
+              "error_rate": 0.1
+            },
+            {
+              "coverage": 0.24444444444444444,
+              "error_rate": 0.09090909090909091
+            },
+            {
+              "coverage": 0.26666666666666666,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.28888888888888886,
+              "error_rate": 0.15384615384615385
+            },
+            {
+              "coverage": 0.3111111111111111,
+              "error_rate": 0.21428571428571427
+            },
+            {
+              "coverage": 0.3333333333333333,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.35555555555555557,
+              "error_rate": 0.25
+            },
+            {
+              "coverage": 0.37777777777777777,
+              "error_rate": 0.23529411764705882
+            },
+            {
+              "coverage": 0.4,
+              "error_rate": 0.2222222222222222
+            },
+            {
+              "coverage": 0.4222222222222222,
+              "error_rate": 0.21052631578947367
+            },
+            {
+              "coverage": 0.4444444444444444,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.4666666666666667,
+              "error_rate": 0.19047619047619047
+            },
+            {
+              "coverage": 0.4888888888888889,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 0.5111111111111111,
+              "error_rate": 0.17391304347826086
+            },
+            {
+              "coverage": 0.5333333333333333,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.5555555555555556,
+              "error_rate": 0.16
+            },
+            {
+              "coverage": 0.5777777777777777,
+              "error_rate": 0.15384615384615385
+            },
+            {
+              "coverage": 0.6,
+              "error_rate": 0.14814814814814814
+            },
+            {
+              "coverage": 0.6222222222222222,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.6444444444444445,
+              "error_rate": 0.13793103448275862
+            },
+            {
+              "coverage": 0.6666666666666666,
+              "error_rate": 0.13333333333333333
+            },
+            {
+              "coverage": 0.6888888888888889,
+              "error_rate": 0.12903225806451613
+            },
+            {
+              "coverage": 0.7111111111111111,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.7333333333333333,
+              "error_rate": 0.15151515151515152
+            },
+            {
+              "coverage": 0.7555555555555555,
+              "error_rate": 0.14705882352941177
+            },
+            {
+              "coverage": 0.7777777777777778,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.8,
+              "error_rate": 0.1388888888888889
+            },
+            {
+              "coverage": 0.8222222222222222,
+              "error_rate": 0.13513513513513514
+            },
+            {
+              "coverage": 0.8444444444444444,
+              "error_rate": 0.13157894736842105
+            },
+            {
+              "coverage": 0.8666666666666667,
+              "error_rate": 0.1282051282051282
+            },
+            {
+              "coverage": 0.8888888888888888,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.9111111111111111,
+              "error_rate": 0.12195121951219512
+            },
+            {
+              "coverage": 0.9333333333333333,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.9555555555555556,
+              "error_rate": 0.13953488372093023
+            },
+            {
+              "coverage": 0.9777777777777777,
+              "error_rate": 0.1590909090909091
+            },
+            {
+              "coverage": 1.0,
+              "error_rate": 0.17777777777777778
+            }
+          ]
+        },
+        "notes": [
+          "only 8 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+        ],
+        "auroc_ci": {
+          "point": 0.6554054054054054,
+          "ci_low": 0.4349618983957219,
+          "ci_high": 0.8759494891073837,
+          "resamples": 10000,
+          "undefined_resamples": 2,
+          "seed": 20260826,
+          "excludes_zero": true
+        }
+      },
+      "detection_by_provenance": {
+        "retrieval_caused": {
+          "n": 2,
+          "positives": 2,
+          "base_error_rate": 1.0,
+          "auroc": null,
+          "auprc": null,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 2,
+            "false_positives": 0,
+            "true_negatives": 0,
+            "false_negatives": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 1.0,
+            "optimal_aurc": 1.0,
+            "excess_aurc": 0.0,
+            "points": [
+              {
+                "coverage": 0.5,
+                "error_rate": 1.0
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 1.0
+              }
+            ]
+          },
+          "notes": [
+            "every answer is incorrect in this set: AUROC and AUPRC are undefined",
+            "the risk score is constant across every question: AUROC is 0.5 by construction and carries no information",
+            "only 2 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "resamples": 10000,
+            "undefined_resamples": 10000,
+            "seed": 20260826,
+            "excludes_zero": false
+          }
+        },
+        "reasoning_caused": {
+          "n": 43,
+          "positives": 6,
+          "base_error_rate": 0.13953488372093023,
+          "auroc": 0.5405405405405406,
+          "auprc": 0.20665961945031713,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 1,
+            "false_positives": 9,
+            "true_negatives": 28,
+            "false_negatives": 5,
+            "precision": 0.1,
+            "recall": 0.16666666666666666,
+            "f1": 0.125,
+            "false_positive_rate": 0.24324324324324326,
+            "false_negative_rate": 0.8333333333333334
+          },
+          "risk_coverage": {
+            "aurc": 0.14272069345958607,
+            "optimal_aurc": 0.011831193468233508,
+            "excess_aurc": 0.13088949999135258,
+            "points": [
+              {
+                "coverage": 0.023255813953488372,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.046511627906976744,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.06976744186046512,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.09302325581395349,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.11627906976744186,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.13953488372093023,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.16279069767441862,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.18604651162790697,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.20930232558139536,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.23255813953488372,
+                "error_rate": 0.1
+              },
+              {
+                "coverage": 0.2558139534883721,
+                "error_rate": 0.09090909090909091
+              },
+              {
+                "coverage": 0.27906976744186046,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.3023255813953488,
+                "error_rate": 0.15384615384615385
+              },
+              {
+                "coverage": 0.32558139534883723,
+                "error_rate": 0.21428571428571427
+              },
+              {
+                "coverage": 0.3488372093023256,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.37209302325581395,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.3953488372093023,
+                "error_rate": 0.23529411764705882
+              },
+              {
+                "coverage": 0.4186046511627907,
+                "error_rate": 0.2222222222222222
+              },
+              {
+                "coverage": 0.4418604651162791,
+                "error_rate": 0.21052631578947367
+              },
+              {
+                "coverage": 0.46511627906976744,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.4883720930232558,
+                "error_rate": 0.19047619047619047
+              },
+              {
+                "coverage": 0.5116279069767442,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.5348837209302325,
+                "error_rate": 0.17391304347826086
+              },
+              {
+                "coverage": 0.5581395348837209,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.5813953488372093,
+                "error_rate": 0.16
+              },
+              {
+                "coverage": 0.6046511627906976,
+                "error_rate": 0.15384615384615385
+              },
+              {
+                "coverage": 0.627906976744186,
+                "error_rate": 0.14814814814814814
+              },
+              {
+                "coverage": 0.6511627906976745,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.6744186046511628,
+                "error_rate": 0.13793103448275862
+              },
+              {
+                "coverage": 0.6976744186046512,
+                "error_rate": 0.13333333333333333
+              },
+              {
+                "coverage": 0.7209302325581395,
+                "error_rate": 0.12903225806451613
+              },
+              {
+                "coverage": 0.7441860465116279,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.7674418604651163,
+                "error_rate": 0.15151515151515152
+              },
+              {
+                "coverage": 0.7906976744186046,
+                "error_rate": 0.14705882352941177
+              },
+              {
+                "coverage": 0.813953488372093,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.8372093023255814,
+                "error_rate": 0.1388888888888889
+              },
+              {
+                "coverage": 0.8604651162790697,
+                "error_rate": 0.13513513513513514
+              },
+              {
+                "coverage": 0.8837209302325582,
+                "error_rate": 0.13157894736842105
+              },
+              {
+                "coverage": 0.9069767441860465,
+                "error_rate": 0.1282051282051282
+              },
+              {
+                "coverage": 0.9302325581395349,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.9534883720930233,
+                "error_rate": 0.12195121951219512
+              },
+              {
+                "coverage": 0.9767441860465116,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.13953488372093023
+              }
+            ]
+          },
+          "notes": [
+            "only 6 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": 0.5405405405405406,
+            "ci_low": 0.34615384615384615,
+            "ci_high": 0.7818269230769229,
+            "resamples": 10000,
+            "undefined_resamples": 20,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "unknown": null,
+        "pooled": {
+          "n": 45,
+          "positives": 8,
+          "base_error_rate": 0.17777777777777778,
+          "auroc": 0.6554054054054054,
+          "auprc": 0.47110042735042734,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 3,
+            "false_positives": 9,
+            "true_negatives": 28,
+            "false_negatives": 5,
+            "precision": 0.25,
+            "recall": 0.375,
+            "f1": 0.3,
+            "false_positive_rate": 0.24324324324324326,
+            "false_negative_rate": 0.625
+          },
+          "risk_coverage": {
+            "aurc": 0.14386352234735306,
+            "optimal_aurc": 0.018791333466727282,
+            "excess_aurc": 0.12507218888062577,
+            "points": [
+              {
+                "coverage": 0.022222222222222223,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.044444444444444446,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.06666666666666667,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.08888888888888889,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.1111111111111111,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.13333333333333333,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.15555555555555556,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.17777777777777778,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.2,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.2222222222222222,
+                "error_rate": 0.1
+              },
+              {
+                "coverage": 0.24444444444444444,
+                "error_rate": 0.09090909090909091
+              },
+              {
+                "coverage": 0.26666666666666666,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.28888888888888886,
+                "error_rate": 0.15384615384615385
+              },
+              {
+                "coverage": 0.3111111111111111,
+                "error_rate": 0.21428571428571427
+              },
+              {
+                "coverage": 0.3333333333333333,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.35555555555555557,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.37777777777777777,
+                "error_rate": 0.23529411764705882
+              },
+              {
+                "coverage": 0.4,
+                "error_rate": 0.2222222222222222
+              },
+              {
+                "coverage": 0.4222222222222222,
+                "error_rate": 0.21052631578947367
+              },
+              {
+                "coverage": 0.4444444444444444,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.4666666666666667,
+                "error_rate": 0.19047619047619047
+              },
+              {
+                "coverage": 0.4888888888888889,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.5111111111111111,
+                "error_rate": 0.17391304347826086
+              },
+              {
+                "coverage": 0.5333333333333333,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.5555555555555556,
+                "error_rate": 0.16
+              },
+              {
+                "coverage": 0.5777777777777777,
+                "error_rate": 0.15384615384615385
+              },
+              {
+                "coverage": 0.6,
+                "error_rate": 0.14814814814814814
+              },
+              {
+                "coverage": 0.6222222222222222,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.6444444444444445,
+                "error_rate": 0.13793103448275862
+              },
+              {
+                "coverage": 0.6666666666666666,
+                "error_rate": 0.13333333333333333
+              },
+              {
+                "coverage": 0.6888888888888889,
+                "error_rate": 0.12903225806451613
+              },
+              {
+                "coverage": 0.7111111111111111,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.7333333333333333,
+                "error_rate": 0.15151515151515152
+              },
+              {
+                "coverage": 0.7555555555555555,
+                "error_rate": 0.14705882352941177
+              },
+              {
+                "coverage": 0.7777777777777778,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.8,
+                "error_rate": 0.1388888888888889
+              },
+              {
+                "coverage": 0.8222222222222222,
+                "error_rate": 0.13513513513513514
+              },
+              {
+                "coverage": 0.8444444444444444,
+                "error_rate": 0.13157894736842105
+              },
+              {
+                "coverage": 0.8666666666666667,
+                "error_rate": 0.1282051282051282
+              },
+              {
+                "coverage": 0.8888888888888888,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.9111111111111111,
+                "error_rate": 0.12195121951219512
+              },
+              {
+                "coverage": 0.9333333333333333,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.9555555555555556,
+                "error_rate": 0.13953488372093023
+              },
+              {
+                "coverage": 0.9777777777777777,
+                "error_rate": 0.1590909090909091
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.17777777777777778
+              }
+            ]
+          },
+          "notes": [
+            "only 8 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": 0.6554054054054054,
+            "ci_low": 0.4349618983957219,
+            "ci_high": 0.8759494891073837,
+            "resamples": 10000,
+            "undefined_resamples": 2,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "note": "Both channels read the same evidence, so agreement is expected to be near-blind to retrieval-caused error. The pooled figure averages across a regime where the method cannot work and would overstate the contribution if reported alone (EVALUATION.md \u00a75.3)."
+      },
+      "agreement_x_correctness": {
+        "agree_correct": 28,
+        "both_agree_wrong": 5,
+        "disagree_correct": 9,
+        "disagree_wrong": 3
+      },
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 41.062,
+        "latency_p95_seconds": 94.66259999999997,
+        "tokens_per_question": 3108.6444444444446,
+        "tokens_by_channel": {
+          "natural": 37734,
+          "program": 102155
+        },
+        "calls_per_question": 1.9777777777777779,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.022222222222222223,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 89,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 89,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "O",
+        "questions": 45,
+        "errors": 8,
+        "blind_spot": {
+          "both_agree_wrong": 5,
+          "of_agreed": 33,
+          "rate_among_agreed": 0.15151515151515152,
+          "qids": [
+            "FI2959dfaf",
+            "FI46e02586",
+            "FI82a95e99",
+            "FI939a55f7",
+            "FI995ccc77"
+          ]
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 2,
+            "errors": 2
+          },
+          "reasoning_caused": {
+            "questions": 43,
+            "errors": 6
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "question_understanding": 2,
+          "undetermined": 4,
+          "retrieval": 2
+        },
+        "by_kind": {
+          "unclassified": 3,
+          "unsupported_claim": 3,
+          "wrong_unit": 2
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unclassified": 2
+          },
+          "retrieval": {
+            "unsupported_claim": 2
+          },
+          "undetermined": {
+            "unclassified": 1,
+            "unsupported_claim": 1,
+            "wrong_unit": 2
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 6,
+        "examples": [
+          {
+            "qid": "FI2959dfaf",
+            "arm": "O",
+            "question": "For Sun Pharmaceutical Industries Limited, in the 2023-24 consolidated financial statements, what was goodwill as a share of total assets (goodwill divided by total assets, expressed as a percentage)?",
+            "correct": false,
+            "risk_score": 0.04499999999999999,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": "0.1388",
+            "gold": "10.06",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "O",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "undetermined",
+              "kind": "unsupported_claim",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "evidence was retrieved and the answer is wrong, but question understanding and/or extraction were not checked - so 'reasoning' cannot be concluded, only assumed",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "O",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": "25018.28",
+            "gold": "12798.00",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "undetermined",
+              "kind": "wrong_unit",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "evidence was retrieved and the answer is wrong, but question understanding and/or extraction were not checked - so 'reasoning' cannot be concluded, only assumed",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "O",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": "5667",
+            "gold": "61269",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "undetermined",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "evidence was retrieved and the answer is wrong, but question understanding and/or extraction were not checked - so 'reasoning' cannot be concluded, only assumed",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "O",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": "2271.29",
+            "gold": "76641.43",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "O",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "reasoning_caused",
+            "predicted": "16230",
+            "gold": "20426",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "undetermined",
+              "kind": "wrong_unit",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "evidence was retrieved and the answer is wrong, but question understanding and/or extraction were not checked - so 'reasoning' cannot be concluded, only assumed",
+                "unit kind unknown vs gold currency"
+              ]
+            }
+          },
+          {
+            "qid": "FIae47e20f",
+            "arm": "O",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were exceptional items (exceptional items as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 1.0,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "-1590.53",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FIb697b29c",
+            "arm": "O",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were trade receivables (trade receivables as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 1.0,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "28302.10",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": []
+    }
+  },
+  "questions_in_gold": 188,
+  "operating_threshold": 0.51125,
+  "tau": "0.005",
+  "resamples": 10000,
+  "hypotheses": {
+    "verdicts": {
+      "H1": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and B5; not enough to test this",
+        "rationale": "cross-modality disagreement vs same-model self-consistency, at matched cost"
+      },
+      "H4": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and H; not enough to test this",
+        "rationale": "cross-model channels vs the same model on both channels - the direct test of D1"
+      },
+      "H3": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and G; not enough to test this",
+        "rationale": "with vs without the deterministic verifier"
+      },
+      "H2": {
+        "testable": false,
+        "reason": "one stratum has too few questions: reasoning_caused=0, retrieval_caused=0",
+        "rationale": "detection should be far better on reasoning-caused errors"
+      }
+    },
+    "family_wise_correction": {},
+    "note": "Holm-Bonferroni across the tested family. Five hypotheses at alpha 0.05 each carries roughly a one-in-four chance of a spurious 'supported'. Untestable hypotheses are excluded from the correction and reported as untestable."
+  },
+  "run_id": "campaign_20260906T005652Z",
+  "threshold_source": "passed on the command line (frozen elsewhere)",
+  "generated_at": "2026-09-06T01:51:26+00:00"
+}

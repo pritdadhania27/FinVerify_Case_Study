@@ -1,0 +1,9 @@
+{
+  "n": 30,
+  "refinement_used": 30,
+  "metrics_agreement": 0.03333333333333333,
+  "year_agreement": 0.7666666666666667,
+  "raised": 0,
+  "latency_median_seconds": 2.031,
+  "latency_max_seconds": 49.203
+}

@@ -1,0 +1,44 @@
+{
+  "finverify_chunks": {
+    "collection": "finverify_chunks",
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "dimension": 768,
+    "point_count": 906,
+    "companies": [
+      "Infosys Limited"
+    ],
+    "document_ids": [
+      "f356fc75d6d63fa3"
+    ],
+    "built_at": "2026-08-27T11:12:29Z",
+    "source": "derived",
+    "notes": [
+      "reconstructed from the live collection; the embedding model was supplied by the caller, not read from Qdrant"
+    ]
+  },
+  "finverify_e5": {
+    "collection": "finverify_e5",
+    "embedding_model": "intfloat/e5-base-v2",
+    "dimension": 768,
+    "point_count": 22930,
+    "companies": [
+      "HDFC Bank Limited",
+      "Infosys Limited",
+      "Reliance Industries Limited",
+      "Sun Pharmaceutical Industries Limited",
+      "Tata Motors Limited"
+    ],
+    "document_ids": [
+      "40f73920a8b153ec",
+      "cca3bdde342aa160",
+      "d8e3739d2e06f09b",
+      "db02424e0ed16204",
+      "f356fc75d6d63fa3"
+    ],
+    "built_at": "2026-08-27T11:12:20Z",
+    "source": "derived",
+    "notes": [
+      "reconstructed from the live collection; the embedding model was supplied by the caller, not read from Qdrant"
+    ]
+  }
+}

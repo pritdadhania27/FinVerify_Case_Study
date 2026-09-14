@@ -1,0 +1,299 @@
+{
+  "set_id": "retrieval-eval-d8e3739d-v1-validation",
+  "split": "validation",
+  "arm": "d8e3739d_retrieval_v1_validation_planned_corpuswide",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "chunks_indexed": 22930,
+  "evaluated_at": "2026-09-12T16:30:33+00:00",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "arms": {
+    "hybrid": {
+      "1": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      },
+      "3": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      },
+      "5": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      },
+      "10": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      }
+    },
+    "planned": {
+      "1": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      },
+      "3": {
+        "questions": 11,
+        "recall_at_k": 0.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "evidence_retrieval_accuracy": 0.0
+      },
+      "5": {
+        "questions": 11,
+        "recall_at_k": 0.09090909090909091,
+        "precision_at_k": 0.018181818181818184,
+        "mrr": 0.018181818181818184,
+        "evidence_retrieval_accuracy": 0.09090909090909091
+      },
+      "10": {
+        "questions": 11,
+        "recall_at_k": 0.18181818181818182,
+        "precision_at_k": 0.027272727272727275,
+        "mrr": 0.03116883116883117,
+        "evidence_retrieval_accuracy": 0.18181818181818182
+      }
+    }
+  },
+  "per_question": {
+    "hybrid": [
+      {
+        "qid": "R01",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "revenue from operations_2023"
+        ]
+      },
+      {
+        "qid": "R02",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other income_2023"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total equity_2024"
+        ]
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "deferred tax_2024"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total income_2023"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other equity_2023"
+        ]
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2024"
+        ]
+      },
+      {
+        "qid": "R08",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "capital work-in-progress_2023"
+        ]
+      },
+      {
+        "qid": "R09",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "goodwill_2023"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "equity share capital_2023"
+        ]
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total expenses_2023"
+        ]
+      }
+    ],
+    "planned": [
+      {
+        "qid": "R01",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other income_2023"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total equity_2024"
+        ]
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total income_2023"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other equity_2023"
+        ]
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2024"
+        ]
+      },
+      {
+        "qid": "R08",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "capital work-in-progress_2023"
+        ]
+      },
+      {
+        "qid": "R09",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "goodwill_2023"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "equity share capital_2023"
+        ]
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total expenses_2023"
+        ]
+      }
+    ]
+  }
+}

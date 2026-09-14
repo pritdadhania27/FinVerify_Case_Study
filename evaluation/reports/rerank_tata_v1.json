@@ -1,0 +1,191 @@
+{
+  "baseline_recall_at_k": 0.04,
+  "reranked_recall_at_k": 0.0,
+  "k": 10,
+  "pool": 100,
+  "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "corpus_wide": false,
+  "entered_top_k": 0,
+  "left_top_k": 1,
+  "groups": 25,
+  "seconds_per_group": 20.003702232001814,
+  "rows": [
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R01",
+      "group_id": "finance cost_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R02",
+      "group_id": "total income_2024",
+      "rank_before": 27,
+      "rank_after": 14
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R03",
+      "group_id": "trade receivables_2024",
+      "rank_before": 11,
+      "rank_after": 84
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R04",
+      "group_id": "profit before tax_2023",
+      "rank_before": 7,
+      "rank_after": 43
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R05",
+      "group_id": "total expenses_2024",
+      "rank_before": 52,
+      "rank_after": 75
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R06",
+      "group_id": "provisions_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R07",
+      "group_id": "other income_2023",
+      "rank_before": 43,
+      "rank_after": 16
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R08",
+      "group_id": "cash and cash equivalents_2024",
+      "rank_before": 71,
+      "rank_after": 56
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R09",
+      "group_id": "profit for the year_2024",
+      "rank_before": 17,
+      "rank_after": 80
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R10",
+      "group_id": "trade payables_2024",
+      "rank_before": 17,
+      "rank_after": 87
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R11",
+      "group_id": "property, plant and equipment_2024",
+      "rank_before": 74,
+      "rank_after": 21
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R12",
+      "group_id": "borrowings_2023",
+      "rank_before": 73,
+      "rank_after": 31
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R13",
+      "group_id": "other financial liabilities_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R14",
+      "group_id": "inventories_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R15",
+      "group_id": "finance cost_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R16",
+      "group_id": "provisions_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R17",
+      "group_id": "profit for the year_2023",
+      "rank_before": 17,
+      "rank_after": 80
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R18",
+      "group_id": "property, plant and equipment_2023",
+      "rank_before": 74,
+      "rank_after": 21
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R19",
+      "group_id": "borrowings_2024",
+      "rank_before": 73,
+      "rank_after": 31
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R20",
+      "group_id": "cash and cash equivalents_2023",
+      "rank_before": 71,
+      "rank_after": 57
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R21",
+      "group_id": "deposits_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R22",
+      "group_id": "inventories_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R23",
+      "group_id": "exceptional items_2023",
+      "rank_before": 12,
+      "rank_after": 12
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R24",
+      "group_id": "total income_2023",
+      "rank_before": 27,
+      "rank_after": 13
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R25",
+      "group_id": "trade receivables_2023",
+      "rank_before": 11,
+      "rank_after": 85
+    }
+  ]
+}

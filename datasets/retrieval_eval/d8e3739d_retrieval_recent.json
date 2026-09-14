@@ -1,0 +1,526 @@
+{
+  "set_id": "retrieval-eval-d8e3739d-v1-recent",
+  "split": "validation",
+  "document_id": "d8e3739d2e06f09b",
+  "company": "Reliance Industries Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/reliance_iar_2023-24.pdf",
+  "source_sha256": "d8e3739d2e06f09b83a192e00cefda0113b5da778483e31018cb35429e72eafe",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "VALIDATION split. Must never be reported as a test result."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were borrowings (total borrowings as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 135702 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0173",
+      "evidence": [
+        {
+          "group_id": "borrowings_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 140,
+              "anchors": [
+                "Borrowings",
+                "1,35,702"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were borrowings (total borrowings as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12275 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0174",
+      "evidence": [
+        {
+          "group_id": "borrowings_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 140,
+              "anchors": [
+                "Borrowings",
+                "12,275"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were capital work-in-progress (capital work-in-progress as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 30972 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0175",
+      "evidence": [
+        {
+          "group_id": "capital work-in-progress_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "30,972"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "30,972"
+              ]
+            },
+            {
+              "page": 74,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "30,972"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R04",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were capital work-in-progress (capital work-in-progress as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 44294 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0176",
+      "evidence": [
+        {
+          "group_id": "capital work-in-progress_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "44,294"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "44,294"
+              ]
+            },
+            {
+              "page": 74,
+              "anchors": [
+                "Capital Work-in-Progress",
+                "44,294"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R06",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were cost of materials consumed (cost of materials consumed as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 376418 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0178",
+      "evidence": [
+        {
+          "group_id": "cost of materials consumed_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 68,
+              "anchors": [
+                "Cost of Materials Consumed",
+                "3,76,418"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R08",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were current tax (current tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 10922 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0180",
+      "evidence": [
+        {
+          "group_id": "current tax_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 49,
+              "anchors": [
+                "Current Tax",
+                "10,922"
+              ]
+            },
+            {
+              "page": 68,
+              "anchors": [
+                "Current Tax",
+                "10,922"
+              ]
+            },
+            {
+              "page": 78,
+              "anchors": [
+                "Current Tax",
+                "10,922"
+              ]
+            },
+            {
+              "page": 80,
+              "anchors": [
+                "Current Tax",
+                "10,922"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R10",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were deferred tax (deferred tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2309 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0182",
+      "evidence": [
+        {
+          "group_id": "deferred tax_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 49,
+              "anchors": [
+                "Deferred Tax",
+                "2,309"
+              ]
+            },
+            {
+              "page": 68,
+              "anchors": [
+                "Deferred Tax",
+                "2,309"
+              ]
+            },
+            {
+              "page": 80,
+              "anchors": [
+                "Deferred Tax",
+                "2,309"
+              ]
+            },
+            {
+              "page": 83,
+              "anchors": [
+                "Deferred Tax",
+                "2,309"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R11",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were intangible assets (intangible assets as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 29334 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0183",
+      "evidence": [
+        {
+          "group_id": "intangible assets_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Intangible Assets",
+                "29,334"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Intangible Assets",
+                "29,334"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R12",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were intangible assets (intangible assets as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 40719 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0184",
+      "evidence": [
+        {
+          "group_id": "intangible assets_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Intangible Assets",
+                "40,719"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Intangible Assets",
+                "40,719"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R14",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other expenses (other expenses as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 59891 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0186",
+      "evidence": [
+        {
+          "group_id": "other expenses_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 68,
+              "anchors": [
+                "Other Expenses",
+                "59,891"
+              ]
+            },
+            {
+              "page": 87,
+              "anchors": [
+                "Other Expenses",
+                "59,891"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R16",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12128 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0188",
+      "evidence": [
+        {
+          "group_id": "other income_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 68,
+              "anchors": [
+                "Other Income",
+                "12,128"
+              ]
+            },
+            {
+              "page": 84,
+              "anchors": [
+                "Other Income",
+                "12,128"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R18",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were profit before tax (profit before tax as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 55273 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0190",
+      "evidence": [
+        {
+          "group_id": "profit before tax_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 49,
+              "anchors": [
+                "Profit Before Tax",
+                "55,273"
+              ]
+            },
+            {
+              "page": 68,
+              "anchors": [
+                "Profit Before Tax",
+                "55,273"
+              ]
+            },
+            {
+              "page": 70,
+              "anchors": [
+                "Profit Before Tax",
+                "55,273"
+              ]
+            },
+            {
+              "page": 80,
+              "anchors": [
+                "Profit Before Tax",
+                "55,273"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R20",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were profit for the year (profit for the year attributable to owners of the company)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 42042 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0192",
+      "evidence": [
+        {
+          "group_id": "profit for the year_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 49,
+              "anchors": [
+                "Profit for the Year",
+                "42,042"
+              ]
+            },
+            {
+              "page": 68,
+              "anchors": [
+                "Profit for the Year",
+                "42,042"
+              ]
+            },
+            {
+              "page": 81,
+              "anchors": [
+                "Profit for the Year",
+                "42,042"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R21",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 252967 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0193",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Property, Plant and Equipment",
+                "2,52,967"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Property, Plant and Equipment",
+                "2,52,967"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R22",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 258911 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0194",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 67,
+              "anchors": [
+                "Property, Plant and Equipment",
+                "2,58,911"
+              ]
+            },
+            {
+              "page": 73,
+              "anchors": [
+                "Property, Plant and Equipment",
+                "2,58,911"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R24",
+      "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were revenue from operations (revenue from operations, excluding other income)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 547942 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0196",
+      "evidence": [
+        {
+          "group_id": "revenue from operations_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 68,
+              "anchors": [
+                "Revenue from Operations",
+                "5,47,942"
+              ]
+            },
+            {
+              "page": 84,
+              "anchors": [
+                "Revenue from Operations",
+                "5,47,942"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+# The application tier (spec §39): API + frontend, on top of the stateful
+# services in docker-compose.yml.
+#
+# Kept in a SEPARATE file on purpose. The research engine only needs Postgres
+# and Qdrant, and a campaign runs from the host - so `docker compose up -d`
+# should bring up the two services an experiment depends on and nothing else.
+# Building a web image is not something an evaluation run should have to wait
+# for.
+#
+#   docker compose up -d                                          # research
+#   docker compose -f docker-compose.yml -f docker-compose.app.yml up -d --build
+#
+# The agent engine is not a service here. Generated code runs in a fresh,
+# disposable container per execution (backend/services/sandbox.py), which is
+# what makes the isolation per-run rather than per-deployment.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+      args:
+        # Supply with: BUILD_REF=$(git rev-parse --short HEAD) docker compose ...
+        # Left as "unknown" rather than defaulted to something plausible:
+        # a wrong version string is worse than an admitted missing one.
+        BUILD_REF: ${BUILD_REF:-unknown}
+    container_name: finverify-api
+    environment:
+      # Inside the compose network the database is reachable by service name on
+      # 5432, regardless of which host port it is published on.
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-finverify}:${POSTGRES_PASSWORD:-finverify_dev}@postgres:5432/${POSTGRES_DB:-finverify}
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_COLLECTION: ${QDRANT_COLLECTION:-finverify_e5}
+      # Passed explicitly rather than left to a code default. A collection is
+      # only meaningful to the model that built it, and leaving one of the pair
+      # implicit is exactly how D-1 happened: D2a changed the model and the
+      # collection variable kept pointing at the old index.
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-intfloat/e5-base-v2}
+      # OFF unless set deliberately. A container that answered questions by
+      # default would spend the campaign's free-tier quota on whatever reached
+      # the port.
+      FINVERIFY_ENABLE_LIVE_QA: ${FINVERIFY_ENABLE_LIVE_QA:-0}
+      # Uploads go to their OWN writable volume, not into the read-only corpus
+      # mount below. `POST /documents/upload` wrote to documents/raw, which is
+      # mounted `:ro` on purpose, so every upload failed with an OSError behind
+      # a bare 500 - the Register button could not succeed at any file size.
+      # Keeping the corpus read-only is deliberate (a run must not be able to
+      # mutate the documents its index was built from), so the fix is a second
+      # location rather than a writable corpus.
+      FINVERIFY_UPLOAD_DIR: /app/uploads
+    volumes:
+      - uploads:/app/uploads
+      # Read-only, and mounted rather than baked into the image: the index
+      # manifest describes the collection that is running NOW. A copy frozen at
+      # build time would go stale the first time the corpus was re-indexed, and
+      # a stale manifest is worse than none - it would assert a pairing that no
+      # longer holds and wave through the mismatch it exists to catch.
+      - ./documents:/app/documents:ro
+    ports:
+      - "${API_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    container_name: finverify-frontend
+    environment:
+      # Where /api/ goes. Default: the API container (read-only screens). The
+      # live-question demo sets host.docker.internal:8001 (RUN_LIVE_DEMO.bat).
+      API_UPSTREAM: ${API_UPSTREAM:-api:8000}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  # Registered uploads. Separate from the corpus bind mount, which stays
+  # read-only so a running service cannot alter the documents its index was
+  # built from - an upload is a submission awaiting processing, not a change to
+  # the evaluated corpus.
+  uploads:

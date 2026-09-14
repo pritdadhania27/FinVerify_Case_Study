@@ -1,0 +1,7 @@
+{
+  "n": 8,
+  "low": 1024,
+  "high": 4096,
+  "fixed_by_raising": 2,
+  "broken_by_raising": 0
+}

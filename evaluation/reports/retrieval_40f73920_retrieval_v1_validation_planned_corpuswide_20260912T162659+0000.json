@@ -1,0 +1,311 @@
+{
+  "set_id": "retrieval-eval-40f73920-v1-validation",
+  "split": "validation",
+  "arm": "40f73920_retrieval_v1_validation_planned_corpuswide",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "chunks_indexed": 22930,
+  "evaluated_at": "2026-09-12T16:26:59+00:00",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "arms": {
+    "hybrid": {
+      "1": {
+        "questions": 12,
+        "recall_at_k": 0.08333333333333333,
+        "precision_at_k": 0.08333333333333333,
+        "mrr": 0.08333333333333333,
+        "evidence_retrieval_accuracy": 0.08333333333333333
+      },
+      "3": {
+        "questions": 12,
+        "recall_at_k": 0.16666666666666666,
+        "precision_at_k": 0.05555555555555555,
+        "mrr": 0.1111111111111111,
+        "evidence_retrieval_accuracy": 0.16666666666666666
+      },
+      "5": {
+        "questions": 12,
+        "recall_at_k": 0.16666666666666666,
+        "precision_at_k": 0.05,
+        "mrr": 0.1111111111111111,
+        "evidence_retrieval_accuracy": 0.16666666666666666
+      },
+      "10": {
+        "questions": 12,
+        "recall_at_k": 0.16666666666666666,
+        "precision_at_k": 0.025,
+        "mrr": 0.1111111111111111,
+        "evidence_retrieval_accuracy": 0.16666666666666666
+      }
+    },
+    "planned": {
+      "1": {
+        "questions": 12,
+        "recall_at_k": 0.08333333333333333,
+        "precision_at_k": 0.08333333333333333,
+        "mrr": 0.08333333333333333,
+        "evidence_retrieval_accuracy": 0.08333333333333333
+      },
+      "3": {
+        "questions": 12,
+        "recall_at_k": 0.08333333333333333,
+        "precision_at_k": 0.027777777777777776,
+        "mrr": 0.08333333333333333,
+        "evidence_retrieval_accuracy": 0.08333333333333333
+      },
+      "5": {
+        "questions": 12,
+        "recall_at_k": 0.25,
+        "precision_at_k": 0.06666666666666667,
+        "mrr": 0.125,
+        "evidence_retrieval_accuracy": 0.25
+      },
+      "10": {
+        "questions": 12,
+        "recall_at_k": 0.3333333333333333,
+        "precision_at_k": 0.04166666666666667,
+        "mrr": 0.1388888888888889,
+        "evidence_retrieval_accuracy": 0.3333333333333333
+      }
+    }
+  },
+  "per_question": {
+    "hybrid": [
+      {
+        "qid": "R01",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "investments_2023"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total assets_2024"
+        ]
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other equity_2024"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "provisions_2024"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2023"
+        ]
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "contingent liabilities_2024"
+        ]
+      },
+      {
+        "qid": "R08",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "deposits_2023"
+        ]
+      },
+      {
+        "qid": "R09",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "interest earned_2024"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2024"
+        ]
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "borrowings_2024"
+        ]
+      }
+    ],
+    "planned": [
+      {
+        "qid": "R01",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "investments_2023"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total assets_2024"
+        ]
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "other equity_2024"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "provisions_2024"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2023"
+        ]
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R08",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "deposits_2023"
+        ]
+      },
+      {
+        "qid": "R09",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 6,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "property, plant and equipment_2024"
+        ]
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "borrowings_2024"
+        ]
+      }
+    ]
+  }
+}

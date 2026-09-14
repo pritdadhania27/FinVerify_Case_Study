@@ -1,0 +1,10 @@
+{
+  "run_id": "campaign_20260831T184152Z",
+  "completed": 180,
+  "skipped_already_done": 0,
+  "failed": 0,
+  "stopped_early": false,
+  "stop_reason": null,
+  "resume_after_seconds": null,
+  "errors": []
+}

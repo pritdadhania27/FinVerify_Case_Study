@@ -1,0 +1,526 @@
+{
+  "set_id": "retrieval-eval-db02424e-v1-recent",
+  "split": "validation",
+  "document_id": "db02424e0ed16204",
+  "company": "Tata Motors Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/tata_motors_iar_2023-24.pdf",
+  "source_sha256": "db02424e0ed1620452e32df320a540f923bf837193e5896757d27e27d24efd48",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "VALIDATION split. Must never be reported as a test result."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were borrowings (total borrowings as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 18872.44 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0250",
+      "evidence": [
+        {
+          "group_id": "borrowings_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 449,
+              "anchors": [
+                "Total borrowings",
+                "18,872.44"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were borrowings (total borrowings as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 13771.04 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0251",
+      "evidence": [
+        {
+          "group_id": "borrowings_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 449,
+              "anchors": [
+                "Total borrowings",
+                "13,771.04"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were cash and cash equivalents (cash and cash equivalents as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 4028.79 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0252",
+      "evidence": [
+        {
+          "group_id": "cash and cash equivalents_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 304,
+              "anchors": [
+                "Cash and cash equivalents",
+                "4,028.79"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R04",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were cash and cash equivalents (cash and cash equivalents as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2898.72 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0253",
+      "evidence": [
+        {
+          "group_id": "cash and cash equivalents_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 228,
+              "anchors": [
+                "Cash and cash equivalents",
+                "2,898"
+              ]
+            },
+            {
+              "page": 304,
+              "anchors": [
+                "Cash and cash equivalents",
+                "2,898.72"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R05",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were finance cost (finance cost as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 8.85 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0254",
+      "evidence": [
+        {
+          "group_id": "finance cost_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 339,
+              "anchors": [
+                "Interest expense",
+                "8.85"
+              ]
+            },
+            {
+              "page": 443,
+              "anchors": [
+                "Interest expense",
+                "8.85"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R06",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were finance cost (finance cost as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 10.19 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0255",
+      "evidence": [
+        {
+          "group_id": "finance cost_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 339,
+              "anchors": [
+                "Interest expense",
+                "10.19"
+              ]
+            },
+            {
+              "page": 443,
+              "anchors": [
+                "Interest expense",
+                "10.19"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R07",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were other expenses (other expenses as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 17.9 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0256",
+      "evidence": [
+        {
+          "group_id": "other expenses_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 217,
+              "anchors": [
+                "Other expenses (net)",
+                "17.9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R08",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 820.94 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0258",
+      "evidence": [
+        {
+          "group_id": "other income_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Other Income",
+                "820.94"
+              ]
+            },
+            {
+              "page": 371,
+              "anchors": [
+                "Other Income",
+                "820.94"
+              ]
+            },
+            {
+              "page": 399,
+              "anchors": [
+                "Other Income",
+                "820.94"
+              ]
+            },
+            {
+              "page": 435,
+              "anchors": [
+                "Other Income",
+                "820.94"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R09",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were other income (other income as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1149.88 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0259",
+      "evidence": [
+        {
+          "group_id": "other income_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Other Income",
+                "1,149.88"
+              ]
+            },
+            {
+              "page": 399,
+              "anchors": [
+                "Other Income",
+                "1,149.88"
+              ]
+            },
+            {
+              "page": 435,
+              "anchors": [
+                "Other Income",
+                "1,149.88"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R10",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were profit for the year (profit for the year attributable to owners of the company)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2689.87 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0260",
+      "evidence": [
+        {
+          "group_id": "profit for the year_2023",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Profit for the year",
+                "2,689.87"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Profit for the year",
+                "2,689.87"
+              ]
+            },
+            {
+              "page": 282,
+              "anchors": [
+                "Profit for the year",
+                "2,689.87"
+              ]
+            },
+            {
+              "page": 285,
+              "anchors": [
+                "Profit for the year",
+                "2,689.87"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R11",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were profit for the year (profit for the year attributable to owners of the company)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 31806.75 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0261",
+      "evidence": [
+        {
+          "group_id": "profit for the year_2024",
+          "note": "stated on 4 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Profit for the year",
+                "31,806.75"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Profit for the year",
+                "31,806.75"
+              ]
+            },
+            {
+              "page": 282,
+              "anchors": [
+                "Profit for the year",
+                "31,806.75"
+              ]
+            },
+            {
+              "page": 284,
+              "anchors": [
+                "Profit for the year",
+                "31,806.75"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R12",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2271.29 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0262",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 280,
+              "anchors": [
+                "Property, plant and equipment",
+                "2,271"
+              ]
+            },
+            {
+              "page": 322,
+              "anchors": [
+                "Property, plant and equipment",
+                "2,271.29"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R13",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 621.04 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0263",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 322,
+              "anchors": [
+                "Property, plant and equipment",
+                "621.04"
+              ]
+            },
+            {
+              "page": 374,
+              "anchors": [
+                "Property, plant and equipment",
+                "621"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R14",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were revenue from operations (revenue from operations, excluding other income)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 65757.33 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0264",
+      "evidence": [
+        {
+          "group_id": "revenue from operations_2023",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Revenue from operations",
+                "65,757.33"
+              ]
+            },
+            {
+              "page": 399,
+              "anchors": [
+                "Revenue from operations",
+                "65,757.33"
+              ]
+            },
+            {
+              "page": 435,
+              "anchors": [
+                "Revenue from operations",
+                "65,757.33"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R15",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were revenue from operations (revenue from operations, excluding other income)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 73303.08 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0265",
+      "evidence": [
+        {
+          "group_id": "revenue from operations_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 134,
+              "anchors": [
+                "Revenue from operations",
+                "73,303.08"
+              ]
+            },
+            {
+              "page": 399,
+              "anchors": [
+                "Revenue from operations",
+                "73,303.08"
+              ]
+            },
+            {
+              "page": 435,
+              "anchors": [
+                "Revenue from operations",
+                "73,303.08"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R16",
+      "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were trade receivables (trade receivables as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 125.85 INR crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0266",
+      "evidence": [
+        {
+          "group_id": "trade receivables_2024",
+          "note": "stated on 3 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 308,
+              "anchors": [
+                "Trade receivables",
+                "125"
+              ]
+            },
+            {
+              "page": 322,
+              "anchors": [
+                "Trade receivables",
+                "125.85"
+              ]
+            },
+            {
+              "page": 360,
+              "anchors": [
+                "Trade receivables",
+                "125"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

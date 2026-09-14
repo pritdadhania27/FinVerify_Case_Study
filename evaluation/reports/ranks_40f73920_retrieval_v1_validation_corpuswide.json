@@ -1,0 +1,100 @@
+{
+  "set_id": "retrieval-eval-40f73920-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 12
+  },
+  "company": "HDFC Bank Limited",
+  "gold_file": "40f73920_retrieval_v1_validation.json",
+  "scope": "corpus-wide",
+  "deep": 300,
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "evidence_groups": 12,
+  "band_counts": {
+    "top 10 (a hit today)": 4,
+    "not ranked": 7,
+    "71-300": 1
+  },
+  "cumulative_recall": {
+    "top 10 (a hit today)": 0.3333333333333333,
+    "11-20": 0.3333333333333333,
+    "21-70": 0.3333333333333333,
+    "71-300": 0.4166666666666667
+  },
+  "per_group": [
+    {
+      "qid": "R01",
+      "group_id": "diluted earnings per share_2023",
+      "rank": 3,
+      "band": "top 10 (a hit today)"
+    },
+    {
+      "qid": "R02",
+      "group_id": "investments_2023",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R03",
+      "group_id": "total assets_2024",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R04",
+      "group_id": "other equity_2024",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R05",
+      "group_id": "provisions_2024",
+      "rank": 93,
+      "band": "71-300"
+    },
+    {
+      "qid": "R06",
+      "group_id": "property, plant and equipment_2023",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R07",
+      "group_id": "contingent liabilities_2024",
+      "rank": 6,
+      "band": "top 10 (a hit today)"
+    },
+    {
+      "qid": "R08",
+      "group_id": "deposits_2023",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R09",
+      "group_id": "interest earned_2024",
+      "rank": 9,
+      "band": "top 10 (a hit today)"
+    },
+    {
+      "qid": "R10",
+      "group_id": "property, plant and equipment_2024",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R11",
+      "group_id": "provisions and contingencies_2023",
+      "rank": 1,
+      "band": "top 10 (a hit today)"
+    },
+    {
+      "qid": "R12",
+      "group_id": "borrowings_2024",
+      "rank": null,
+      "band": "not ranked"
+    }
+  ],
+  "note": "Cumulative recall is the ceiling a reranker works against, not a promise. RX-035 measured that ceiling and the reranker scored BELOW the baseline."
+}

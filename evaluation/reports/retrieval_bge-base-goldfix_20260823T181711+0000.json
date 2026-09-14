@@ -1,0 +1,857 @@
+{
+  "set_id": "retrieval-eval-infosys-fy24-v1",
+  "split": "validation",
+  "arm": "bge-base-goldfix",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "collection": "finverify_chunks",
+  "chunks_indexed": 908,
+  "evaluated_at": "2026-08-23T18:17:11+00:00",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "arms": {
+    "semantic": {
+      "1": {
+        "questions": 22,
+        "recall_at_k": 0.18181818181818182,
+        "precision_at_k": 0.18181818181818182,
+        "mrr": 0.18181818181818182,
+        "evidence_retrieval_accuracy": 0.18181818181818182
+      },
+      "3": {
+        "questions": 22,
+        "recall_at_k": 0.2727272727272727,
+        "precision_at_k": 0.13636363636363635,
+        "mrr": 0.2196969696969697,
+        "evidence_retrieval_accuracy": 0.2727272727272727
+      },
+      "5": {
+        "questions": 22,
+        "recall_at_k": 0.3409090909090909,
+        "precision_at_k": 0.1090909090909091,
+        "mrr": 0.24015151515151514,
+        "evidence_retrieval_accuracy": 0.3181818181818182
+      },
+      "10": {
+        "questions": 22,
+        "recall_at_k": 0.4318181818181818,
+        "precision_at_k": 0.07272727272727274,
+        "mrr": 0.2534090909090909,
+        "evidence_retrieval_accuracy": 0.4090909090909091
+      }
+    },
+    "keyword": {
+      "1": {
+        "questions": 22,
+        "recall_at_k": 0.2727272727272727,
+        "precision_at_k": 0.2727272727272727,
+        "mrr": 0.2727272727272727,
+        "evidence_retrieval_accuracy": 0.2727272727272727
+      },
+      "3": {
+        "questions": 22,
+        "recall_at_k": 0.36363636363636365,
+        "precision_at_k": 0.19696969696969696,
+        "mrr": 0.3181818181818182,
+        "evidence_retrieval_accuracy": 0.36363636363636365
+      },
+      "5": {
+        "questions": 22,
+        "recall_at_k": 0.5454545454545454,
+        "precision_at_k": 0.18181818181818182,
+        "mrr": 0.3613636363636364,
+        "evidence_retrieval_accuracy": 0.5454545454545454
+      },
+      "10": {
+        "questions": 22,
+        "recall_at_k": 0.6818181818181818,
+        "precision_at_k": 0.1272727272727273,
+        "mrr": 0.38003246753246755,
+        "evidence_retrieval_accuracy": 0.6818181818181818
+      }
+    },
+    "hybrid": {
+      "1": {
+        "questions": 22,
+        "recall_at_k": 0.22727272727272727,
+        "precision_at_k": 0.22727272727272727,
+        "mrr": 0.22727272727272727,
+        "evidence_retrieval_accuracy": 0.22727272727272727
+      },
+      "3": {
+        "questions": 22,
+        "recall_at_k": 0.3181818181818182,
+        "precision_at_k": 0.16666666666666666,
+        "mrr": 0.2727272727272727,
+        "evidence_retrieval_accuracy": 0.3181818181818182
+      },
+      "5": {
+        "questions": 22,
+        "recall_at_k": 0.5,
+        "precision_at_k": 0.15454545454545454,
+        "mrr": 0.31363636363636366,
+        "evidence_retrieval_accuracy": 0.5
+      },
+      "10": {
+        "questions": 22,
+        "recall_at_k": 0.5681818181818182,
+        "precision_at_k": 0.1,
+        "mrr": 0.32386363636363635,
+        "evidence_retrieval_accuracy": 0.5454545454545454
+      }
+    }
+  },
+  "per_question": {
+    "semantic": [
+      {
+        "qid": "R01",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "paraphrase",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "equity_attributable_fy24"
+        ]
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R08",
+        "question_type": "negative_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "financing_cash_fy24"
+        ]
+      },
+      {
+        "qid": "R09",
+        "question_type": "negative_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "dividends_paid_fy24"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup_narrative",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "pbt_fy24"
+        ]
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "employee_expenses_fy24"
+        ]
+      },
+      {
+        "qid": "R13",
+        "question_type": "two_year_comparison",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R14",
+        "question_type": "cross_statement_multi_hop",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24",
+          "total_equity_fy24"
+        ]
+      },
+      {
+        "qid": "R15",
+        "question_type": "cross_table_multi_hop",
+        "recall": 0.5,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24_b"
+        ]
+      },
+      {
+        "qid": "R16",
+        "question_type": "distractor_heavy",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_other_fin_liabilities_fy24"
+        ]
+      },
+      {
+        "qid": "R17",
+        "question_type": "unit_trap",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "basic_eps_fy24"
+        ]
+      },
+      {
+        "qid": "R18",
+        "question_type": "deep_note",
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R19",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "subcontractors_fy24"
+        ]
+      },
+      {
+        "qid": "R20",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 8,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R21",
+        "question_type": "near_miss_distractor",
+        "recall": 1.0,
+        "first_relevant_rank": 6,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R22",
+        "question_type": "small_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "finance_cost_fy24"
+        ]
+      }
+    ],
+    "keyword": [
+      {
+        "qid": "R01",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "trade_payables_fy24"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R08",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R09",
+        "question_type": "negative_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "dividends_paid_fy24"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup_narrative",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R13",
+        "question_type": "two_year_comparison",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R14",
+        "question_type": "cross_statement_multi_hop",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24",
+          "total_equity_fy24"
+        ]
+      },
+      {
+        "qid": "R15",
+        "question_type": "cross_table_multi_hop",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "goodwill_fy24",
+          "total_assets_fy24_b"
+        ]
+      },
+      {
+        "qid": "R16",
+        "question_type": "distractor_heavy",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_other_fin_liabilities_fy24"
+        ]
+      },
+      {
+        "qid": "R17",
+        "question_type": "unit_trap",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R18",
+        "question_type": "deep_note",
+        "recall": 1.0,
+        "first_relevant_rank": 8,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R19",
+        "question_type": "paraphrase",
+        "recall": 1.0,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R20",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 7,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R21",
+        "question_type": "near_miss_distractor",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R22",
+        "question_type": "small_value",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      }
+    ],
+    "hybrid": [
+      {
+        "qid": "R01",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R02",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "trade_payables_fy24"
+        ]
+      },
+      {
+        "qid": "R03",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R04",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24"
+        ]
+      },
+      {
+        "qid": "R05",
+        "question_type": "lookup_single",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24"
+        ]
+      },
+      {
+        "qid": "R06",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R07",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R08",
+        "question_type": "negative_value",
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R09",
+        "question_type": "negative_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "dividends_paid_fy24"
+        ]
+      },
+      {
+        "qid": "R10",
+        "question_type": "lookup_narrative",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R11",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R12",
+        "question_type": "lookup_single",
+        "recall": 1.0,
+        "first_relevant_rank": 10,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R13",
+        "question_type": "two_year_comparison",
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R14",
+        "question_type": "cross_statement_multi_hop",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "profit_for_year_fy24",
+          "total_equity_fy24"
+        ]
+      },
+      {
+        "qid": "R15",
+        "question_type": "cross_table_multi_hop",
+        "recall": 0.5,
+        "first_relevant_rank": 8,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_assets_fy24_b"
+        ]
+      },
+      {
+        "qid": "R16",
+        "question_type": "distractor_heavy",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "total_other_fin_liabilities_fy24"
+        ]
+      },
+      {
+        "qid": "R17",
+        "question_type": "unit_trap",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "basic_eps_fy24"
+        ]
+      },
+      {
+        "qid": "R18",
+        "question_type": "deep_note",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R19",
+        "question_type": "paraphrase",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "subcontractors_fy24"
+        ]
+      },
+      {
+        "qid": "R20",
+        "question_type": "lookup_multi_location",
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R21",
+        "question_type": "near_miss_distractor",
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "all_evidence_retrieved": true,
+        "missed_groups": []
+      },
+      {
+        "qid": "R22",
+        "question_type": "small_value",
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "all_evidence_retrieved": false,
+        "missed_groups": [
+          "finance_cost_fy24"
+        ]
+      }
+    ]
+  },
+  "diagnosis": [
+    {
+      "qid": "R02",
+      "group_id": "trade_payables_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p44:t0:0",
+        "f356fc75d6d63fa3:p37:x721",
+        "f356fc75d6d63fa3:p51:x786",
+        "f356fc75d6d63fa3:p44:x751",
+        "f356fc75d6d63fa3:p12:x613"
+      ],
+      "pages_allowed": [
+        12,
+        37,
+        44,
+        51
+      ]
+    },
+    {
+      "qid": "R04",
+      "group_id": "profit_for_year_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p79:t0:1",
+        "f356fc75d6d63fa3:p13:t0:1",
+        "f356fc75d6d63fa3:p20:t0:0",
+        "f356fc75d6d63fa3:p17:t0:3"
+      ],
+      "pages_allowed": [
+        13,
+        17,
+        20,
+        79
+      ]
+    },
+    {
+      "qid": "R05",
+      "group_id": "total_assets_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p12:x614"
+      ],
+      "pages_allowed": [
+        11,
+        12
+      ]
+    },
+    {
+      "qid": "R09",
+      "group_id": "dividends_paid_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p21:t0:1"
+      ],
+      "pages_allowed": [
+        21
+      ]
+    },
+    {
+      "qid": "R14",
+      "group_id": "profit_for_year_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p79:t0:1",
+        "f356fc75d6d63fa3:p13:t0:1",
+        "f356fc75d6d63fa3:p20:t0:0",
+        "f356fc75d6d63fa3:p17:t0:3"
+      ],
+      "pages_allowed": [
+        13,
+        17,
+        20,
+        79
+      ]
+    },
+    {
+      "qid": "R14",
+      "group_id": "total_equity_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p12:t0:0"
+      ],
+      "pages_allowed": [
+        12,
+        18
+      ]
+    },
+    {
+      "qid": "R15",
+      "group_id": "total_assets_fy24_b",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p12:x614"
+      ],
+      "pages_allowed": [
+        11,
+        12
+      ]
+    },
+    {
+      "qid": "R16",
+      "group_id": "total_other_fin_liabilities_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p51:x783"
+      ],
+      "pages_allowed": [
+        51
+      ]
+    },
+    {
+      "qid": "R17",
+      "group_id": "basic_eps_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p14:t0:0"
+      ],
+      "pages_allowed": [
+        14
+      ]
+    },
+    {
+      "qid": "R19",
+      "group_id": "subcontractors_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p13:t0:0"
+      ],
+      "pages_allowed": [
+        13
+      ]
+    },
+    {
+      "qid": "R22",
+      "group_id": "finance_cost_fy24",
+      "verdict": "ranked_too_low",
+      "chunks_holding_evidence": [
+        "f356fc75d6d63fa3:p13:t0:1",
+        "f356fc75d6d63fa3:p20:t0:0",
+        "f356fc75d6d63fa3:p79:t0:0"
+      ],
+      "pages_allowed": [
+        13,
+        20,
+        78,
+        79
+      ]
+    }
+  ]
+}

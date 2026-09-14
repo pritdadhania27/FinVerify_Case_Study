@@ -1,0 +1,53 @@
+{
+  "corpus_id": "finverify-ind-v1",
+  "description": "Cross-sector Indian annual reports for FinVerify-IND and the Module 27 case study. Sector spread is deliberate: a benchmark built only on IT-services filings would overstate how well extraction transfers, since banks in particular use a structurally different balance sheet.",
+  "fiscal_year": "2023-24",
+  "selected_on": "2026-08-23",
+  "documents": [
+    {
+      "company": "Infosys Limited",
+      "sector": "IT services",
+      "fiscal_year": "2023-24",
+      "filename": "infosys_ar_2023-24_consolidated.pdf",
+      "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/2023-24/consolidated.pdf",
+      "scope": "consolidated financial statements only",
+      "notes": "Ind AS consolidated statements extracted from the integrated annual report."
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "sector": "Banking",
+      "fiscal_year": "2023-24",
+      "filename": "hdfc_bank_iar_2023-24.pdf",
+      "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/pdf/annual-reports/2023-24/integrated-annual-report-2023-24.pdf",
+      "scope": "full integrated annual report",
+      "notes": "Banking balance sheet is structurally unlike the others - schedules rather than a single statement. The hardest extraction case in the corpus, and the reason the set is cross-sector. FY24 also absorbs the erstwhile HDFC Limited amalgamation, so prior-year comparatives are not like-for-like."
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "sector": "Conglomerate (energy, retail, telecom)",
+      "fiscal_year": "2023-24",
+      "filename": "reliance_iar_2023-24.pdf",
+      "url": "https://www.ril.com/ar2023-24/pdf/RIL_IAR_2024.pdf",
+      "scope": "full integrated annual report",
+      "notes": "Segment reporting across unrelated businesses - tests cross-table questions."
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "sector": "Pharmaceuticals",
+      "fiscal_year": "2023-24",
+      "filename": "sun_pharma_ar_2023-24.pdf",
+      "url": "https://sunpharma.com/wp-content/uploads/2024/07/SPIL-Annual-Report-2023-24.pdf",
+      "scope": "full annual report",
+      "notes": "R&D capitalisation and large intangibles; exposes unit and scale variety."
+    },
+    {
+      "company": "Tata Motors Limited",
+      "sector": "Automotive manufacturing",
+      "fiscal_year": "2023-24",
+      "filename": "tata_motors_iar_2023-24.pdf",
+      "url": "https://www.tatamotors.com/wp-content/uploads/2024/05/tata-motor-IAR-2023-24.pdf",
+      "scope": "full integrated annual report (79th)",
+      "notes": "Heavy segment and subsidiary detail (JLR); negative-value line items are common, which exercises sign handling."
+    }
+  ]
+}

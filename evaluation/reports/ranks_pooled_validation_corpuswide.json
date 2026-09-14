@@ -1,0 +1,48 @@
+{
+  "scope": "corpus-wide",
+  "gold": "validation-only (RX-054)",
+  "companies": 4,
+  "evidence_groups": 32,
+  "band_counts": {
+    "top 10 (a hit today)": 4,
+    "not ranked": 9,
+    "71-300": 10,
+    "21-70": 8,
+    "11-20": 1
+  },
+  "cumulative_recall": {
+    "top 10 (a hit today)": 0.125,
+    "11-20": 0.15625,
+    "21-70": 0.40625,
+    "71-300": 0.71875
+  },
+  "not_ranked_fraction": 0.28125,
+  "per_company_band_counts": {
+    "HDFC Bank Limited": {
+      "top 10 (a hit today)": 4,
+      "not ranked": 7,
+      "71-300": 1
+    },
+    "Sun Pharmaceutical Industries Limited": {
+      "not ranked": 1,
+      "71-300": 1,
+      "21-70": 1
+    },
+    "Reliance Industries Limited": {
+      "21-70": 5,
+      "not ranked": 1,
+      "71-300": 5
+    },
+    "Tata Motors Limited": {
+      "71-300": 3,
+      "21-70": 2,
+      "11-20": 1
+    }
+  },
+  "comparison_rx034_mixed_gold": {
+    "top_10": 0.28,
+    "within_rank_70": 0.72,
+    "candidate_at_all": 0.87
+  },
+  "note": "RX-034's figures were measured on gold later found to be 57% test-derived (RX-053). These are the validation-only equivalents. Not comparable question-for-question: different question sets."
+}

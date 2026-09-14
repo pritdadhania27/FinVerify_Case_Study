@@ -1,0 +1,363 @@
+{
+  "set_id": "retrieval-eval-40f73920-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 12
+  },
+  "document_id": "40f73920a8b153ec",
+  "company": "HDFC Bank Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/hdfc_bank_iar_2023-24.pdf",
+  "source_sha256": "40f73920a8b153ecb04a826db8d916e904da9f99ba6dd1e054a9a2da60524793",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "The `split` field is DERIVED from the source questions, not declared. It was hardcoded 'validation' until 2026-09-12 while source questions were drawn from every split, which put 43 of the 76 sealed test questions into sets labelled validation and let `evaluate_retrieval.py`'s seal gate pass on a label that did not describe the contents. `split_composition` now states the breakdown so the claim is checkable rather than asserted.",
+    "A set whose split is anything other than 'validation' must be treated as test-bearing: it needs FINVERIFY_ALLOW_TEST=1, the access is logged, and any figure from it is a one-shot result that cannot be used to tune anything."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were diluted earnings per share (diluted earnings per share as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 82.27 - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI0fe0af23",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "diluted earnings per share_2023",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 477,
+              "anchors": [
+                "Diluted earnings per share (`)",
+                "82.27"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 511581.71 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI19b399ca",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "investments_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Investments",
+                "511,581.71"
+              ]
+            },
+            {
+              "page": 420,
+              "anchors": [
+                "Investments",
+                "511,581.71"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were total assets (total assets as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 75579.83 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI35d1533d",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "total assets_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 332,
+              "anchors": [
+                "Total Assets",
+                "75,579.83"
+              ]
+            },
+            {
+              "page": 379,
+              "anchors": [
+                "Total Assets",
+                "75,579"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R04",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 452982.84 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI40d1603f",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "other equity_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Reserves and surplus",
+                "452,982.84"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R05",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12798.00 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI46e02586",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "provisions_2024",
+          "note": "stated on 1 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 472,
+              "anchors": [
+                "Provisions for non -",
+                "12,798"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R06",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 8282.56 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI560ce9a1",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Fixed assets",
+                "8,282.56"
+              ]
+            },
+            {
+              "page": 422,
+              "anchors": [
+                "Fixed assets",
+                "8,282.56"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R07",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 2344487.73 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI9676d18d",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "contingent liabilities_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Contingent liabilities",
+                "2,344,487.73"
+              ]
+            },
+            {
+              "page": 423,
+              "anchors": [
+                "Contingent liabilities",
+                "2,344,487.73"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R08",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were deposits (the 'Deposits' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 1882663.25 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIb6da1598",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "deposits_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Deposits",
+                "1,882,663.25"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Deposits",
+                "1,882,663.25"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R09",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were interest earned (interest earned as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 283649.02 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIcdce4480",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "interest earned_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 413,
+              "anchors": [
+                "Interest earned",
+                "283,649.02"
+              ]
+            },
+            {
+              "page": 424,
+              "anchors": [
+                "Interest earned",
+                "283,649.02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R10",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 12603.76 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIecfc1d53",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "property, plant and equipment_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Fixed assets",
+                "12,603.76"
+              ]
+            },
+            {
+              "page": 422,
+              "anchors": [
+                "Fixed assets",
+                "12,603.76"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R11",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were provisions and contingencies (provisions and contingencies as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 29203.77 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIef6a2a27",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "provisions and contingencies_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 413,
+              "anchors": [
+                "Provisions and contingencies",
+                "29,203.77"
+              ]
+            },
+            {
+              "page": 464,
+              "anchors": [
+                "Provisions and contingencies",
+                "29,203.77"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R12",
+      "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were borrowings (the 'Borrowings' line item as reported on the consolidated balance sheet)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 730615.46 crore - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIf66d80e7",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "borrowings_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 412,
+              "anchors": [
+                "Borrowings",
+                "730,615.46"
+              ]
+            },
+            {
+              "page": 418,
+              "anchors": [
+                "Borrowings",
+                "730,615.46"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

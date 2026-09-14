@@ -1,0 +1,8 @@
+{"qid": "FI0054", "blocks": 8, "1024": "abstained", "4096": "abstained"}
+{"qid": "FI0042", "blocks": 8, "1024": "parse_failure", "4096": "answered"}
+{"qid": "FI0187", "blocks": 8, "1024": "parse_failure", "4096": "unavailable"}
+{"qid": "FI0249", "blocks": 8, "1024": "unavailable", "4096": "unavailable"}
+{"qid": "FI0250", "blocks": 8, "1024": "unavailable", "4096": "unavailable"}
+{"qid": "FI0115", "blocks": 8, "1024": "unavailable", "4096": "unavailable"}
+{"qid": "FI0027", "blocks": 8, "1024": "unavailable", "4096": "unavailable"}
+{"qid": "FI0191", "blocks": 8, "1024": "unavailable", "4096": "unavailable"}

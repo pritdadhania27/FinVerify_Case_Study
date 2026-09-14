@@ -1,0 +1,5097 @@
+{
+  "arms": {
+    "A": {
+      "arm": "A",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.35555555555555557,
+        "numerical_accuracy": 0.4,
+        "execution_accuracy": 0.3111111111111111,
+        "abstention_rate": 0.4444444444444444,
+        "parse_failure_rate": 0.022222222222222223,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.4,
+          "0.005": 0.4,
+          "0.01": 0.4,
+          "0.05": 0.4666666666666667
+        },
+        "mismatch_counts": {
+          "none": 18,
+          "missing_prediction": 21,
+          "magnitude": 5,
+          "sign": 1
+        },
+        "notes": []
+      },
+      "detection": {
+        "n": 45,
+        "positives": 27,
+        "base_error_rate": 0.6,
+        "auroc": 0.9074074074074074,
+        "auprc": 0.9274738974598722,
+        "at_threshold": {
+          "threshold": 0.51125,
+          "true_positives": 26,
+          "false_positives": 5,
+          "true_negatives": 13,
+          "false_negatives": 1,
+          "precision": 0.8387096774193549,
+          "recall": 0.9629629629629629,
+          "f1": 0.896551724137931,
+          "false_positive_rate": 0.2777777777777778,
+          "false_negative_rate": 0.037037037037037035
+        },
+        "risk_coverage": {
+          "aurc": 0.29296284105488046,
+          "optimal_aurc": 0.24006398505799653,
+          "excess_aurc": 0.05289885599688393,
+          "points": [
+            {
+              "coverage": 0.022222222222222223,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.044444444444444446,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.06666666666666667,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.08888888888888889,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.1111111111111111,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.13333333333333333,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.15555555555555556,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.17777777777777778,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.2,
+              "error_rate": 0.1111111111111111
+            },
+            {
+              "coverage": 0.2222222222222222,
+              "error_rate": 0.1
+            },
+            {
+              "coverage": 0.24444444444444444,
+              "error_rate": 0.09090909090909091
+            },
+            {
+              "coverage": 0.26666666666666666,
+              "error_rate": 0.08333333333333333
+            },
+            {
+              "coverage": 0.28888888888888886,
+              "error_rate": 0.07692307692307693
+            },
+            {
+              "coverage": 0.3111111111111111,
+              "error_rate": 0.07142857142857142
+            },
+            {
+              "coverage": 0.3333333333333333,
+              "error_rate": 0.13333333333333333
+            },
+            {
+              "coverage": 0.35555555555555557,
+              "error_rate": 0.1875
+            },
+            {
+              "coverage": 0.37777777777777777,
+              "error_rate": 0.17647058823529413
+            },
+            {
+              "coverage": 0.4,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.4222222222222222,
+              "error_rate": 0.21052631578947367
+            },
+            {
+              "coverage": 0.4444444444444444,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.4666666666666667,
+              "error_rate": 0.23809523809523808
+            },
+            {
+              "coverage": 0.4888888888888889,
+              "error_rate": 0.22727272727272727
+            },
+            {
+              "coverage": 0.5111111111111111,
+              "error_rate": 0.2608695652173913
+            },
+            {
+              "coverage": 0.5333333333333333,
+              "error_rate": 0.2916666666666667
+            },
+            {
+              "coverage": 0.5555555555555556,
+              "error_rate": 0.32
+            },
+            {
+              "coverage": 0.5777777777777777,
+              "error_rate": 0.34615384615384615
+            },
+            {
+              "coverage": 0.6,
+              "error_rate": 0.37037037037037035
+            },
+            {
+              "coverage": 0.6222222222222222,
+              "error_rate": 0.39285714285714285
+            },
+            {
+              "coverage": 0.6444444444444445,
+              "error_rate": 0.41379310344827586
+            },
+            {
+              "coverage": 0.6666666666666666,
+              "error_rate": 0.43333333333333335
+            },
+            {
+              "coverage": 0.6888888888888889,
+              "error_rate": 0.45161290322580644
+            },
+            {
+              "coverage": 0.7111111111111111,
+              "error_rate": 0.46875
+            },
+            {
+              "coverage": 0.7333333333333333,
+              "error_rate": 0.48484848484848486
+            },
+            {
+              "coverage": 0.7555555555555555,
+              "error_rate": 0.5
+            },
+            {
+              "coverage": 0.7777777777777778,
+              "error_rate": 0.5142857142857142
+            },
+            {
+              "coverage": 0.8,
+              "error_rate": 0.5277777777777778
+            },
+            {
+              "coverage": 0.8222222222222222,
+              "error_rate": 0.5405405405405406
+            },
+            {
+              "coverage": 0.8444444444444444,
+              "error_rate": 0.5526315789473685
+            },
+            {
+              "coverage": 0.8666666666666667,
+              "error_rate": 0.5641025641025641
+            },
+            {
+              "coverage": 0.8888888888888888,
+              "error_rate": 0.575
+            },
+            {
+              "coverage": 0.9111111111111111,
+              "error_rate": 0.5853658536585366
+            },
+            {
+              "coverage": 0.9333333333333333,
+              "error_rate": 0.5952380952380952
+            },
+            {
+              "coverage": 0.9555555555555556,
+              "error_rate": 0.6046511627906976
+            },
+            {
+              "coverage": 0.9777777777777777,
+              "error_rate": 0.5909090909090909
+            },
+            {
+              "coverage": 1.0,
+              "error_rate": 0.6
+            }
+          ]
+        },
+        "notes": [],
+        "auroc_ci": {
+          "point": 0.9074074074074074,
+          "ci_low": 0.7803595735027223,
+          "ci_high": 0.9919028340080972,
+          "resamples": 10000,
+          "undefined_resamples": 0,
+          "seed": 20260826,
+          "excludes_zero": true
+        }
+      },
+      "detection_by_provenance": {
+        "retrieval_caused": {
+          "n": 32,
+          "positives": 27,
+          "base_error_rate": 0.84375,
+          "auroc": 0.7703703703703704,
+          "auprc": 0.9498145272601793,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 26,
+            "false_positives": 2,
+            "true_negatives": 3,
+            "false_negatives": 1,
+            "precision": 0.9285714285714286,
+            "recall": 0.9629629629629629,
+            "f1": 0.9454545454545454,
+            "false_positive_rate": 0.4,
+            "false_negative_rate": 0.037037037037037035
+          },
+          "risk_coverage": {
+            "aurc": 0.6714326402209726,
+            "optimal_aurc": 0.5663809590463771,
+            "excess_aurc": 0.10505168117459551,
+            "points": [
+              {
+                "coverage": 0.03125,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.0625,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.09375,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.125,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.15625,
+                "error_rate": 0.4
+              },
+              {
+                "coverage": 0.1875,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.21875,
+                "error_rate": 0.42857142857142855
+              },
+              {
+                "coverage": 0.25,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.28125,
+                "error_rate": 0.5555555555555556
+              },
+              {
+                "coverage": 0.3125,
+                "error_rate": 0.6
+              },
+              {
+                "coverage": 0.34375,
+                "error_rate": 0.6363636363636364
+              },
+              {
+                "coverage": 0.375,
+                "error_rate": 0.6666666666666666
+              },
+              {
+                "coverage": 0.40625,
+                "error_rate": 0.6923076923076923
+              },
+              {
+                "coverage": 0.4375,
+                "error_rate": 0.7142857142857143
+              },
+              {
+                "coverage": 0.46875,
+                "error_rate": 0.7333333333333333
+              },
+              {
+                "coverage": 0.5,
+                "error_rate": 0.75
+              },
+              {
+                "coverage": 0.53125,
+                "error_rate": 0.7647058823529411
+              },
+              {
+                "coverage": 0.5625,
+                "error_rate": 0.7777777777777778
+              },
+              {
+                "coverage": 0.59375,
+                "error_rate": 0.7894736842105263
+              },
+              {
+                "coverage": 0.625,
+                "error_rate": 0.8
+              },
+              {
+                "coverage": 0.65625,
+                "error_rate": 0.8095238095238095
+              },
+              {
+                "coverage": 0.6875,
+                "error_rate": 0.8181818181818182
+              },
+              {
+                "coverage": 0.71875,
+                "error_rate": 0.8260869565217391
+              },
+              {
+                "coverage": 0.75,
+                "error_rate": 0.8333333333333334
+              },
+              {
+                "coverage": 0.78125,
+                "error_rate": 0.84
+              },
+              {
+                "coverage": 0.8125,
+                "error_rate": 0.8461538461538461
+              },
+              {
+                "coverage": 0.84375,
+                "error_rate": 0.8518518518518519
+              },
+              {
+                "coverage": 0.875,
+                "error_rate": 0.8571428571428571
+              },
+              {
+                "coverage": 0.90625,
+                "error_rate": 0.8620689655172413
+              },
+              {
+                "coverage": 0.9375,
+                "error_rate": 0.8666666666666667
+              },
+              {
+                "coverage": 0.96875,
+                "error_rate": 0.8387096774193549
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.84375
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.7703703703703704,
+            "ci_low": 0.3448275862068966,
+            "ci_high": 1.0,
+            "resamples": 10000,
+            "undefined_resamples": 41,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "reasoning_caused": {
+          "n": 13,
+          "positives": 0,
+          "base_error_rate": 0.0,
+          "auroc": null,
+          "auprc": null,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 3,
+            "true_negatives": 10,
+            "false_negatives": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.23076923076923078,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.0,
+            "optimal_aurc": 0.0,
+            "excess_aurc": 0.0,
+            "points": [
+              {
+                "coverage": 0.07692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15384615384615385,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.23076923076923078,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.3076923076923077,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.38461538461538464,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.46153846153846156,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.5384615384615384,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6153846153846154,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6923076923076923,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.7692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.8461538461538461,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.9230769230769231,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.0
+              }
+            ]
+          },
+          "notes": [
+            "no incorrect answers in this set: AUROC and AUPRC are undefined",
+            "only 0 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "resamples": 10000,
+            "undefined_resamples": 10000,
+            "seed": 20260826,
+            "excludes_zero": false
+          }
+        },
+        "unknown": null,
+        "pooled": {
+          "n": 45,
+          "positives": 27,
+          "base_error_rate": 0.6,
+          "auroc": 0.9074074074074074,
+          "auprc": 0.9274738974598722,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 26,
+            "false_positives": 5,
+            "true_negatives": 13,
+            "false_negatives": 1,
+            "precision": 0.8387096774193549,
+            "recall": 0.9629629629629629,
+            "f1": 0.896551724137931,
+            "false_positive_rate": 0.2777777777777778,
+            "false_negative_rate": 0.037037037037037035
+          },
+          "risk_coverage": {
+            "aurc": 0.29296284105488046,
+            "optimal_aurc": 0.24006398505799653,
+            "excess_aurc": 0.05289885599688393,
+            "points": [
+              {
+                "coverage": 0.022222222222222223,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.044444444444444446,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.06666666666666667,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.08888888888888889,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.1111111111111111,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.13333333333333333,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15555555555555556,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.17777777777777778,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.2,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.2222222222222222,
+                "error_rate": 0.1
+              },
+              {
+                "coverage": 0.24444444444444444,
+                "error_rate": 0.09090909090909091
+              },
+              {
+                "coverage": 0.26666666666666666,
+                "error_rate": 0.08333333333333333
+              },
+              {
+                "coverage": 0.28888888888888886,
+                "error_rate": 0.07692307692307693
+              },
+              {
+                "coverage": 0.3111111111111111,
+                "error_rate": 0.07142857142857142
+              },
+              {
+                "coverage": 0.3333333333333333,
+                "error_rate": 0.13333333333333333
+              },
+              {
+                "coverage": 0.35555555555555557,
+                "error_rate": 0.1875
+              },
+              {
+                "coverage": 0.37777777777777777,
+                "error_rate": 0.17647058823529413
+              },
+              {
+                "coverage": 0.4,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.4222222222222222,
+                "error_rate": 0.21052631578947367
+              },
+              {
+                "coverage": 0.4444444444444444,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.4666666666666667,
+                "error_rate": 0.23809523809523808
+              },
+              {
+                "coverage": 0.4888888888888889,
+                "error_rate": 0.22727272727272727
+              },
+              {
+                "coverage": 0.5111111111111111,
+                "error_rate": 0.2608695652173913
+              },
+              {
+                "coverage": 0.5333333333333333,
+                "error_rate": 0.2916666666666667
+              },
+              {
+                "coverage": 0.5555555555555556,
+                "error_rate": 0.32
+              },
+              {
+                "coverage": 0.5777777777777777,
+                "error_rate": 0.34615384615384615
+              },
+              {
+                "coverage": 0.6,
+                "error_rate": 0.37037037037037035
+              },
+              {
+                "coverage": 0.6222222222222222,
+                "error_rate": 0.39285714285714285
+              },
+              {
+                "coverage": 0.6444444444444445,
+                "error_rate": 0.41379310344827586
+              },
+              {
+                "coverage": 0.6666666666666666,
+                "error_rate": 0.43333333333333335
+              },
+              {
+                "coverage": 0.6888888888888889,
+                "error_rate": 0.45161290322580644
+              },
+              {
+                "coverage": 0.7111111111111111,
+                "error_rate": 0.46875
+              },
+              {
+                "coverage": 0.7333333333333333,
+                "error_rate": 0.48484848484848486
+              },
+              {
+                "coverage": 0.7555555555555555,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.7777777777777778,
+                "error_rate": 0.5142857142857142
+              },
+              {
+                "coverage": 0.8,
+                "error_rate": 0.5277777777777778
+              },
+              {
+                "coverage": 0.8222222222222222,
+                "error_rate": 0.5405405405405406
+              },
+              {
+                "coverage": 0.8444444444444444,
+                "error_rate": 0.5526315789473685
+              },
+              {
+                "coverage": 0.8666666666666667,
+                "error_rate": 0.5641025641025641
+              },
+              {
+                "coverage": 0.8888888888888888,
+                "error_rate": 0.575
+              },
+              {
+                "coverage": 0.9111111111111111,
+                "error_rate": 0.5853658536585366
+              },
+              {
+                "coverage": 0.9333333333333333,
+                "error_rate": 0.5952380952380952
+              },
+              {
+                "coverage": 0.9555555555555556,
+                "error_rate": 0.6046511627906976
+              },
+              {
+                "coverage": 0.9777777777777777,
+                "error_rate": 0.5909090909090909
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.6
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.9074074074074074,
+            "ci_low": 0.7803595735027223,
+            "ci_high": 0.9919028340080972,
+            "resamples": 10000,
+            "undefined_resamples": 0,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "note": "Both channels read the same evidence, so agreement is expected to be near-blind to retrieval-caused error. The pooled figure averages across a regime where the method cannot work and would overstate the contribution if reported alone (EVALUATION.md \u00a75.3)."
+      },
+      "agreement_x_correctness": {
+        "agree_correct": 13,
+        "both_agree_wrong": 1,
+        "disagree_correct": 5,
+        "disagree_wrong": 26
+      },
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 38.578,
+        "latency_p95_seconds": 106.00979999999998,
+        "tokens_per_question": 5783.355555555556,
+        "tokens_by_channel": {
+          "natural": 100510,
+          "program": 159741
+        },
+        "calls_per_question": 1.9555555555555555,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.044444444444444446,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 88,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 88,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "A",
+        "questions": 45,
+        "errors": 27,
+        "blind_spot": {
+          "both_agree_wrong": 1,
+          "of_agreed": 14,
+          "rate_among_agreed": 0.07142857142857142,
+          "qids": [
+            "FIc7be25a5"
+          ]
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 27
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 3
+        },
+        "by_kind": {
+          "unsupported_claim": 21,
+          "unclassified": 3,
+          "wrong_unit": 2,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 3
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 3,
+            "unsupported_claim": 18,
+            "wrong_unit": 2
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 3,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "A",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "A",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "A",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "A",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "12351.28",
+            "gold": "12798.00",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "A",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "A",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "A",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "A",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI9676d18d",
+            "arm": "A",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "22967583363",
+            "gold": "2344487.73",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "A",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": []
+    },
+    "B1": {
+      "arm": "B1",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.0,
+        "numerical_accuracy": 0.0,
+        "execution_accuracy": null,
+        "abstention_rate": 0.9777777777777777,
+        "parse_failure_rate": 0.022222222222222223,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.0,
+          "0.005": 0.0,
+          "0.01": 0.0,
+          "0.05": 0.0
+        },
+        "mismatch_counts": {
+          "missing_prediction": 45
+        },
+        "notes": [
+          "no program channel in this arm: execution accuracy is not defined"
+        ]
+      },
+      "detection": null,
+      "detection_by_provenance": {},
+      "agreement_x_correctness": {},
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 3.063,
+        "latency_p95_seconds": 6.006399999999997,
+        "tokens_per_question": 522.8444444444444,
+        "tokens_by_channel": {
+          "natural": 23528
+        },
+        "calls_per_question": 0.9777777777777777,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.0,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 44,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 44,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "B1",
+        "questions": 45,
+        "errors": 45,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 0,
+          "rate_among_agreed": null,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 45,
+            "errors": 45
+          },
+          "reasoning_caused": {
+            "questions": 0,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "question_understanding": 11,
+          "retrieval": 34
+        },
+        "by_kind": {
+          "unsupported_claim": 45
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 11
+          },
+          "retrieval": {
+            "unsupported_claim": 34
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 0,
+        "examples": [
+          {
+            "qid": "FI0560ee2f",
+            "arm": "B1",
+            "question": "For Infosys Limited, as reported for the year ended March 31, 2024, what were cost of technical sub-contractors (cost of technical sub-contractors as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12232",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI19b399ca",
+            "arm": "B1",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "B1",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "443877.69",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI26192dd3",
+            "arm": "B1",
+            "question": "For Infosys Limited, as reported for the year ended March 31, 2024, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12370",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI2959dfaf",
+            "arm": "B1",
+            "question": "For Sun Pharmaceutical Industries Limited, in the 2023-24 consolidated financial statements, what was goodwill as a share of total assets (goodwill divided by total assets, expressed as a percentage)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "10.06",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI3ef3342a",
+            "arm": "B1",
+            "question": "For Infosys Limited, as reported for the year ended March 31, 2023, what were finance cost (finance cost as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "284",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "B1",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "B1",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12798.00",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI53ce4398",
+            "arm": "B1",
+            "question": "For Infosys Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "13346",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "B1",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": [
+        "B1 produces no risk score, so it is a QA baseline only. It is absent from the detection table rather than entered at AUROC 0.5, which would read as a measurement"
+      ]
+    },
+    "B2": {
+      "arm": "B2",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.35555555555555557,
+        "numerical_accuracy": 0.4,
+        "execution_accuracy": null,
+        "abstention_rate": 0.4666666666666667,
+        "parse_failure_rate": 0.0,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.4,
+          "0.005": 0.4,
+          "0.01": 0.4,
+          "0.05": 0.4666666666666667
+        },
+        "mismatch_counts": {
+          "none": 18,
+          "missing_prediction": 21,
+          "magnitude": 5,
+          "sign": 1
+        },
+        "notes": [
+          "no program channel in this arm: execution accuracy is not defined"
+        ]
+      },
+      "detection": null,
+      "detection_by_provenance": {},
+      "agreement_x_correctness": {},
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 4.828,
+        "latency_p95_seconds": 14.734199999999996,
+        "tokens_per_question": 2279.777777777778,
+        "tokens_by_channel": {
+          "natural": 102590
+        },
+        "calls_per_question": 1.0,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.0,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 45,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 45,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "B2",
+        "questions": 45,
+        "errors": 27,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 0,
+          "rate_among_agreed": null,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 27
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 3
+        },
+        "by_kind": {
+          "unsupported_claim": 21,
+          "unclassified": 3,
+          "wrong_unit": 2,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 3
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 3,
+            "unsupported_claim": 18,
+            "wrong_unit": 2
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 3,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "B2",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "B2",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "B2",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "B2",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "12351.28",
+            "gold": "12798.00",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "B2",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "B2",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "B2",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "B2",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI9676d18d",
+            "arm": "B2",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "22967583363",
+            "gold": "2344487.73",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "B2",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": [
+        "B2 produces no risk score, so it is a QA baseline only. It is absent from the detection table rather than entered at AUROC 0.5, which would read as a measurement"
+      ]
+    },
+    "B4": {
+      "arm": "B4",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.3333333333333333,
+        "numerical_accuracy": 0.35555555555555557,
+        "execution_accuracy": null,
+        "abstention_rate": 0.4888888888888889,
+        "parse_failure_rate": 0.022222222222222223,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.35555555555555557,
+          "0.005": 0.35555555555555557,
+          "0.01": 0.35555555555555557,
+          "0.05": 0.37777777777777777
+        },
+        "mismatch_counts": {
+          "none": 16,
+          "missing_prediction": 23,
+          "magnitude": 5,
+          "sign": 1
+        },
+        "notes": [
+          "no program channel in this arm: execution accuracy is not defined"
+        ]
+      },
+      "detection": null,
+      "detection_by_provenance": {},
+      "agreement_x_correctness": {},
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 4.203,
+        "latency_p95_seconds": 7.877799999999998,
+        "tokens_per_question": 2222.2444444444445,
+        "tokens_by_channel": {
+          "natural": 100001
+        },
+        "calls_per_question": 0.9777777777777777,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.0,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 44,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 44,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "B4",
+        "questions": 45,
+        "errors": 29,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 0,
+          "rate_among_agreed": null,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 29
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 5
+        },
+        "by_kind": {
+          "unsupported_claim": 23,
+          "unclassified": 4,
+          "wrong_unit": 1,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unclassified": 1,
+            "unsupported_claim": 4
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 3,
+            "unsupported_claim": 19,
+            "wrong_unit": 1
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 4,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "B4",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "B4",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "B4",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "B4",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12798.00",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "B4",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI66c8e58d",
+            "arm": "B4",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were revenue from operations (revenue from operations, excluding other income)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "891311",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "B4",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "B4",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI8fdff60d",
+            "arm": "B4",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were profit for the year (profit for the year attributable to owners of the company)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "479.2",
+            "gold": "2414.29",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "B4",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": [
+        "B4 produces no risk score, so it is a QA baseline only. It is absent from the detection table rather than entered at AUROC 0.5, which would read as a measurement"
+      ]
+    },
+    "B5": {
+      "arm": "B5",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.35555555555555557,
+        "numerical_accuracy": 0.4,
+        "execution_accuracy": null,
+        "abstention_rate": 0.4888888888888889,
+        "parse_failure_rate": 0.0,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.4,
+          "0.005": 0.4,
+          "0.01": 0.4,
+          "0.05": 0.4444444444444444
+        },
+        "mismatch_counts": {
+          "none": 18,
+          "missing_prediction": 22,
+          "magnitude": 4,
+          "sign": 1
+        },
+        "notes": [
+          "no program channel in this arm: execution accuracy is not defined"
+        ]
+      },
+      "detection": {
+        "n": 23,
+        "positives": 5,
+        "base_error_rate": 0.21739130434782608,
+        "auroc": 0.6,
+        "auprc": 0.3739130434782609,
+        "at_threshold": {
+          "threshold": 0.51125,
+          "true_positives": 0,
+          "false_positives": 0,
+          "true_negatives": 18,
+          "false_negatives": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 1.0
+        },
+        "risk_coverage": {
+          "aurc": 0.195252752299388,
+          "optimal_aurc": 0.030204269911761703,
+          "excess_aurc": 0.1650484823876263,
+          "points": [
+            {
+              "coverage": 0.043478260869565216,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.08695652173913043,
+              "error_rate": 0.5
+            },
+            {
+              "coverage": 0.13043478260869565,
+              "error_rate": 0.3333333333333333
+            },
+            {
+              "coverage": 0.17391304347826086,
+              "error_rate": 0.25
+            },
+            {
+              "coverage": 0.21739130434782608,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.2608695652173913,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.30434782608695654,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.34782608695652173,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.391304347826087,
+              "error_rate": 0.1111111111111111
+            },
+            {
+              "coverage": 0.43478260869565216,
+              "error_rate": 0.1
+            },
+            {
+              "coverage": 0.4782608695652174,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 0.5217391304347826,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.5652173913043478,
+              "error_rate": 0.15384615384615385
+            },
+            {
+              "coverage": 0.6086956521739131,
+              "error_rate": 0.21428571428571427
+            },
+            {
+              "coverage": 0.6521739130434783,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.6956521739130435,
+              "error_rate": 0.1875
+            },
+            {
+              "coverage": 0.7391304347826086,
+              "error_rate": 0.23529411764705882
+            },
+            {
+              "coverage": 0.782608695652174,
+              "error_rate": 0.2222222222222222
+            },
+            {
+              "coverage": 0.8260869565217391,
+              "error_rate": 0.21052631578947367
+            },
+            {
+              "coverage": 0.8695652173913043,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.9130434782608695,
+              "error_rate": 0.19047619047619047
+            },
+            {
+              "coverage": 0.9565217391304348,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 1.0,
+              "error_rate": 0.21739130434782608
+            }
+          ]
+        },
+        "notes": [
+          "only 5 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+        ],
+        "auroc_ci": {
+          "point": 0.6,
+          "ci_low": 0.5,
+          "ci_high": 0.8333333333333334,
+          "resamples": 10000,
+          "undefined_resamples": 44,
+          "seed": 20260826,
+          "excludes_zero": true
+        }
+      },
+      "detection_by_provenance": {
+        "retrieval_caused": {
+          "n": 10,
+          "positives": 5,
+          "base_error_rate": 0.5,
+          "auroc": 0.6,
+          "auprc": 0.6000000000000001,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 0,
+            "true_negatives": 5,
+            "false_negatives": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 1.0
+          },
+          "risk_coverage": {
+            "aurc": 0.44896825396825396,
+            "optimal_aurc": 0.17718253968253966,
+            "excess_aurc": 0.2717857142857143,
+            "points": [
+              {
+                "coverage": 0.1,
+                "error_rate": 1.0
+              },
+              {
+                "coverage": 0.2,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.3,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.4,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.5,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.6,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.7,
+                "error_rate": 0.42857142857142855
+              },
+              {
+                "coverage": 0.8,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.9,
+                "error_rate": 0.4444444444444444
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.5
+              }
+            ]
+          },
+          "notes": [
+            "only 5 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": 0.6,
+            "ci_low": 0.5,
+            "ci_high": 0.8333333333333334,
+            "resamples": 10000,
+            "undefined_resamples": 16,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "reasoning_caused": {
+          "n": 13,
+          "positives": 0,
+          "base_error_rate": 0.0,
+          "auroc": null,
+          "auprc": null,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 0,
+            "true_negatives": 13,
+            "false_negatives": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.0,
+            "optimal_aurc": 0.0,
+            "excess_aurc": 0.0,
+            "points": [
+              {
+                "coverage": 0.07692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15384615384615385,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.23076923076923078,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.3076923076923077,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.38461538461538464,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.46153846153846156,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.5384615384615384,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6153846153846154,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6923076923076923,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.7692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.8461538461538461,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.9230769230769231,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.0
+              }
+            ]
+          },
+          "notes": [
+            "no incorrect answers in this set: AUROC and AUPRC are undefined",
+            "the risk score is constant across every question: AUROC is 0.5 by construction and carries no information",
+            "only 0 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "resamples": 10000,
+            "undefined_resamples": 10000,
+            "seed": 20260826,
+            "excludes_zero": false
+          }
+        },
+        "unknown": null,
+        "pooled": {
+          "n": 23,
+          "positives": 5,
+          "base_error_rate": 0.21739130434782608,
+          "auroc": 0.6,
+          "auprc": 0.3739130434782609,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 0,
+            "true_negatives": 18,
+            "false_negatives": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 1.0
+          },
+          "risk_coverage": {
+            "aurc": 0.195252752299388,
+            "optimal_aurc": 0.030204269911761703,
+            "excess_aurc": 0.1650484823876263,
+            "points": [
+              {
+                "coverage": 0.043478260869565216,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.08695652173913043,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.13043478260869565,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.17391304347826086,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.21739130434782608,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.2608695652173913,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.30434782608695654,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.34782608695652173,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.391304347826087,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.43478260869565216,
+                "error_rate": 0.1
+              },
+              {
+                "coverage": 0.4782608695652174,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.5217391304347826,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.5652173913043478,
+                "error_rate": 0.15384615384615385
+              },
+              {
+                "coverage": 0.6086956521739131,
+                "error_rate": 0.21428571428571427
+              },
+              {
+                "coverage": 0.6521739130434783,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.6956521739130435,
+                "error_rate": 0.1875
+              },
+              {
+                "coverage": 0.7391304347826086,
+                "error_rate": 0.23529411764705882
+              },
+              {
+                "coverage": 0.782608695652174,
+                "error_rate": 0.2222222222222222
+              },
+              {
+                "coverage": 0.8260869565217391,
+                "error_rate": 0.21052631578947367
+              },
+              {
+                "coverage": 0.8695652173913043,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.9130434782608695,
+                "error_rate": 0.19047619047619047
+              },
+              {
+                "coverage": 0.9565217391304348,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.21739130434782608
+              }
+            ]
+          },
+          "notes": [
+            "only 5 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": 0.6,
+            "ci_low": 0.5,
+            "ci_high": 0.8333333333333334,
+            "resamples": 10000,
+            "undefined_resamples": 44,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "note": "Both channels read the same evidence, so agreement is expected to be near-blind to retrieval-caused error. The pooled figure averages across a regime where the method cannot work and would overstate the contribution if reported alone (EVALUATION.md \u00a75.3)."
+      },
+      "agreement_x_correctness": {},
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 19.297,
+        "latency_p95_seconds": 44.73099999999999,
+        "tokens_per_question": 13708.555555555555,
+        "tokens_by_channel": {
+          "natural": 102587,
+          "natural_sample": 514298
+        },
+        "calls_per_question": 6.0,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.0,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 270,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 270,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "B5",
+        "questions": 45,
+        "errors": 27,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 0,
+          "rate_among_agreed": null,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 27
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 3
+        },
+        "by_kind": {
+          "unsupported_claim": 22,
+          "unclassified": 3,
+          "wrong_unit": 1,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 3
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 3,
+            "unsupported_claim": 19,
+            "wrong_unit": 1
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 3,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "B5",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "B5",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "B5",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "B5",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12798.00",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "B5",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "B5",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "B5",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "B5",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI9676d18d",
+            "arm": "B5",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "22967583363",
+            "gold": "2344487.73",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "B5",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": null,
+            "agreed": null,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": []
+    },
+    "G": {
+      "arm": "G",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.35555555555555557,
+        "numerical_accuracy": 0.4,
+        "execution_accuracy": 0.17777777777777778,
+        "abstention_rate": 0.4888888888888889,
+        "parse_failure_rate": 0.0,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.4,
+          "0.005": 0.4,
+          "0.01": 0.4,
+          "0.05": 0.4444444444444444
+        },
+        "mismatch_counts": {
+          "none": 18,
+          "missing_prediction": 22,
+          "magnitude": 4,
+          "sign": 1
+        },
+        "notes": []
+      },
+      "detection": {
+        "n": 45,
+        "positives": 27,
+        "base_error_rate": 0.6,
+        "auroc": 0.9588477366255144,
+        "auprc": 0.95995995995996,
+        "at_threshold": {
+          "threshold": 0.51125,
+          "true_positives": 27,
+          "false_positives": 10,
+          "true_negatives": 8,
+          "false_negatives": 0,
+          "precision": 0.7297297297297297,
+          "recall": 1.0,
+          "f1": 0.8437499999999999,
+          "false_positive_rate": 0.5555555555555556,
+          "false_negative_rate": 0.0
+        },
+        "risk_coverage": {
+          "aurc": 0.26441734316264465,
+          "optimal_aurc": 0.24006398505799653,
+          "excess_aurc": 0.024353358104648115,
+          "points": [
+            {
+              "coverage": 0.022222222222222223,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.044444444444444446,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.06666666666666667,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.08888888888888889,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.1111111111111111,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.13333333333333333,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.15555555555555556,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.17777777777777778,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.2,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.2222222222222222,
+              "error_rate": 0.1
+            },
+            {
+              "coverage": 0.24444444444444444,
+              "error_rate": 0.09090909090909091
+            },
+            {
+              "coverage": 0.26666666666666666,
+              "error_rate": 0.08333333333333333
+            },
+            {
+              "coverage": 0.28888888888888886,
+              "error_rate": 0.07692307692307693
+            },
+            {
+              "coverage": 0.3111111111111111,
+              "error_rate": 0.07142857142857142
+            },
+            {
+              "coverage": 0.3333333333333333,
+              "error_rate": 0.06666666666666667
+            },
+            {
+              "coverage": 0.35555555555555557,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.37777777777777777,
+              "error_rate": 0.11764705882352941
+            },
+            {
+              "coverage": 0.4,
+              "error_rate": 0.1111111111111111
+            },
+            {
+              "coverage": 0.4222222222222222,
+              "error_rate": 0.15789473684210525
+            },
+            {
+              "coverage": 0.4444444444444444,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.4666666666666667,
+              "error_rate": 0.19047619047619047
+            },
+            {
+              "coverage": 0.4888888888888889,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 0.5111111111111111,
+              "error_rate": 0.21739130434782608
+            },
+            {
+              "coverage": 0.5333333333333333,
+              "error_rate": 0.25
+            },
+            {
+              "coverage": 0.5555555555555556,
+              "error_rate": 0.28
+            },
+            {
+              "coverage": 0.5777777777777777,
+              "error_rate": 0.3076923076923077
+            },
+            {
+              "coverage": 0.6,
+              "error_rate": 0.3333333333333333
+            },
+            {
+              "coverage": 0.6222222222222222,
+              "error_rate": 0.35714285714285715
+            },
+            {
+              "coverage": 0.6444444444444445,
+              "error_rate": 0.3793103448275862
+            },
+            {
+              "coverage": 0.6666666666666666,
+              "error_rate": 0.4
+            },
+            {
+              "coverage": 0.6888888888888889,
+              "error_rate": 0.41935483870967744
+            },
+            {
+              "coverage": 0.7111111111111111,
+              "error_rate": 0.4375
+            },
+            {
+              "coverage": 0.7333333333333333,
+              "error_rate": 0.45454545454545453
+            },
+            {
+              "coverage": 0.7555555555555555,
+              "error_rate": 0.47058823529411764
+            },
+            {
+              "coverage": 0.7777777777777778,
+              "error_rate": 0.4857142857142857
+            },
+            {
+              "coverage": 0.8,
+              "error_rate": 0.5
+            },
+            {
+              "coverage": 0.8222222222222222,
+              "error_rate": 0.5135135135135135
+            },
+            {
+              "coverage": 0.8444444444444444,
+              "error_rate": 0.5263157894736842
+            },
+            {
+              "coverage": 0.8666666666666667,
+              "error_rate": 0.5384615384615384
+            },
+            {
+              "coverage": 0.8888888888888888,
+              "error_rate": 0.55
+            },
+            {
+              "coverage": 0.9111111111111111,
+              "error_rate": 0.5609756097560976
+            },
+            {
+              "coverage": 0.9333333333333333,
+              "error_rate": 0.5714285714285714
+            },
+            {
+              "coverage": 0.9555555555555556,
+              "error_rate": 0.5813953488372093
+            },
+            {
+              "coverage": 0.9777777777777777,
+              "error_rate": 0.5909090909090909
+            },
+            {
+              "coverage": 1.0,
+              "error_rate": 0.6
+            }
+          ]
+        },
+        "notes": [],
+        "auroc_ci": {
+          "point": 0.9588477366255144,
+          "ci_low": 0.9094827586206896,
+          "ci_high": 0.992,
+          "resamples": 10000,
+          "undefined_resamples": 0,
+          "seed": 20260826,
+          "excludes_zero": true
+        }
+      },
+      "detection_by_provenance": {
+        "retrieval_caused": {
+          "n": 32,
+          "positives": 27,
+          "base_error_rate": 0.84375,
+          "auroc": 0.9555555555555556,
+          "auprc": 0.9851851851851852,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 27,
+            "false_positives": 3,
+            "true_negatives": 2,
+            "false_negatives": 0,
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526316,
+            "false_positive_rate": 0.6,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.5908601257130437,
+            "optimal_aurc": 0.5663809590463771,
+            "excess_aurc": 0.024479166666666607,
+            "points": [
+              {
+                "coverage": 0.03125,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.0625,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.09375,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.125,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.15625,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.1875,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.21875,
+                "error_rate": 0.2857142857142857
+              },
+              {
+                "coverage": 0.25,
+                "error_rate": 0.375
+              },
+              {
+                "coverage": 0.28125,
+                "error_rate": 0.4444444444444444
+              },
+              {
+                "coverage": 0.3125,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.34375,
+                "error_rate": 0.5454545454545454
+              },
+              {
+                "coverage": 0.375,
+                "error_rate": 0.5833333333333334
+              },
+              {
+                "coverage": 0.40625,
+                "error_rate": 0.6153846153846154
+              },
+              {
+                "coverage": 0.4375,
+                "error_rate": 0.6428571428571429
+              },
+              {
+                "coverage": 0.46875,
+                "error_rate": 0.6666666666666666
+              },
+              {
+                "coverage": 0.5,
+                "error_rate": 0.6875
+              },
+              {
+                "coverage": 0.53125,
+                "error_rate": 0.7058823529411765
+              },
+              {
+                "coverage": 0.5625,
+                "error_rate": 0.7222222222222222
+              },
+              {
+                "coverage": 0.59375,
+                "error_rate": 0.7368421052631579
+              },
+              {
+                "coverage": 0.625,
+                "error_rate": 0.75
+              },
+              {
+                "coverage": 0.65625,
+                "error_rate": 0.7619047619047619
+              },
+              {
+                "coverage": 0.6875,
+                "error_rate": 0.7727272727272727
+              },
+              {
+                "coverage": 0.71875,
+                "error_rate": 0.782608695652174
+              },
+              {
+                "coverage": 0.75,
+                "error_rate": 0.7916666666666666
+              },
+              {
+                "coverage": 0.78125,
+                "error_rate": 0.8
+              },
+              {
+                "coverage": 0.8125,
+                "error_rate": 0.8076923076923077
+              },
+              {
+                "coverage": 0.84375,
+                "error_rate": 0.8148148148148148
+              },
+              {
+                "coverage": 0.875,
+                "error_rate": 0.8214285714285714
+              },
+              {
+                "coverage": 0.90625,
+                "error_rate": 0.8275862068965517
+              },
+              {
+                "coverage": 0.9375,
+                "error_rate": 0.8333333333333334
+              },
+              {
+                "coverage": 0.96875,
+                "error_rate": 0.8387096774193549
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.84375
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.9555555555555556,
+            "ci_low": 0.8870967741935484,
+            "ci_high": 1.0,
+            "resamples": 10000,
+            "undefined_resamples": 41,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "reasoning_caused": {
+          "n": 13,
+          "positives": 0,
+          "base_error_rate": 0.0,
+          "auroc": null,
+          "auprc": null,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 7,
+            "true_negatives": 6,
+            "false_negatives": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.5384615384615384,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.0,
+            "optimal_aurc": 0.0,
+            "excess_aurc": 0.0,
+            "points": [
+              {
+                "coverage": 0.07692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15384615384615385,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.23076923076923078,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.3076923076923077,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.38461538461538464,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.46153846153846156,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.5384615384615384,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6153846153846154,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6923076923076923,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.7692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.8461538461538461,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.9230769230769231,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.0
+              }
+            ]
+          },
+          "notes": [
+            "no incorrect answers in this set: AUROC and AUPRC are undefined",
+            "only 0 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "resamples": 10000,
+            "undefined_resamples": 10000,
+            "seed": 20260826,
+            "excludes_zero": false
+          }
+        },
+        "unknown": null,
+        "pooled": {
+          "n": 45,
+          "positives": 27,
+          "base_error_rate": 0.6,
+          "auroc": 0.9588477366255144,
+          "auprc": 0.95995995995996,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 27,
+            "false_positives": 10,
+            "true_negatives": 8,
+            "false_negatives": 0,
+            "precision": 0.7297297297297297,
+            "recall": 1.0,
+            "f1": 0.8437499999999999,
+            "false_positive_rate": 0.5555555555555556,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.26441734316264465,
+            "optimal_aurc": 0.24006398505799653,
+            "excess_aurc": 0.024353358104648115,
+            "points": [
+              {
+                "coverage": 0.022222222222222223,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.044444444444444446,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.06666666666666667,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.08888888888888889,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.1111111111111111,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.13333333333333333,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15555555555555556,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.17777777777777778,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.2,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.2222222222222222,
+                "error_rate": 0.1
+              },
+              {
+                "coverage": 0.24444444444444444,
+                "error_rate": 0.09090909090909091
+              },
+              {
+                "coverage": 0.26666666666666666,
+                "error_rate": 0.08333333333333333
+              },
+              {
+                "coverage": 0.28888888888888886,
+                "error_rate": 0.07692307692307693
+              },
+              {
+                "coverage": 0.3111111111111111,
+                "error_rate": 0.07142857142857142
+              },
+              {
+                "coverage": 0.3333333333333333,
+                "error_rate": 0.06666666666666667
+              },
+              {
+                "coverage": 0.35555555555555557,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.37777777777777777,
+                "error_rate": 0.11764705882352941
+              },
+              {
+                "coverage": 0.4,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.4222222222222222,
+                "error_rate": 0.15789473684210525
+              },
+              {
+                "coverage": 0.4444444444444444,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.4666666666666667,
+                "error_rate": 0.19047619047619047
+              },
+              {
+                "coverage": 0.4888888888888889,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.5111111111111111,
+                "error_rate": 0.21739130434782608
+              },
+              {
+                "coverage": 0.5333333333333333,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.5555555555555556,
+                "error_rate": 0.28
+              },
+              {
+                "coverage": 0.5777777777777777,
+                "error_rate": 0.3076923076923077
+              },
+              {
+                "coverage": 0.6,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.6222222222222222,
+                "error_rate": 0.35714285714285715
+              },
+              {
+                "coverage": 0.6444444444444445,
+                "error_rate": 0.3793103448275862
+              },
+              {
+                "coverage": 0.6666666666666666,
+                "error_rate": 0.4
+              },
+              {
+                "coverage": 0.6888888888888889,
+                "error_rate": 0.41935483870967744
+              },
+              {
+                "coverage": 0.7111111111111111,
+                "error_rate": 0.4375
+              },
+              {
+                "coverage": 0.7333333333333333,
+                "error_rate": 0.45454545454545453
+              },
+              {
+                "coverage": 0.7555555555555555,
+                "error_rate": 0.47058823529411764
+              },
+              {
+                "coverage": 0.7777777777777778,
+                "error_rate": 0.4857142857142857
+              },
+              {
+                "coverage": 0.8,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.8222222222222222,
+                "error_rate": 0.5135135135135135
+              },
+              {
+                "coverage": 0.8444444444444444,
+                "error_rate": 0.5263157894736842
+              },
+              {
+                "coverage": 0.8666666666666667,
+                "error_rate": 0.5384615384615384
+              },
+              {
+                "coverage": 0.8888888888888888,
+                "error_rate": 0.55
+              },
+              {
+                "coverage": 0.9111111111111111,
+                "error_rate": 0.5609756097560976
+              },
+              {
+                "coverage": 0.9333333333333333,
+                "error_rate": 0.5714285714285714
+              },
+              {
+                "coverage": 0.9555555555555556,
+                "error_rate": 0.5813953488372093
+              },
+              {
+                "coverage": 0.9777777777777777,
+                "error_rate": 0.5909090909090909
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.6
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.9588477366255144,
+            "ci_low": 0.9094827586206896,
+            "ci_high": 0.992,
+            "resamples": 10000,
+            "undefined_resamples": 0,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "note": "Both channels read the same evidence, so agreement is expected to be near-blind to retrieval-caused error. The pooled figure averages across a regime where the method cannot work and would overstate the contribution if reported alone (EVALUATION.md \u00a75.3)."
+      },
+      "agreement_x_correctness": {
+        "agree_correct": 8,
+        "both_agree_wrong": 0,
+        "disagree_correct": 10,
+        "disagree_wrong": 27
+      },
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 38.453,
+        "latency_p95_seconds": 125.41519999999996,
+        "tokens_per_question": 5838.666666666667,
+        "tokens_by_channel": {
+          "natural": 102361,
+          "program": 160379
+        },
+        "calls_per_question": 2.0,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.022222222222222223,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 90,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 90,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "G",
+        "questions": 45,
+        "errors": 27,
+        "blind_spot": {
+          "both_agree_wrong": 0,
+          "of_agreed": 8,
+          "rate_among_agreed": 0.0,
+          "qids": []
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 27
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 3
+        },
+        "by_kind": {
+          "unsupported_claim": 22,
+          "unclassified": 3,
+          "wrong_unit": 1,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 3
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 3,
+            "unsupported_claim": 19,
+            "wrong_unit": 1
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 3,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "G",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "G",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "G",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "G",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "12798.00",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "G",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "G",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "G",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "G",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI9676d18d",
+            "arm": "G",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "22967583363",
+            "gold": "2344487.73",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "G",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": []
+    },
+    "H": {
+      "arm": "H",
+      "n": 45,
+      "qa": {
+        "n": 45,
+        "exact_match": 0.35555555555555557,
+        "numerical_accuracy": 0.4,
+        "execution_accuracy": 0.37777777777777777,
+        "abstention_rate": 0.4666666666666667,
+        "parse_failure_rate": 0.0,
+        "unit_assumption_rate": 0.0,
+        "tau_sensitivity": {
+          "0.001": 0.4,
+          "0.005": 0.4,
+          "0.01": 0.4,
+          "0.05": 0.4666666666666667
+        },
+        "mismatch_counts": {
+          "none": 18,
+          "missing_prediction": 21,
+          "magnitude": 5,
+          "sign": 1
+        },
+        "notes": []
+      },
+      "detection": {
+        "n": 45,
+        "positives": 27,
+        "base_error_rate": 0.6,
+        "auroc": 0.9362139917695473,
+        "auprc": 0.9525925925925924,
+        "at_threshold": {
+          "threshold": 0.51125,
+          "true_positives": 24,
+          "false_positives": 1,
+          "true_negatives": 17,
+          "false_negatives": 3,
+          "precision": 0.96,
+          "recall": 0.8888888888888888,
+          "f1": 0.923076923076923,
+          "false_positive_rate": 0.05555555555555555,
+          "false_negative_rate": 0.1111111111111111
+        },
+        "risk_coverage": {
+          "aurc": 0.3235312630118586,
+          "optimal_aurc": 0.24006398505799653,
+          "excess_aurc": 0.08346727795386205,
+          "points": [
+            {
+              "coverage": 0.022222222222222223,
+              "error_rate": 0.0
+            },
+            {
+              "coverage": 0.044444444444444446,
+              "error_rate": 0.5
+            },
+            {
+              "coverage": 0.06666666666666667,
+              "error_rate": 0.3333333333333333
+            },
+            {
+              "coverage": 0.08888888888888889,
+              "error_rate": 0.25
+            },
+            {
+              "coverage": 0.1111111111111111,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.13333333333333333,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.15555555555555556,
+              "error_rate": 0.14285714285714285
+            },
+            {
+              "coverage": 0.17777777777777778,
+              "error_rate": 0.125
+            },
+            {
+              "coverage": 0.2,
+              "error_rate": 0.1111111111111111
+            },
+            {
+              "coverage": 0.2222222222222222,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.24444444444444444,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 0.26666666666666666,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.28888888888888886,
+              "error_rate": 0.23076923076923078
+            },
+            {
+              "coverage": 0.3111111111111111,
+              "error_rate": 0.21428571428571427
+            },
+            {
+              "coverage": 0.3333333333333333,
+              "error_rate": 0.2
+            },
+            {
+              "coverage": 0.35555555555555557,
+              "error_rate": 0.1875
+            },
+            {
+              "coverage": 0.37777777777777777,
+              "error_rate": 0.17647058823529413
+            },
+            {
+              "coverage": 0.4,
+              "error_rate": 0.16666666666666666
+            },
+            {
+              "coverage": 0.4222222222222222,
+              "error_rate": 0.15789473684210525
+            },
+            {
+              "coverage": 0.4444444444444444,
+              "error_rate": 0.15
+            },
+            {
+              "coverage": 0.4666666666666667,
+              "error_rate": 0.19047619047619047
+            },
+            {
+              "coverage": 0.4888888888888889,
+              "error_rate": 0.18181818181818182
+            },
+            {
+              "coverage": 0.5111111111111111,
+              "error_rate": 0.21739130434782608
+            },
+            {
+              "coverage": 0.5333333333333333,
+              "error_rate": 0.25
+            },
+            {
+              "coverage": 0.5555555555555556,
+              "error_rate": 0.28
+            },
+            {
+              "coverage": 0.5777777777777777,
+              "error_rate": 0.3076923076923077
+            },
+            {
+              "coverage": 0.6,
+              "error_rate": 0.3333333333333333
+            },
+            {
+              "coverage": 0.6222222222222222,
+              "error_rate": 0.35714285714285715
+            },
+            {
+              "coverage": 0.6444444444444445,
+              "error_rate": 0.3793103448275862
+            },
+            {
+              "coverage": 0.6666666666666666,
+              "error_rate": 0.4
+            },
+            {
+              "coverage": 0.6888888888888889,
+              "error_rate": 0.41935483870967744
+            },
+            {
+              "coverage": 0.7111111111111111,
+              "error_rate": 0.4375
+            },
+            {
+              "coverage": 0.7333333333333333,
+              "error_rate": 0.45454545454545453
+            },
+            {
+              "coverage": 0.7555555555555555,
+              "error_rate": 0.47058823529411764
+            },
+            {
+              "coverage": 0.7777777777777778,
+              "error_rate": 0.4857142857142857
+            },
+            {
+              "coverage": 0.8,
+              "error_rate": 0.5
+            },
+            {
+              "coverage": 0.8222222222222222,
+              "error_rate": 0.5135135135135135
+            },
+            {
+              "coverage": 0.8444444444444444,
+              "error_rate": 0.5263157894736842
+            },
+            {
+              "coverage": 0.8666666666666667,
+              "error_rate": 0.5384615384615384
+            },
+            {
+              "coverage": 0.8888888888888888,
+              "error_rate": 0.55
+            },
+            {
+              "coverage": 0.9111111111111111,
+              "error_rate": 0.5609756097560976
+            },
+            {
+              "coverage": 0.9333333333333333,
+              "error_rate": 0.5714285714285714
+            },
+            {
+              "coverage": 0.9555555555555556,
+              "error_rate": 0.5813953488372093
+            },
+            {
+              "coverage": 0.9777777777777777,
+              "error_rate": 0.5909090909090909
+            },
+            {
+              "coverage": 1.0,
+              "error_rate": 0.6
+            }
+          ]
+        },
+        "notes": [],
+        "auroc_ci": {
+          "point": 0.9362139917695473,
+          "ci_low": 0.8611111111111112,
+          "ci_high": 0.9980237154150198,
+          "resamples": 10000,
+          "undefined_resamples": 0,
+          "seed": 20260826,
+          "excludes_zero": true
+        }
+      },
+      "detection_by_provenance": {
+        "retrieval_caused": {
+          "n": 32,
+          "positives": 27,
+          "base_error_rate": 0.84375,
+          "auroc": 0.9333333333333333,
+          "auprc": 0.9826388888888887,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 24,
+            "false_positives": 0,
+            "true_negatives": 5,
+            "false_negatives": 3,
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 0.1111111111111111
+          },
+          "risk_coverage": {
+            "aurc": 0.6588660780939961,
+            "optimal_aurc": 0.5663809590463771,
+            "excess_aurc": 0.09248511904761902,
+            "points": [
+              {
+                "coverage": 0.03125,
+                "error_rate": 1.0
+              },
+              {
+                "coverage": 0.0625,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.09375,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.125,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.15625,
+                "error_rate": 0.4
+              },
+              {
+                "coverage": 0.1875,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.21875,
+                "error_rate": 0.42857142857142855
+              },
+              {
+                "coverage": 0.25,
+                "error_rate": 0.375
+              },
+              {
+                "coverage": 0.28125,
+                "error_rate": 0.4444444444444444
+              },
+              {
+                "coverage": 0.3125,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.34375,
+                "error_rate": 0.5454545454545454
+              },
+              {
+                "coverage": 0.375,
+                "error_rate": 0.5833333333333334
+              },
+              {
+                "coverage": 0.40625,
+                "error_rate": 0.6153846153846154
+              },
+              {
+                "coverage": 0.4375,
+                "error_rate": 0.6428571428571429
+              },
+              {
+                "coverage": 0.46875,
+                "error_rate": 0.6666666666666666
+              },
+              {
+                "coverage": 0.5,
+                "error_rate": 0.6875
+              },
+              {
+                "coverage": 0.53125,
+                "error_rate": 0.7058823529411765
+              },
+              {
+                "coverage": 0.5625,
+                "error_rate": 0.7222222222222222
+              },
+              {
+                "coverage": 0.59375,
+                "error_rate": 0.7368421052631579
+              },
+              {
+                "coverage": 0.625,
+                "error_rate": 0.75
+              },
+              {
+                "coverage": 0.65625,
+                "error_rate": 0.7619047619047619
+              },
+              {
+                "coverage": 0.6875,
+                "error_rate": 0.7727272727272727
+              },
+              {
+                "coverage": 0.71875,
+                "error_rate": 0.782608695652174
+              },
+              {
+                "coverage": 0.75,
+                "error_rate": 0.7916666666666666
+              },
+              {
+                "coverage": 0.78125,
+                "error_rate": 0.8
+              },
+              {
+                "coverage": 0.8125,
+                "error_rate": 0.8076923076923077
+              },
+              {
+                "coverage": 0.84375,
+                "error_rate": 0.8148148148148148
+              },
+              {
+                "coverage": 0.875,
+                "error_rate": 0.8214285714285714
+              },
+              {
+                "coverage": 0.90625,
+                "error_rate": 0.8275862068965517
+              },
+              {
+                "coverage": 0.9375,
+                "error_rate": 0.8333333333333334
+              },
+              {
+                "coverage": 0.96875,
+                "error_rate": 0.8387096774193549
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.84375
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.9333333333333333,
+            "ci_low": 0.84375,
+            "ci_high": 1.0,
+            "resamples": 10000,
+            "undefined_resamples": 41,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "reasoning_caused": {
+          "n": 13,
+          "positives": 0,
+          "base_error_rate": 0.0,
+          "auroc": null,
+          "auprc": null,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 0,
+            "false_positives": 1,
+            "true_negatives": 12,
+            "false_negatives": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "false_positive_rate": 0.07692307692307693,
+            "false_negative_rate": 0.0
+          },
+          "risk_coverage": {
+            "aurc": 0.0,
+            "optimal_aurc": 0.0,
+            "excess_aurc": 0.0,
+            "points": [
+              {
+                "coverage": 0.07692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.15384615384615385,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.23076923076923078,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.3076923076923077,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.38461538461538464,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.46153846153846156,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.5384615384615384,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6153846153846154,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.6923076923076923,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.7692307692307693,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.8461538461538461,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.9230769230769231,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.0
+              }
+            ]
+          },
+          "notes": [
+            "no incorrect answers in this set: AUROC and AUPRC are undefined",
+            "only 0 incorrect answer(s): too few to support a claim about detection quality, and the interval will be very wide"
+          ],
+          "auroc_ci": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "resamples": 10000,
+            "undefined_resamples": 10000,
+            "seed": 20260826,
+            "excludes_zero": false
+          }
+        },
+        "unknown": null,
+        "pooled": {
+          "n": 45,
+          "positives": 27,
+          "base_error_rate": 0.6,
+          "auroc": 0.9362139917695473,
+          "auprc": 0.9525925925925924,
+          "at_threshold": {
+            "threshold": 0.51125,
+            "true_positives": 24,
+            "false_positives": 1,
+            "true_negatives": 17,
+            "false_negatives": 3,
+            "precision": 0.96,
+            "recall": 0.8888888888888888,
+            "f1": 0.923076923076923,
+            "false_positive_rate": 0.05555555555555555,
+            "false_negative_rate": 0.1111111111111111
+          },
+          "risk_coverage": {
+            "aurc": 0.3235312630118586,
+            "optimal_aurc": 0.24006398505799653,
+            "excess_aurc": 0.08346727795386205,
+            "points": [
+              {
+                "coverage": 0.022222222222222223,
+                "error_rate": 0.0
+              },
+              {
+                "coverage": 0.044444444444444446,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.06666666666666667,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.08888888888888889,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.1111111111111111,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.13333333333333333,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.15555555555555556,
+                "error_rate": 0.14285714285714285
+              },
+              {
+                "coverage": 0.17777777777777778,
+                "error_rate": 0.125
+              },
+              {
+                "coverage": 0.2,
+                "error_rate": 0.1111111111111111
+              },
+              {
+                "coverage": 0.2222222222222222,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.24444444444444444,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.26666666666666666,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.28888888888888886,
+                "error_rate": 0.23076923076923078
+              },
+              {
+                "coverage": 0.3111111111111111,
+                "error_rate": 0.21428571428571427
+              },
+              {
+                "coverage": 0.3333333333333333,
+                "error_rate": 0.2
+              },
+              {
+                "coverage": 0.35555555555555557,
+                "error_rate": 0.1875
+              },
+              {
+                "coverage": 0.37777777777777777,
+                "error_rate": 0.17647058823529413
+              },
+              {
+                "coverage": 0.4,
+                "error_rate": 0.16666666666666666
+              },
+              {
+                "coverage": 0.4222222222222222,
+                "error_rate": 0.15789473684210525
+              },
+              {
+                "coverage": 0.4444444444444444,
+                "error_rate": 0.15
+              },
+              {
+                "coverage": 0.4666666666666667,
+                "error_rate": 0.19047619047619047
+              },
+              {
+                "coverage": 0.4888888888888889,
+                "error_rate": 0.18181818181818182
+              },
+              {
+                "coverage": 0.5111111111111111,
+                "error_rate": 0.21739130434782608
+              },
+              {
+                "coverage": 0.5333333333333333,
+                "error_rate": 0.25
+              },
+              {
+                "coverage": 0.5555555555555556,
+                "error_rate": 0.28
+              },
+              {
+                "coverage": 0.5777777777777777,
+                "error_rate": 0.3076923076923077
+              },
+              {
+                "coverage": 0.6,
+                "error_rate": 0.3333333333333333
+              },
+              {
+                "coverage": 0.6222222222222222,
+                "error_rate": 0.35714285714285715
+              },
+              {
+                "coverage": 0.6444444444444445,
+                "error_rate": 0.3793103448275862
+              },
+              {
+                "coverage": 0.6666666666666666,
+                "error_rate": 0.4
+              },
+              {
+                "coverage": 0.6888888888888889,
+                "error_rate": 0.41935483870967744
+              },
+              {
+                "coverage": 0.7111111111111111,
+                "error_rate": 0.4375
+              },
+              {
+                "coverage": 0.7333333333333333,
+                "error_rate": 0.45454545454545453
+              },
+              {
+                "coverage": 0.7555555555555555,
+                "error_rate": 0.47058823529411764
+              },
+              {
+                "coverage": 0.7777777777777778,
+                "error_rate": 0.4857142857142857
+              },
+              {
+                "coverage": 0.8,
+                "error_rate": 0.5
+              },
+              {
+                "coverage": 0.8222222222222222,
+                "error_rate": 0.5135135135135135
+              },
+              {
+                "coverage": 0.8444444444444444,
+                "error_rate": 0.5263157894736842
+              },
+              {
+                "coverage": 0.8666666666666667,
+                "error_rate": 0.5384615384615384
+              },
+              {
+                "coverage": 0.8888888888888888,
+                "error_rate": 0.55
+              },
+              {
+                "coverage": 0.9111111111111111,
+                "error_rate": 0.5609756097560976
+              },
+              {
+                "coverage": 0.9333333333333333,
+                "error_rate": 0.5714285714285714
+              },
+              {
+                "coverage": 0.9555555555555556,
+                "error_rate": 0.5813953488372093
+              },
+              {
+                "coverage": 0.9777777777777777,
+                "error_rate": 0.5909090909090909
+              },
+              {
+                "coverage": 1.0,
+                "error_rate": 0.6
+              }
+            ]
+          },
+          "notes": [],
+          "auroc_ci": {
+            "point": 0.9362139917695473,
+            "ci_low": 0.8611111111111112,
+            "ci_high": 0.9980237154150198,
+            "resamples": 10000,
+            "undefined_resamples": 0,
+            "seed": 20260826,
+            "excludes_zero": true
+          }
+        },
+        "note": "Both channels read the same evidence, so agreement is expected to be near-blind to retrieval-caused error. The pooled figure averages across a regime where the method cannot work and would overstate the contribution if reported alone (EVALUATION.md \u00a75.3)."
+      },
+      "agreement_x_correctness": {
+        "agree_correct": 17,
+        "both_agree_wrong": 3,
+        "disagree_correct": 1,
+        "disagree_wrong": 24
+      },
+      "efficiency": {
+        "n": 45,
+        "latency_p50_seconds": 10.422,
+        "latency_p95_seconds": 18.743999999999996,
+        "tokens_per_question": 4712.866666666667,
+        "tokens_by_channel": {
+          "natural": 102334,
+          "program": 109745
+        },
+        "calls_per_question": 2.0,
+        "sandbox_executions_per_question": 0.0,
+        "verification_trigger_rate": 0.022222222222222223,
+        "cost_usd": 0.0,
+        "cost_usd_note": "free tier: an actual spend of zero, not a cheap method",
+        "equivalent_cost_usd": null,
+        "quota_requests": 90,
+        "notes": [
+          "equivalent_cost_usd is UNESTABLISHED: no provider in the registry carries a published paid rate. Reporting 0.00 here would read as 'the method is free', which is a claim about this free tier and not about the method. Populate ProviderSpec.price_per_mtok from a cited price page before quoting a monetary figure."
+        ],
+        "rows_with_token_usage": 90,
+        "unattributed_tokens": 0
+      },
+      "error_analysis": {
+        "arm": "H",
+        "questions": 45,
+        "errors": 27,
+        "blind_spot": {
+          "both_agree_wrong": 3,
+          "of_agreed": 20,
+          "rate_among_agreed": 0.15,
+          "qids": [
+            "FI223250a2",
+            "FI9676d18d",
+            "FIae82da53"
+          ]
+        },
+        "strata": {
+          "retrieval_caused": {
+            "questions": 32,
+            "errors": 27
+          },
+          "reasoning_caused": {
+            "questions": 13,
+            "errors": 0
+          },
+          "unknown": {
+            "questions": 0,
+            "errors": 0
+          }
+        },
+        "by_provenance": {
+          "retrieval": 24,
+          "question_understanding": 3
+        },
+        "by_kind": {
+          "unsupported_claim": 21,
+          "unclassified": 4,
+          "wrong_unit": 1,
+          "sign_error": 1
+        },
+        "provenance_by_kind": {
+          "question_understanding": {
+            "unsupported_claim": 3
+          },
+          "retrieval": {
+            "sign_error": 1,
+            "unclassified": 4,
+            "unsupported_claim": 18,
+            "wrong_unit": 1
+          }
+        },
+        "ambiguity_false_positives": {
+          "ambiguous_questions": 0,
+          "answered_correctly": 0,
+          "flagged_as_risky": 0,
+          "false_positive_rate": null,
+          "threshold": 0.51125,
+          "note": "the detector cannot distinguish a defensible alternative definition from a numerical error; this is the size of that confusion, measured rather than assumed (D22)"
+        },
+        "needs_human_labelling": 4,
+        "examples": [
+          {
+            "qid": "FI19b399ca",
+            "arm": "H",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were investments (the 'Investments' line item as reported on the consolidated balance sheet)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "511581.71",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI223250a2",
+            "arm": "H",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2024, what were total income (total income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "437927.77",
+            "gold": "443877.69",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI40d1603f",
+            "arm": "H",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were other equity (other equity as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "452982.84",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI46e02586",
+            "arm": "H",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were provisions (provisions as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.51125,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "12492.79",
+            "gold": "12798.00",
+            "answer_source": "program",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unclassified",
+              "confidence": "needs_human",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "the answer is simply a different number - distinguishing wrong metric from wrong formula from arithmetic error requires reading the reasoning"
+              ]
+            }
+          },
+          {
+            "qid": "FI560ce9a1",
+            "arm": "H",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "8282.56",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI78900d3e",
+            "arm": "H",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were other income (other income as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "11734",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI82a95e99",
+            "arm": "H",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2024, what were other financial liabilities (other financial liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "61269",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI939a55f7",
+            "arm": "H",
+            "question": "For Tata Motors Limited, as reported for the year ended March 31, 2023, what were property, plant and equipment (property, plant and equipment as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "76641.43",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "question_understanding",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "the QuestionSpec misread the question, so both channels were identically misdirected (D19)",
+                "no answer was produced"
+              ]
+            }
+          },
+          {
+            "qid": "FI9676d18d",
+            "arm": "H",
+            "question": "For HDFC Bank Limited, as reported for the year ended March 31, 2024, what were contingent liabilities (contingent liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.0,
+            "agreed": true,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": "22967583363",
+            "gold": "2344487.73",
+            "answer_source": "natural",
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "wrong_unit",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "unit kind currency vs gold unknown"
+              ]
+            }
+          },
+          {
+            "qid": "FI995ccc77",
+            "arm": "H",
+            "question": "For Reliance Industries Limited, as reported for the year ended March 31, 2023, what were lease liabilities (lease liabilities as reported in the consolidated financial statements)?",
+            "correct": false,
+            "risk_score": 0.550625,
+            "agreed": false,
+            "ambiguous": false,
+            "stratum": "retrieval_caused",
+            "predicted": null,
+            "gold": "20426",
+            "answer_source": null,
+            "label": {
+              "is_error": true,
+              "provenance": "retrieval",
+              "kind": "unsupported_claim",
+              "confidence": "mechanical",
+              "counts_as_hallucination": true,
+              "evidence": [
+                "a required gold evidence group was absent from the retrieved set, so no channel could have answered correctly (D12)",
+                "no answer was produced"
+              ]
+            }
+          }
+        ],
+        "notes": []
+      },
+      "notes": []
+    }
+  },
+  "questions_in_gold": 188,
+  "operating_threshold": 0.51125,
+  "tau": "0.005",
+  "resamples": 10000,
+  "hypotheses": {
+    "verdicts": {
+      "H1": {
+        "testable": true,
+        "comparison": "AUROC(A) - AUROC(B5)",
+        "rationale": "cross-modality disagreement vs same-model self-consistency, at matched cost",
+        "interval": {
+          "point": 0.16666666666666674,
+          "ci_low": -0.07142857142857145,
+          "ci_high": 0.389297385620915,
+          "resamples": 10000,
+          "undefined_resamples": 44,
+          "seed": 20260826,
+          "excludes_zero": false
+        },
+        "p_value": 0.1715548413017276,
+        "supported_before_correction": false
+      },
+      "H4": {
+        "testable": true,
+        "comparison": "AUROC(A) - AUROC(H)",
+        "rationale": "cross-model channels vs the same model on both channels - the direct test of D1",
+        "interval": {
+          "point": -0.028806584362139898,
+          "ci_low": -0.16704260234851698,
+          "ci_high": 0.08400084033613439,
+          "resamples": 10000,
+          "undefined_resamples": 0,
+          "seed": 20260826,
+          "excludes_zero": false
+        },
+        "p_value": 0.708,
+        "supported_before_correction": false
+      },
+      "H3": {
+        "testable": true,
+        "comparison": "AUROC(A) - AUROC(G)",
+        "rationale": "with vs without the deterministic verifier",
+        "interval": {
+          "point": -0.05144032921810693,
+          "ci_low": -0.17386943102522806,
+          "ci_high": 0.030364372469635637,
+          "resamples": 10000,
+          "undefined_resamples": 0,
+          "seed": 20260826,
+          "excludes_zero": false
+        },
+        "p_value": 0.3678,
+        "supported_before_correction": false
+      },
+      "H2": {
+        "testable": false,
+        "reasoning_caused_auroc": null,
+        "retrieval_caused_auroc": 0.7703703703703704,
+        "difference": null,
+        "reason": "AUROC is undefined for reasoning_caused (13 question(s), 0 error(s)): it needs at least one error and one correct answer in the stratum",
+        "rationale": "the mechanism check on H1. A positive H1 with a failed H2 must be reported as an unexplained correlation, not a validated design",
+        "note": "the two strata are different question sets, so this comparison is UNPAIRED and its interval is correspondingly wider than the between-arm comparisons above"
+      },
+      "H5": {
+        "testable": true,
+        "curve": [
+          {
+            "arm": "G",
+            "auroc": 0.9588477366255144,
+            "tokens_per_question": 5838.666666666667,
+            "calls_per_question": 2.0
+          },
+          {
+            "arm": "H",
+            "auroc": 0.9362139917695473,
+            "tokens_per_question": 4712.866666666667,
+            "calls_per_question": 2.0
+          },
+          {
+            "arm": "A",
+            "auroc": 0.9074074074074074,
+            "tokens_per_question": 5783.355555555556,
+            "calls_per_question": 1.9555555555555555
+          },
+          {
+            "arm": "B5",
+            "auroc": 0.6,
+            "tokens_per_question": 13708.555555555555,
+            "calls_per_question": 6.0
+          }
+        ],
+        "rationale": "at least one reduced configuration should reach 80% of the full detection gain at 50% of the cost",
+        "note": "cost here is tokens and calls, which were measured. A monetary ratio is omitted because no provider carries an established paid rate - see efficiency.py"
+      }
+    },
+    "family_wise_correction": {
+      "H1": {
+        "p_value": 0.1715548413017276,
+        "rank": 1,
+        "adjusted_threshold": 0.016666666666666666,
+        "significant": false
+      },
+      "H3": {
+        "p_value": 0.3678,
+        "rank": 2,
+        "adjusted_threshold": 0.025,
+        "significant": false
+      },
+      "H4": {
+        "p_value": 0.708,
+        "rank": 3,
+        "adjusted_threshold": 0.05,
+        "significant": false
+      }
+    },
+    "note": "Holm-Bonferroni across the tested family. Five hypotheses at alpha 0.05 each carries roughly a one-in-four chance of a spurious 'supported'. Untestable hypotheses are excluded from the correction and reported as untestable."
+  },
+  "run_id": "campaign_20260901T105355Z",
+  "threshold_source": "passed on the command line (frozen elsewhere)",
+  "generated_at": "2026-09-03T15:45:02+00:00"
+}

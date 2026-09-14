@@ -1,0 +1,10 @@
+{
+  "run_id": "campaign_20260831T235851Z",
+  "completed": 0,
+  "skipped_already_done": 4,
+  "failed": 0,
+  "stopped_early": true,
+  "stop_reason": "free-tier quota exhausted: DailyQuotaExhausted: groq: daily token allowance of 200,000 is spent (196,887 used, this call needs about 5,995). This is the limit that binds on a free tier, not the request count - 10 of 14400 requests are still free. Resets at the provider's UTC day boundary. (surfaced by the orchestrator: a campaign must stop here rather than record every remaining question as an abstention)",
+  "resume_after_seconds": null,
+  "errors": []
+}

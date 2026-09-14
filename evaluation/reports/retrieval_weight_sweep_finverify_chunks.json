@@ -1,0 +1,127 @@
+{
+  "collection": "finverify_chunks",
+  "model": "BAAI/bge-base-en-v1.5",
+  "split": "validation",
+  "note": "Tuned on VALIDATION. Any weight chosen here is a reported hyperparameter, not a free improvement.",
+  "sweep": [
+    {
+      "semantic_weight": 0.0,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.5909090909090909,
+        "precision_at_k": 0.19090909090909092,
+        "mrr": 0.34015151515151515,
+        "evidence_retrieval_accuracy": 0.5909090909090909
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.7045454545454546,
+        "precision_at_k": 0.1272727272727273,
+        "mrr": 0.35542929292929293,
+        "evidence_retrieval_accuracy": 0.6818181818181818
+      }
+    },
+    {
+      "semantic_weight": 0.25,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.5,
+        "precision_at_k": 0.17272727272727273,
+        "mrr": 0.32196969696969696,
+        "evidence_retrieval_accuracy": 0.5
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.6590909090909091,
+        "precision_at_k": 0.11363636363636363,
+        "mrr": 0.3462662337662338,
+        "evidence_retrieval_accuracy": 0.6363636363636364
+      }
+    },
+    {
+      "semantic_weight": 0.5,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.45454545454545453,
+        "precision_at_k": 0.16363636363636364,
+        "mrr": 0.3068181818181818,
+        "evidence_retrieval_accuracy": 0.45454545454545453
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.6136363636363636,
+        "precision_at_k": 0.10909090909090909,
+        "mrr": 0.3333333333333333,
+        "evidence_retrieval_accuracy": 0.5909090909090909
+      }
+    },
+    {
+      "semantic_weight": 0.75,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.45454545454545453,
+        "precision_at_k": 0.16363636363636364,
+        "mrr": 0.32954545454545453,
+        "evidence_retrieval_accuracy": 0.45454545454545453
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.5681818181818182,
+        "precision_at_k": 0.1,
+        "mrr": 0.3486652236652237,
+        "evidence_retrieval_accuracy": 0.5454545454545454
+      }
+    },
+    {
+      "semantic_weight": 1.0,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.45454545454545453,
+        "precision_at_k": 0.14545454545454545,
+        "mrr": 0.32954545454545453,
+        "evidence_retrieval_accuracy": 0.45454545454545453
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.5681818181818182,
+        "precision_at_k": 0.1,
+        "mrr": 0.3486652236652237,
+        "evidence_retrieval_accuracy": 0.5454545454545454
+      }
+    },
+    {
+      "semantic_weight": 1.5,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.45454545454545453,
+        "precision_at_k": 0.14545454545454545,
+        "mrr": 0.30454545454545456,
+        "evidence_retrieval_accuracy": 0.45454545454545453
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.5227272727272727,
+        "precision_at_k": 0.09545454545454546,
+        "mrr": 0.3160894660894661,
+        "evidence_retrieval_accuracy": 0.5
+      }
+    },
+    {
+      "semantic_weight": 2.0,
+      "at_5": {
+        "questions": 22,
+        "recall_at_k": 0.45454545454545453,
+        "precision_at_k": 0.14545454545454545,
+        "mrr": 0.2856060606060606,
+        "evidence_retrieval_accuracy": 0.45454545454545453
+      },
+      "at_10": {
+        "questions": 22,
+        "recall_at_k": 0.5227272727272727,
+        "precision_at_k": 0.09545454545454546,
+        "mrr": 0.29664502164502166,
+        "evidence_retrieval_accuracy": 0.5
+      }
+    }
+  ]
+}

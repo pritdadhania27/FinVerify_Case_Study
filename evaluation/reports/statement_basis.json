@@ -1,0 +1,57 @@
+{
+  "finverify_ind": {
+    "n": 192,
+    "offenders": [],
+    "share": 0.0,
+    "per_company": {
+      "Sun Pharmaceutical Industries Limited": {
+        "consolidated": 14,
+        "standalone": 15
+      },
+      "Tata Motors Limited": {
+        "consolidated": 34,
+        "standalone": 2
+      },
+      "HDFC Bank Limited": {
+        "consolidated": 35,
+        "standalone": 2
+      },
+      "Infosys Limited": {
+        "consolidated": 45
+      },
+      "Reliance Industries Limited": {
+        "consolidated": 45
+      }
+    }
+  },
+  "retrieval_gold": {
+    "n": 100,
+    "wrong_basis": 0,
+    "sets": [
+      {
+        "company": "HDFC Bank Limited",
+        "n": 25,
+        "right_basis": 24,
+        "mixed_or_unknown": 1
+      },
+      {
+        "company": "Sun Pharmaceutical Industries Limited",
+        "n": 25,
+        "right_basis": 23,
+        "mixed_or_unknown": 2
+      },
+      {
+        "company": "Reliance Industries Limited",
+        "n": 25,
+        "right_basis": 22,
+        "mixed_or_unknown": 3
+      },
+      {
+        "company": "Tata Motors Limited",
+        "n": 25,
+        "mixed_or_unknown": 5,
+        "right_basis": 20
+      }
+    ]
+  }
+}

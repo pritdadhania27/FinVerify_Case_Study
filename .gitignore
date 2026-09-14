@@ -1,0 +1,84 @@
+# Secrets - never commit (spec section 37)
+.env
+.env.local
+# Any backup of .env is still a file full of live API keys. One was created
+# during the D33 fix and was NOT covered by the two patterns above.
+.env.bak*
+.env.*.bak
+.env.save
+*.key
+*.pem
+secrets/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Model weights / caches - large, re-downloadable, not source
+models/
+.cache/
+*.onnx
+*.safetensors
+
+# Source PDFs are large and redistributable only from their original source.
+# Provenance (URL + sha256) is tracked in datasets/, the bytes are not.
+documents/raw/*
+!documents/raw/.gitkeep
+documents/processed/*
+!documents/processed/.gitkeep
+documents/extracted/*
+!documents/extracted/.gitkeep
+
+# Third-party benchmark data - fetched by scripts, governed by upstream licenses
+datasets/raw/*
+!datasets/raw/.gitkeep
+
+# Experiment RESULTS ARE COMMITTED (spec section 18: never overwrite raw results).
+# Only transient scratch is ignored.
+experiments/runs/**/tmp/
+experiments/scratch/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.swp
+
+# Machine-local agent tooling state (not project source). The whole directory:
+# it holds editor/assistant configuration, not anything this project needs.
+.claude/
+experiments/.rate_limit_state.json
+
+# Scratch space written by audit subagents
+.tmp_audit/
+
+# Supervisor process logs - operational, not research artifacts. The run's
+# results.jsonl/metrics.json/config.json are the record; this is just stdout.
+experiments/runs/*/supervisor.log
+
+# Windows shell artifact, created by Explorer, not project content
+desktop.ini
+
+# Agent/editor tooling state. These were only in .git/info/exclude, which is
+# local and does not travel with a clone.
+.impeccable/
+.claude-flow/
+.playwright-mcp/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# The faculty submission document. Its title page carries the author's name and
+# registration number, which do not belong in a public repository. The file is
+# built outside the repo and kept locally; docs/README.md says what it is.
+docs/*.docx
+docs/*.pdf

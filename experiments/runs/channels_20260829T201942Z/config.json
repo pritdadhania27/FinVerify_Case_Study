@@ -1,0 +1,9 @@
+{
+  "script": "scripts/measure_channel_reliability.py",
+  "natural": "groq/qwen/qwen3.6-27b",
+  "program": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+  "limit": 20,
+  "seed": 20260830,
+  "top_k": 10,
+  "collection": "finverify_e5"
+}

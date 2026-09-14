@@ -1,0 +1,7 @@
+{
+  "script": "scripts/measure_question_understanding.py",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "limit": 30,
+  "seed": 20260829
+}

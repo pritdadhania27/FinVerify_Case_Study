@@ -1,0 +1,716 @@
+{
+  "baseline_recall_at_k": 0.28,
+  "reranked_recall_at_k": 0.24,
+  "k": 10,
+  "pool": 100,
+  "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "corpus_wide": false,
+  "entered_top_k": 7,
+  "left_top_k": 11,
+  "groups": 100,
+  "seconds_per_group": 19.04563000799986,
+  "rows": [
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R01",
+      "group_id": "basic earnings per share_2024",
+      "rank_before": 4,
+      "rank_after": 8
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R02",
+      "group_id": "diluted earnings per share_2023",
+      "rank_before": 4,
+      "rank_after": 2
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R03",
+      "group_id": "investments_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R04",
+      "group_id": "diluted earnings per share_2024",
+      "rank_before": 4,
+      "rank_after": 3
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R05",
+      "group_id": "total assets_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R06",
+      "group_id": "advances_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R07",
+      "group_id": "advances_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R08",
+      "group_id": "other equity_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R09",
+      "group_id": "provisions_2024",
+      "rank_before": 17,
+      "rank_after": 20
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R10",
+      "group_id": "property, plant and equipment_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R11",
+      "group_id": "provisions and contingencies_2024",
+      "rank_before": 1,
+      "rank_after": 5
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R12",
+      "group_id": "basic earnings per share_2023",
+      "rank_before": 4,
+      "rank_after": 7
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R13",
+      "group_id": "non-controlling interests_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R14",
+      "group_id": "other equity_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R15",
+      "group_id": "investments_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R16",
+      "group_id": "total assets_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R17",
+      "group_id": "deferred tax_2024",
+      "rank_before": 8,
+      "rank_after": 61
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R18",
+      "group_id": "non-controlling interests_2023",
+      "rank_before": 54,
+      "rank_after": 50
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R19",
+      "group_id": "deposits_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R20",
+      "group_id": "borrowings_2023",
+      "rank_before": 91,
+      "rank_after": 19
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R21",
+      "group_id": "contingent liabilities_2024",
+      "rank_before": 4,
+      "rank_after": 43
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R22",
+      "group_id": "contingent liabilities_2023",
+      "rank_before": 4,
+      "rank_after": 44
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R23",
+      "group_id": "deferred tax_2023",
+      "rank_before": 8,
+      "rank_after": 57
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R24",
+      "group_id": "other income_2024",
+      "rank_before": 26,
+      "rank_after": 24
+    },
+    {
+      "company": "HDFC Bank Limited",
+      "qid": "R25",
+      "group_id": "other income_2023",
+      "rank_before": 26,
+      "rank_after": 24
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R01",
+      "group_id": "goodwill_2024",
+      "rank_before": 10,
+      "rank_after": 10
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R02",
+      "group_id": "finance cost_2023",
+      "rank_before": 77,
+      "rank_after": 53
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R03",
+      "group_id": "interest income_2024",
+      "rank_before": 71,
+      "rank_after": 82
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R04",
+      "group_id": "retained earnings_2024",
+      "rank_before": 21,
+      "rank_after": 63
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R05",
+      "group_id": "revenue from contracts with customers_2023",
+      "rank_before": 1,
+      "rank_after": 2
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R06",
+      "group_id": "lease liabilities_2023",
+      "rank_before": 1,
+      "rank_after": 11
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R07",
+      "group_id": "finance cost_2024",
+      "rank_before": 77,
+      "rank_after": 41
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R08",
+      "group_id": "interest income_2023",
+      "rank_before": 71,
+      "rank_after": 82
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R09",
+      "group_id": "other financial liabilities_2024",
+      "rank_before": 4,
+      "rank_after": 13
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R10",
+      "group_id": "trade receivables_2024",
+      "rank_before": 66,
+      "rank_after": 85
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R11",
+      "group_id": "other financial liabilities_2023",
+      "rank_before": 9,
+      "rank_after": 12
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R12",
+      "group_id": "non-controlling interests_2023",
+      "rank_before": 25,
+      "rank_after": 10
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R13",
+      "group_id": "lease liabilities_2024",
+      "rank_before": 2,
+      "rank_after": 10
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R14",
+      "group_id": "retained earnings_2023",
+      "rank_before": 21,
+      "rank_after": 68
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R15",
+      "group_id": "total equity_2024",
+      "rank_before": 82,
+      "rank_after": 92
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R16",
+      "group_id": "total equity_2023",
+      "rank_before": 82,
+      "rank_after": 93
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R17",
+      "group_id": "profit before tax_2023",
+      "rank_before": 1,
+      "rank_after": 8
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R18",
+      "group_id": "trade payables_2023",
+      "rank_before": 2,
+      "rank_after": 14
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R19",
+      "group_id": "non-controlling interests_2024",
+      "rank_before": 25,
+      "rank_after": 10
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R20",
+      "group_id": "revenue from contracts with customers_2024",
+      "rank_before": 1,
+      "rank_after": 2
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R21",
+      "group_id": "profit before tax_2024",
+      "rank_before": 1,
+      "rank_after": 8
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R22",
+      "group_id": "trade payables_2024",
+      "rank_before": 4,
+      "rank_after": 15
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R23",
+      "group_id": "goodwill_2023",
+      "rank_before": 17,
+      "rank_after": 22
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R24",
+      "group_id": "borrowings_2024",
+      "rank_before": 68,
+      "rank_after": 20
+    },
+    {
+      "company": "Sun Pharmaceutical Industries Limited",
+      "qid": "R25",
+      "group_id": "borrowings_2023",
+      "rank_before": 27,
+      "rank_after": 16
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R01",
+      "group_id": "provisions_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R02",
+      "group_id": "total income_2024",
+      "rank_before": 39,
+      "rank_after": 7
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R03",
+      "group_id": "current tax_2023",
+      "rank_before": 3,
+      "rank_after": 5
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R04",
+      "group_id": "profit before tax_2023",
+      "rank_before": 1,
+      "rank_after": 3
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R05",
+      "group_id": "other equity_2024",
+      "rank_before": 20,
+      "rank_after": 23
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R06",
+      "group_id": "other expenses_2024",
+      "rank_before": 19,
+      "rank_after": 6
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R07",
+      "group_id": "investments_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R08",
+      "group_id": "profit for the year_2024",
+      "rank_before": 1,
+      "rank_after": 4
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R09",
+      "group_id": "other expenses_2023",
+      "rank_before": 19,
+      "rank_after": 6
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R10",
+      "group_id": "total equity_2023",
+      "rank_before": 57,
+      "rank_after": 17
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R11",
+      "group_id": "provisions_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R12",
+      "group_id": "revenue from operations_2023",
+      "rank_before": 5,
+      "rank_after": 6
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R13",
+      "group_id": "equity share capital_2024",
+      "rank_before": 11,
+      "rank_after": 8
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R14",
+      "group_id": "other income_2023",
+      "rank_before": 62,
+      "rank_after": 7
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R15",
+      "group_id": "profit for the year_2023",
+      "rank_before": 1,
+      "rank_after": 4
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R16",
+      "group_id": "other financial liabilities_2024",
+      "rank_before": 34,
+      "rank_after": 84
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R17",
+      "group_id": "total expenses_2024",
+      "rank_before": 10,
+      "rank_after": 5
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R18",
+      "group_id": "borrowings_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R19",
+      "group_id": "investments_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R20",
+      "group_id": "lease liabilities_2023",
+      "rank_before": 17,
+      "rank_after": 96
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R21",
+      "group_id": "property, plant and equipment_2023",
+      "rank_before": 89,
+      "rank_after": 38
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R22",
+      "group_id": "total equity_2024",
+      "rank_before": 57,
+      "rank_after": 17
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R23",
+      "group_id": "borrowings_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R24",
+      "group_id": "deferred tax_2024",
+      "rank_before": 7,
+      "rank_after": 22
+    },
+    {
+      "company": "Reliance Industries Limited",
+      "qid": "R25",
+      "group_id": "lease liabilities_2024",
+      "rank_before": 17,
+      "rank_after": 96
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R01",
+      "group_id": "finance cost_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R02",
+      "group_id": "total income_2024",
+      "rank_before": 27,
+      "rank_after": 14
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R03",
+      "group_id": "trade receivables_2024",
+      "rank_before": 11,
+      "rank_after": 84
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R04",
+      "group_id": "profit before tax_2023",
+      "rank_before": 7,
+      "rank_after": 43
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R05",
+      "group_id": "total expenses_2024",
+      "rank_before": 52,
+      "rank_after": 75
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R06",
+      "group_id": "provisions_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R07",
+      "group_id": "other income_2023",
+      "rank_before": 43,
+      "rank_after": 16
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R08",
+      "group_id": "cash and cash equivalents_2024",
+      "rank_before": 71,
+      "rank_after": 56
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R09",
+      "group_id": "profit for the year_2024",
+      "rank_before": 17,
+      "rank_after": 80
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R10",
+      "group_id": "trade payables_2024",
+      "rank_before": 17,
+      "rank_after": 87
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R11",
+      "group_id": "property, plant and equipment_2024",
+      "rank_before": 74,
+      "rank_after": 21
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R12",
+      "group_id": "borrowings_2023",
+      "rank_before": 73,
+      "rank_after": 31
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R13",
+      "group_id": "other financial liabilities_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R14",
+      "group_id": "inventories_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R15",
+      "group_id": "finance cost_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R16",
+      "group_id": "provisions_2023",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R17",
+      "group_id": "profit for the year_2023",
+      "rank_before": 17,
+      "rank_after": 80
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R18",
+      "group_id": "property, plant and equipment_2023",
+      "rank_before": 74,
+      "rank_after": 21
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R19",
+      "group_id": "borrowings_2024",
+      "rank_before": 73,
+      "rank_after": 31
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R20",
+      "group_id": "cash and cash equivalents_2023",
+      "rank_before": 71,
+      "rank_after": 57
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R21",
+      "group_id": "deposits_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R22",
+      "group_id": "inventories_2024",
+      "rank_before": null,
+      "rank_after": null
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R23",
+      "group_id": "exceptional items_2023",
+      "rank_before": 12,
+      "rank_after": 12
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R24",
+      "group_id": "total income_2023",
+      "rank_before": 27,
+      "rank_after": 13
+    },
+    {
+      "company": "Tata Motors Limited",
+      "qid": "R25",
+      "group_id": "trade receivables_2023",
+      "rank_before": 11,
+      "rank_after": 85
+    }
+  ]
+}

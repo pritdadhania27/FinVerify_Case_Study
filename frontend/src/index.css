@@ -1,0 +1,859 @@
+/*
+ * FinVerify-AI - the research console.
+ *
+ * The design register is INSTRUMENT AND LEDGER, not dashboard. This is a window
+ * onto a measurement apparatus pointed at annual reports, so the surfaces are
+ * ruled rather than carded, every figure is set in a monospace with tabular
+ * numerals so columns of numbers actually line up, and headings take a serif -
+ * the register financial statements are set in.
+ *
+ * Three rules the styling must not break, because each one exists to stop the
+ * interface from misreporting the system underneath it:
+ *
+ * 1. RISK COLOUR IS NOT THE ACCENT. The accent is teal ink; risk runs on its own
+ *    green/amber/red scale. If the two shared a hue, a HIGH-risk answer and a
+ *    focused button would read as the same kind of thing.
+ * 2. "UNSCORED" AND "UNDEFINED" ARE STATES, NOT ZEROES. They are styled as muted
+ *    and italic - visibly a different kind of cell from a measured value, never
+ *    dressed up to look like one.
+ * 3. A WARNING TRAVELS WITH ITS NUMBER. `.flag-underpowered` sits in the same
+ *    cell as the value it qualifies, because a caveat rendered anywhere else is
+ *    a caveat nobody reads.
+ */
+
+:root {
+  /* Light: cool ledger paper. Not pure white - a sheet, with panels raised off
+     it - and not the warm cream that every generated page reaches for. */
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --surface-sunken: #eef1f5;
+  --fg: #11161c;
+  --fg-strong: #060a0f;
+  --muted: #59616e;
+  /* Darkened from #858d9a, which was 3.35:1 on a panel and 3.14:1 on a table
+     header - under the 4.5:1 AA floor for text this size. `--faint` is not
+     decoration here: it colours every table header and stat label at 10.5px
+     uppercase, every form label, `.undefined-value` ("not measured"),
+     `.risk-UNSCORED` ("no detector ran") and the CONFIDENCE INTERVALS in the
+     charts. Those are the caveats, and this project's rule is that a caveat
+     travels with its number - rendering them in the least legible colour on the
+     page is that rule broken at the last step. Now 4.61:1 on the sunken header
+     ground, which is the darkest surface it sits on and so the binding case,
+     and still visibly lighter than `--muted` so the hierarchy is intact. */
+  --faint: #666d77;
+  --line: #dee3ea;
+  --line-strong: #c3cad4;
+
+  /* Deep teal ink. Chosen against the corporate blue this started with: the
+     subject is an instrument, and teal reads as gauge rather than as bank. */
+  --accent: #0b5f6b;
+  --accent-soft: #e2f0f2;
+  --accent-strong: #084850;
+  /* Text ON the accent, which flips with the theme. The accent is a DARK teal
+     in light mode and a LIGHT one in dark mode, so a hardcoded white would be
+     correct in one theme and unreadable in the other. */
+  --on-accent: #ffffff;
+
+  --risk-low: #0f7a4a;
+  --risk-mid: #8a5a00;
+  --risk-high: #b3261e;
+  --risk-low-bg: #e6f4ec;
+  --risk-mid-bg: #fbf1de;
+  --risk-high-bg: #fbeae8;
+
+  --shadow: 0 1px 2px rgb(16 22 28 / 6%), 0 1px 1px rgb(16 22 28 / 4%);
+  --shadow-lift: 0 2px 8px rgb(16 22 28 / 8%), 0 1px 2px rgb(16 22 28 / 6%);
+
+  --sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --serif: "IBM Plex Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark: an instrument panel. Backgrounds carry a blue-green bias so the
+       teal accent sits in the same world as the ground rather than on top of
+       a neutral grey. */
+    --bg: #0d1116;
+    --surface: #151a21;
+    --surface-sunken: #10151b;
+    --fg: #e4e8ee;
+    --fg-strong: #f4f6f9;
+    --muted: #98a2b0;
+    /* Lightened from #6f7987 (3.96:1) for the same reason. Here the binding
+       ground is the LIGHTEST surface, not the darkest: these are light glyphs,
+       so the raised panel gives less contrast than the page behind it. */
+    --faint: #7b8491;
+    --line: #242b34;
+    --line-strong: #333c47;
+
+    --accent: #5fb8c4;
+    --accent-soft: #102f34;
+    --accent-strong: #8fd6df;
+    --on-accent: #08131a;
+
+    --risk-low: #45c689;
+    --risk-mid: #e0a33a;
+    --risk-high: #f07a72;
+    --risk-low-bg: #10281d;
+    --risk-mid-bg: #2b2213;
+    --risk-high-bg: #2e1917;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 40%);
+    --shadow-lift: 0 4px 14px rgb(0 0 0 / 45%), 0 1px 2px rgb(0 0 0 / 40%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------------------------- shell */
+
+.shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+/*
+ * Deliberately NOT sticky. It was, and at ~185px of wordmark, strapline and
+ * tabs it both ate a third of a laptop viewport on the data screens and
+ * occluded the tables' own sticky `thead` - rows slid underneath it and could
+ * not be read. Only one of the two can own `top: 0`, and on a screen whose
+ * whole purpose is long metric tables it should be the column headers.
+ */
+header {
+  padding: 22px 0 0;
+  margin-bottom: 4px;
+}
+
+header h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: var(--fg-strong);
+}
+
+/* The one place the accent is allowed to be decorative: a rule under the
+   wordmark, tying the header to the instrument palette. */
+header h1::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 7px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.sub {
+  margin: 9px 0 14px;
+  color: var(--muted);
+  font-size: 13.5px;
+  max-width: 62ch;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+nav a {
+  position: relative;
+  padding: 9px 14px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 13.5px;
+  font-weight: 500;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+nav a:hover {
+  color: var(--fg);
+  background: var(--surface-sunken);
+}
+
+nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Drawn on the shared border so the tab sits ON the rule rather than above it. */
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px 2px 0 0;
+}
+
+main {
+  padding-top: 26px;
+}
+
+/* ------------------------------------------------------------- headings */
+
+h2 {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--fg-strong);
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 11.5px;
+  font-weight: 600;
+  margin: 32px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--faint);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* A hairline that runs from the label to the edge - a ledger rule, and it makes
+   each section read as a band of the instrument rather than a floating title. */
+h3::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+p.note {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin: 6px 0 18px;
+  max-width: 76ch;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: var(--accent-strong);
+}
+
+strong {
+  color: var(--fg-strong);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------- tables */
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface-sunken);
+  font-weight: 600;
+  color: var(--faint);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr {
+  transition: background 0.12s ease;
+}
+
+tbody tr:hover {
+  background: var(--surface-sunken);
+}
+
+/* Every figure is monospace with tabular numerals. Columns of financial values
+   that do not line up are columns a reader cannot scan, and this project's
+   whole subject is reading numbers correctly. */
+td.num,
+th.num {
+  text-align: right;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------- panels & stats */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.panel > p.note:last-child,
+.panel > ul:last-child {
+  margin-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/* A stat is a ruled cell, not a card: a hairline of accent along the top edge
+   and the figure given room. Cards would make eight equal tiles compete; the
+   rule groups them as readings off one instrument. */
+.panel.stat {
+  position: relative;
+  padding: 15px 16px 14px;
+  overflow: hidden;
+}
+
+.panel.stat::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
+.stat .label {
+  color: var(--faint);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stat .value {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--mono);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--fg-strong);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+/* A stat whose value is a list of arm names, a model binding or a sentence is
+   not a reading - it must not be set at 25px like one. */
+.stat .value:not(:has(*)) {
+  overflow-wrap: anywhere;
+}
+
+.stat .value.text {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+.stat .value.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.stat .sub-value {
+  display: block;
+  margin-top: 4px;
+  color: var(--faint);
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------- risk & badges */
+
+.risk-LOW {
+  color: var(--risk-low);
+}
+
+.risk-MEDIUM {
+  color: var(--risk-mid);
+}
+
+.risk-HIGH,
+.risk-UNCERTAIN {
+  color: var(--risk-high);
+}
+
+/* Not a low risk. No risk was measured, and it is set apart from every banded
+   value so it can never be misread as a good reading. */
+.risk-UNSCORED {
+  color: var(--faint);
+  font-style: italic;
+}
+
+/* A band as a pill with a dot: colour alone is not an encoding anyone can rely
+   on, so the dot carries position and the text carries the name. */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 9px 2px 8px;
+  border-radius: 99px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.pill.risk-LOW {
+  background: var(--risk-low-bg);
+  border-color: color-mix(in srgb, var(--risk-low) 26%, transparent);
+}
+
+.pill.risk-MEDIUM {
+  background: var(--risk-mid-bg);
+  border-color: color-mix(in srgb, var(--risk-mid) 26%, transparent);
+}
+
+.pill.risk-HIGH,
+.pill.risk-UNCERTAIN {
+  background: var(--risk-high-bg);
+  border-color: color-mix(in srgb, var(--risk-high) 26%, transparent);
+}
+
+.pill.risk-UNSCORED {
+  background: var(--surface-sunken);
+  border-color: var(--line);
+  font-style: normal;
+}
+
+.badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 99px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-sunken);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* The arm is the single most load-bearing label in any of these tables - it is
+   what "A minus one field" is read against - so it gets the accent. */
+.badge.arm {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 24%, transparent);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------- flags */
+
+/* A metric that could not be computed. Italic and muted so it is visibly a
+   different kind of cell from a measured value - never a zero in disguise. */
+.undefined-value {
+  color: var(--faint);
+  font-style: italic;
+}
+
+/* Sits in the same cell as the figure it qualifies. A contrast resting on three
+   errors is the single most misleading thing these tables can show, and the
+   warning is worthless if it is anywhere but next to the number. */
+.flag {
+  display: inline-block;
+  padding: 0 6px;
+  margin-right: 6px;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.flag-underpowered {
+  color: var(--risk-mid);
+  background: var(--risk-mid-bg);
+  border: 1px solid color-mix(in srgb, var(--risk-mid) 30%, transparent);
+}
+
+.flag-significant {
+  color: var(--risk-low);
+  background: var(--risk-low-bg);
+  border: 1px solid color-mix(in srgb, var(--risk-low) 30%, transparent);
+}
+
+/* The prose of a qualified note. Set apart from a plain note but NOT as faint
+   as `.undefined-value`: that treatment is for a one-word non-value, and a
+   whole sentence set in it is a sentence nobody finishes. */
+.note-qualified {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Filters sit in one row above the data they filter, so the control and its
+   effect are visible together. Each keeps its own label - a row of unlabelled
+   dropdowns is a puzzle, and these choose between fourteen arms and fifteen
+   runs whose names are not self-explanatory. */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 200px;
+  flex: 1 1 220px;
+}
+
+.filters label {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------- chart */
+
+/* A point estimate with its interval. Marks are thin and recessive; the ONE
+   emphatic element is the dot, because the dot is the estimate. Every colour
+   comes from the same tokens the tables use, so the chart reads as a second
+   view of the table rather than a different design. */
+.chart {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.chart svg {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+  height: auto;
+}
+
+.chart figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12.5px;
+  max-width: 76ch;
+}
+
+.chart-reference {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.chart-whisker {
+  stroke: var(--faint);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.chart-dot {
+  fill: var(--accent);
+}
+
+/* Sits under the dot so the mark stays legible where it crosses its whisker. */
+.chart-dot-halo {
+  fill: var(--surface);
+}
+
+.chart-label {
+  fill: var(--fg);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chart-value {
+  fill: var(--fg-strong);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-value-ci {
+  fill: var(--faint);
+}
+
+.chart-tick {
+  fill: var(--faint);
+  font-family: var(--mono);
+  font-size: 10.5px;
+}
+
+/* An unmeasured row says so on the plot. It is never drawn at zero. */
+.chart-absent {
+  fill: var(--faint);
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-style: italic;
+}
+
+.chart-flag {
+  fill: var(--risk-mid);
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------- forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 11px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--fg);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+textarea {
+  min-height: 88px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+button {
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 9px 18px;
+  font-weight: 600;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: transparent;
+  box-shadow: var(--shadow);
+}
+
+button:hover:not(:disabled) {
+  background: var(--accent-strong);
+  box-shadow: var(--shadow-lift);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* A button repeated once per row is not a call to action - it is a row control,
+   and at full accent weight forty of them fight the data they sit beside. In a
+   table it recedes to a quiet outline and only picks up the accent on hover. */
+td button {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--line-strong);
+  box-shadow: none;
+}
+
+td button:hover:not(:disabled) {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  box-shadow: none;
+}
+
+/* Keyboard focus must stay visible everywhere, including on the nav tabs. */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* --------------------------------------------------------------- misc */
+
+/* The tinted ground, the full hairline in the risk hue and the coloured heading
+   already say "error" three times over; a heavy rail down one edge was a fourth
+   saying it loudest, and it is the tell of a component library nobody chose. */
+.error {
+  border: 1px solid color-mix(in srgb, var(--risk-high) 32%, transparent);
+  padding: 13px 16px;
+  background: var(--risk-high-bg);
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  font-size: 13.5px;
+}
+
+.error strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--risk-high);
+}
+
+ul.reasons {
+  margin: 8px 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul.reasons li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+ul.reasons li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--line);
+  padding: 1px 5px;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    padding: 0 14px 64px;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
+
+  .stat .value {
+    font-size: 21px;
+  }
+}

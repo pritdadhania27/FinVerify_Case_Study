@@ -1,0 +1,11 @@
+{
+  "run_id": "slice_20260824T153825Z",
+  "natural_channel": "groq/qwen/qwen3.6-27b",
+  "program_channel": "groq/openai/gpt-oss-120b",
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "top_k": 8,
+  "temperature": 0.0,
+  "dry_run": false,
+  "document_id": "f356fc75d6d63fa3"
+}

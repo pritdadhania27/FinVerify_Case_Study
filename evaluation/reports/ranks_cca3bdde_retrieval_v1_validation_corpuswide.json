@@ -1,0 +1,46 @@
+{
+  "set_id": "retrieval-eval-cca3bdde-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 3
+  },
+  "company": "Sun Pharmaceutical Industries Limited",
+  "gold_file": "cca3bdde_retrieval_v1_validation.json",
+  "scope": "corpus-wide",
+  "deep": 300,
+  "embedding_model": "intfloat/e5-base-v2",
+  "collection": "finverify_e5",
+  "evidence_groups": 3,
+  "band_counts": {
+    "not ranked": 1,
+    "71-300": 1,
+    "21-70": 1
+  },
+  "cumulative_recall": {
+    "top 10 (a hit today)": 0.0,
+    "11-20": 0.0,
+    "21-70": 0.3333333333333333,
+    "71-300": 0.6666666666666666
+  },
+  "per_group": [
+    {
+      "qid": "R01",
+      "group_id": "finance cost_2023",
+      "rank": null,
+      "band": "not ranked"
+    },
+    {
+      "qid": "R02",
+      "group_id": "trade receivables_2024",
+      "rank": 166,
+      "band": "71-300"
+    },
+    {
+      "qid": "R03",
+      "group_id": "non-controlling interests_2024",
+      "rank": 23,
+      "band": "21-70"
+    }
+  ],
+  "note": "Cumulative recall is the ceiling a reranker works against, not a promise. RX-035 measured that ceiling and the reranker scored BELOW the baseline."
+}

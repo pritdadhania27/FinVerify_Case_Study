@@ -1,0 +1,114 @@
+{
+  "set_id": "retrieval-eval-cca3bdde-v1-validation",
+  "split": "validation",
+  "split_composition": {
+    "validation": 3
+  },
+  "document_id": "cca3bdde342aa160",
+  "company": "Sun Pharmaceutical Industries Limited",
+  "fiscal_year": "2023-24",
+  "source_document": "documents/raw/sun_pharma_ar_2023-24.pdf",
+  "source_sha256": "cca3bdde342aa160a874bc3d711365d116c4d73612afd35472558cae3433a0d6",
+  "generated_by": "scripts/build_retrieval_gold.py",
+  "notes": [
+    "RETRIEVAL set. Grades whether the evidence needed to answer reaches the top-K. It does NOT grade answers, and the figures quoted in answer_note are UNVALIDATED FinVerify-IND candidates.",
+    "Every span was verified against the PDF text layer at build time: both the row label and the figure were found on the stated page. Questions whose anchors could not be confirmed were DROPPED, and questions whose confirmed page disagreed with the generator's page were dropped rather than relocated.",
+    "`page` is the 1-indexed PDF page, which is what chunk provenance records - not the number printed on the page.",
+    "Evidence groups are COMPLETE: the whole document was scanned and every page carrying the same label-and-figure pair is listed as an alternative. Without this the metric measures 'did retrieval find MY page' rather than 'did it find the evidence'.",
+    "Anchors keep the source's own digit grouping. This corpus mixes Indian and western grouping inside single tables, and an anchor that normalised separators would hide exactly the transcription errors this project exists to catch.",
+    "The `split` field is DERIVED from the source questions, not declared. It was hardcoded 'validation' until 2026-09-12 while source questions were drawn from every split, which put 43 of the 76 sealed test questions into sets labelled validation and let `evaluate_retrieval.py`'s seal gate pass on a label that did not describe the contents. `split_composition` now states the breakdown so the claim is checkable rather than asserted.",
+    "A set whose split is anything other than 'validation' must be treated as test-bearing: it needs FINVERIFY_ALLOW_TEST=1, the access is logged, and any figure from it is a one-shot result that cannot be used to tune anything."
+  ],
+  "questions": [
+    {
+      "qid": "R01",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2023, what were finance cost (finance cost as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 4346.9 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI1f0adbf8",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "finance cost_2023",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 173,
+              "anchors": [
+                "Interest expense",
+                "4,346"
+              ]
+            },
+            {
+              "page": 201,
+              "anchors": [
+                "Interest expense",
+                "4,346.9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R02",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were trade receivables (trade receivables as reported in the standalone financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 5764.8 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FI823a83a4",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "trade receivables_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 183,
+              "anchors": [
+                "Trade receivables",
+                "5,764.8"
+              ]
+            },
+            {
+              "page": 265,
+              "anchors": [
+                "Trade receivables",
+                "5,764.8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "R03",
+      "question": "For Sun Pharmaceutical Industries Limited, as reported for the year ended March 31, 2024, what were non-controlling interests (non-controlling interests as reported in the consolidated financial statements)?",
+      "question_type": "lookup",
+      "answer_note": "candidate figure 34392.2 INR million - NOT a validated gold answer; this set grades retrieval only",
+      "source_qid": "FIc4b13188",
+      "source_split": "validation",
+      "evidence": [
+        {
+          "group_id": "non-controlling interests_2024",
+          "note": "stated on 2 page(s); any is correct evidence",
+          "any_of": [
+            {
+              "page": 215,
+              "anchors": [
+                "Non-controlling interests",
+                "34,392.2"
+              ]
+            },
+            {
+              "page": 281,
+              "anchors": [
+                "Non-controlling interests",
+                "34,392.2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

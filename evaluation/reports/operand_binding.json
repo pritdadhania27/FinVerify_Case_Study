@@ -1,0 +1,4900 @@
+{
+  "n": 268,
+  "where_channel_engages": {
+    "n": 12,
+    "bound": 6,
+    "coverage": 0.5,
+    "comparable": 0,
+    "agreed": 0,
+    "agreement": null
+  },
+  "where_channel_abstains": {
+    "n": 256,
+    "bound": 113,
+    "coverage": 0.44140625,
+    "comparable": 113,
+    "agreed": 23,
+    "agreement": 0.20353982300884957
+  },
+  "disagreements": 90,
+  "rows": [
+    {
+      "qid": "FI0054",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "643639.66",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0042",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total non-current assets"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "54935",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 48382 crore",
+      "row_label": "Total non-current assets",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0187",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "11149",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0249",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "percentage_of",
+      "engages_channel": true,
+      "metrics": [
+        "goodwill",
+        "total assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "goodwill",
+        "total assets"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0250",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 0,
+      "unbound": [
+        "borrowings"
+      ],
+      "candidate": "18872.44",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0115",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "56186.25",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0027",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "4716",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 4716 crore",
+      "row_label": "Other expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0191",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "44190",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0220",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "273920",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0264",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "65757.33",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0114",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "48243.22",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0013",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "equity share capital"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2069",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 2071 crore",
+      "row_label": "Equity share capital",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0188",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "12128",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0244",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "trade receivables"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "5764.8",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 71250.2 million",
+      "row_label": "Trade receivables",
+      "citation": "p.178, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0266",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "trade receivables"
+      ],
+      "bound": 0,
+      "unbound": [
+        "trade receivables"
+      ],
+      "candidate": "125.85",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0098",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "161585.54",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0009",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "depreciation and amortization expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "4225",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 4678 crore",
+      "row_label": "Depreciation and amortization expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0186",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "59891",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "77 crore",
+      "row_label": "Other Expenses",
+      "citation": "p.131, (iii)\t Cash flows from Discontinued Operations, table 2"
+    },
+    {
+      "qid": "FI0215",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other financial liabilities"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "17960.1",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 40606.9 million",
+      "row_label": "Other financial liabilities",
+      "citation": "p.182, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 2"
+    },
+    {
+      "qid": "FI0251",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 0,
+      "unbound": [
+        "borrowings"
+      ],
+      "candidate": "13771.04",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0154",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "60812.28",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0029",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "35988",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 35988 crore",
+      "row_label": "Profit before tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0177",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cost of materials consumed"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "399644",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "376418 crore",
+      "row_label": "Cost of Materials Consumed",
+      "citation": "p.68, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0203",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 0,
+      "unbound": [
+        "borrowings"
+      ],
+      "candidate": "110466.1",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0255",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "10.19",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0053",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "546424.19",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0025",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other equity"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "86045",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 86045 crore",
+      "row_label": "Other equity",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0180",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "current tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "current tax"
+      ],
+      "candidate": "10922",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0221",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "284870",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0261",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "31806.75",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0121",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "13383.40",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0012",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "employee benefit expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "82620",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 82620 crore",
+      "row_label": "Employee benefit expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0176",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "capital work-in-progress"
+      ],
+      "bound": 0,
+      "unbound": [
+        "capital work-in-progress"
+      ],
+      "candidate": "44294",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0206",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "goodwill"
+      ],
+      "bound": 0,
+      "unbound": [
+        "goodwill"
+      ],
+      "candidate": "16041.5",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0267",
+      "company": "Tata Motors Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "total assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year",
+        "total assets"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0132",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "31214.83",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0044",
+      "company": "Infosys Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "total equity"
+      ],
+      "bound": 2,
+      "unbound": [],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 26248 crore",
+      "row_label": "Profit for the year",
+      "citation": "p.20, Consolidated Statement of Cash Flows, table 1"
+    },
+    {
+      "qid": "FI0201",
+      "company": "Reliance Industries Limited",
+      "operation": "margin",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0236",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "300914",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0268",
+      "company": "Tata Motors Limited",
+      "operation": "margin",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0079",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "40146.49",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0041",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total income"
+      ],
+      "candidate": "158381",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0184",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "intangible assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "intangible assets"
+      ],
+      "candidate": "40719",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0245",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "total equity"
+      ],
+      "bound": 2,
+      "unbound": [],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 3281.4 million",
+      "row_label": "Profit after tax",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0257",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other expenses"
+      ],
+      "candidate": "18.0",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0100",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "156833.82",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0001",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "capital work-in-progress"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "288",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 293 crore",
+      "row_label": "Capital work-in-progress",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0199",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total income"
+      ],
+      "candidate": "563972",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0216",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "94084.3",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 34496.5 million",
+      "row_label": "Profit before tax",
+      "citation": "p.174, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0265",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "73303.08",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0136",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "18637.94",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0037",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total equity"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "88461",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 88461 crore",
+      "row_label": "Total equity",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0175",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "capital work-in-progress"
+      ],
+      "bound": 0,
+      "unbound": [
+        "capital work-in-progress"
+      ],
+      "candidate": "30972",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0229",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "484969",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0259",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "1149.88",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0150",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "26257.31",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0033",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "12370",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 12370 crore",
+      "row_label": "Property, plant and equipment",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0178",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cost of materials consumed"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "376418",
+      "candidate_unit": "crore",
+      "agreement": true,
+      "bound_value": "376418 crore",
+      "row_label": "Cost of Materials Consumed",
+      "citation": "p.68, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0209",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "interest income"
+      ],
+      "candidate": "2685.0",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0256",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other expenses"
+      ],
+      "candidate": "17.9",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0088",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest expended"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "747433173",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "15 crore",
+      "row_label": "Interest expended",
+      "citation": "p.413, Integrated Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0016",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "470",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 470 crore",
+      "row_label": "Finance cost",
+      "citation": "p.79, Membership No. A21918, table 1"
+    },
+    {
+      "qid": "FI0173",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "135702",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "1 crore",
+      "row_label": "Borrowings",
+      "citation": "p.101, Return on Capital Employed (%), table 2"
+    },
+    {
+      "qid": "FI0210",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "lease liabilities"
+      ],
+      "bound": 0,
+      "unbound": [
+        "lease liabilities"
+      ],
+      "candidate": "1981.5",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0263",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 0,
+      "unbound": [
+        "property, plant and equipment"
+      ],
+      "candidate": "621.04",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0068",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "4.75",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0045",
+      "company": "Infosys Limited",
+      "operation": "margin",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "bound": 2,
+      "unbound": [],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 26248 crore",
+      "row_label": "Profit for the year",
+      "citation": "p.20, Consolidated Statement of Cash Flows, table 1"
+    },
+    {
+      "qid": "FI0190",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "55273",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "104727 crore",
+      "row_label": "Profit Before Tax",
+      "citation": "p.111, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0243",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "trade payables"
+      ],
+      "bound": 0,
+      "unbound": [
+        "trade payables"
+      ],
+      "candidate": "26195.8",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0252",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cash and cash equivalents"
+      ],
+      "bound": 0,
+      "unbound": [
+        "cash and cash equivalents"
+      ],
+      "candidate": "4028.79",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0165",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "23492.15",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0034",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "146767",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 153670 crore",
+      "row_label": "Revenue from operations",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0182",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deferred tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "deferred tax"
+      ],
+      "candidate": "2309",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0207",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "goodwill"
+      ],
+      "bound": 0,
+      "unbound": [
+        "goodwill"
+      ],
+      "candidate": "12505.5",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0254",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "8.85",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0122",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other equity"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other equity"
+      ],
+      "candidate": "2785740145",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0020",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "11708",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 11708 crore",
+      "row_label": "Investments",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0189",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "54118",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "104727 crore",
+      "row_label": "Profit Before Tax",
+      "citation": "p.111, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0224",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "290659",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0253",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cash and cash equivalents"
+      ],
+      "bound": 0,
+      "unbound": [
+        "cash and cash equivalents"
+      ],
+      "candidate": "2898.72",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0066",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "diluted earnings per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "diluted earnings per share"
+      ],
+      "candidate": "85.44",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0011",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "employee benefit expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "78359",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 82620 crore",
+      "row_label": "Employee benefit expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0194",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 0,
+      "unbound": [
+        "property, plant and equipment"
+      ],
+      "candidate": "258911",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0202",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 0,
+      "unbound": [
+        "borrowings"
+      ],
+      "candidate": "75926.7",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0262",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 0,
+      "unbound": [
+        "property, plant and equipment"
+      ],
+      "candidate": "2271.29",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0138",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "26697.32",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0008",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deferred tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "454",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 1350 crore",
+      "row_label": "Deferred tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0192",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "42042",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0212",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "33200.9",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0260",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "2689.87",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0146",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "12296.23",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0024",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other equity"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "73338",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 86045 crore",
+      "row_label": "Other equity",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0185",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "62557",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "77 crore",
+      "row_label": "Other Expenses",
+      "citation": "p.131, (iii)\t Cash flows from Discontinued Operations, table 2"
+    },
+    {
+      "qid": "FI0227",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "386545",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0258",
+      "company": "Tata Motors Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "820.94",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0109",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "702414.96",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0023",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "345",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0195",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "552823",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "26 crore",
+      "row_label": "Revenue from Operations",
+      "citation": "p.68, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0238",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "343337",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0061",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2379786.28",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0031",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "26248",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0183",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "intangible assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "intangible assets"
+      ],
+      "candidate": "29334",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0234",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "322016",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0112",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "33139.22",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0028",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "33322",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 35988 crore",
+      "row_label": "Profit before tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0197",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total expenses"
+      ],
+      "candidate": "509854",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0208",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "interest income"
+      ],
+      "candidate": "1720.3",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0157",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2725.61",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0005",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "current tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "9287",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 8390 crore",
+      "row_label": "Current tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0198",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total expenses"
+      ],
+      "candidate": "504797",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0230",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total equity"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total equity"
+      ],
+      "candidate": "593154.7",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0070",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "6.50",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0010",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "depreciation and amortization expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "4678",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 4678 crore",
+      "row_label": "Depreciation and amortization expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0181",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deferred tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "deferred tax"
+      ],
+      "candidate": "4930",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0223",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "264895",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0091",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "60221.45",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0018",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "goodwill"
+      ],
+      "bound": 0,
+      "unbound": [
+        "goodwill"
+      ],
+      "candidate": "7303",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0196",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "547942",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "26 crore",
+      "row_label": "Revenue from Operations",
+      "citation": "p.68, Managing Director, table 2"
+    },
+    {
+      "qid": "FI0242",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "trade payables"
+      ],
+      "bound": 0,
+      "unbound": [
+        "trade payables"
+      ],
+      "candidate": "31255.8",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0162",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "15702.85",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0006",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "current tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "8390",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 8390 crore",
+      "row_label": "Current tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0179",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "current tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "current tax"
+      ],
+      "candidate": "6186",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0241",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "498510",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0060",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1883394.65",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0039",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "122393",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 122393 crore",
+      "row_label": "Total expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0193",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 0,
+      "unbound": [
+        "property, plant and equipment"
+      ],
+      "candidate": "252967",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0239",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "395760",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0107",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "455535.69",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0022",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "388",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0174",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "12275",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "1 crore",
+      "row_label": "Borrowings",
+      "citation": "p.101, Return on Capital Employed (%), table 2"
+    },
+    {
+      "qid": "FI0246",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "total assets"
+      ],
+      "bound": 1,
+      "unbound": [
+        "total assets"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 3281.4 million",
+      "row_label": "Profit after tax",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0104",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "293116.07",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0043",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total non-current assets"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "48382",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 48382 crore",
+      "row_label": "Total non-current assets",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0200",
+      "company": "Reliance Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total income"
+      ],
+      "candidate": "560070",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0231",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total equity"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total equity"
+      ],
+      "candidate": "671059.7",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0161",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "12142.39",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0017",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "goodwill"
+      ],
+      "bound": 0,
+      "unbound": [
+        "goodwill"
+      ],
+      "candidate": "7248",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0219",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from contracts with customers"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "477584.5",
+      "candidate_unit": "INR million",
+      "agreement": true,
+      "bound_value": "INR 477584.5 million",
+      "row_label": "Revenue from contracts with customers",
+      "citation": "p.272, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 2"
+    },
+    {
+      "qid": "FI0135",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "15328.72",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0026",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "4392",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 4716 crore",
+      "row_label": "Other expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0217",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "110878.9",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 34496.5 million",
+      "row_label": "Profit before tax",
+      "citation": "p.174, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0075",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "19.505",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0036",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total equity"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "75795",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 88461 crore",
+      "row_label": "Total equity",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0226",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "334981",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0076",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "26074.23",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0032",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "property, plant and equipment"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "13346",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 12370 crore",
+      "row_label": "Property, plant and equipment",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0240",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "445202",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0110",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "22395.68",
+      "candidate_unit": "crore",
+      "agreement": true,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0014",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "equity share capital"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2071",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 2071 crore",
+      "row_label": "Equity share capital",
+      "citation": "p.12, Consolidated Balance Sheet (contd.), table 1"
+    },
+    {
+      "qid": "FI0237",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "334735",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0166",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "335751716",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0002",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "capital work-in-progress"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "293",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 293 crore",
+      "row_label": "Capital work-in-progress",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0218",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from contracts with customers"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "432788.7",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 477584.5 million",
+      "row_label": "Revenue from contracts with customers",
+      "citation": "p.272, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 2"
+    },
+    {
+      "qid": "FI0090",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "48469.91",
+      "candidate_unit": "crore",
+      "agreement": true,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0021",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "lease liabilities"
+      ],
+      "bound": 0,
+      "unbound": [
+        "lease liabilities"
+      ],
+      "candidate": "223",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0211",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "lease liabilities"
+      ],
+      "bound": 0,
+      "unbound": [
+        "lease liabilities"
+      ],
+      "candidate": "1803.0",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0151",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "31116.52",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0040",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total income"
+      ],
+      "candidate": "149468",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0233",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "291453",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0141",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "41658.98",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0019",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "12569",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 11708 crore",
+      "row_label": "Investments",
+      "citation": "p.11, Consolidated Balance Sheet, table 1"
+    },
+    {
+      "qid": "FI0232",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "279397",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0052",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "450795.65",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0038",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total expenses"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "116146",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 122393 crore",
+      "row_label": "Total expenses",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0213",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "34392.2",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0108",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "517001.43",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0035",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "153670",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 153670 crore",
+      "row_label": "Revenue from operations",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0248",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "borrowings",
+        "total equity"
+      ],
+      "bound": 1,
+      "unbound": [
+        "borrowings"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 236944.0 million",
+      "row_label": "Total equity",
+      "citation": "p.139, Mumbai, May 22, 2024, table 1"
+    },
+    {
+      "qid": "FI0128",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "17625.87",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0003",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cost of technical sub-contractors"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "14062",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 12232 crore",
+      "row_label": "Cost of technical sub-contractors",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0225",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "328375",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0148",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "17486.75",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0007",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deferred tax"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1245",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 1350 crore",
+      "row_label": "Deferred tax",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0204",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "4346.9",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 35 million",
+      "row_label": "Finance costs",
+      "citation": "p.216, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0074",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "19.00",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0030",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "24108",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0214",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other financial liabilities"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "44519.1",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 40606.9 million",
+      "row_label": "Other financial liabilities",
+      "citation": "p.182, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 2"
+    },
+    {
+      "qid": "FI0172",
+      "company": "HDFC Bank Limited",
+      "operation": "margin",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0015",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "284",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "INR 470 crore",
+      "row_label": "Finance cost",
+      "citation": "p.79, Membership No. A21918, table 1"
+    },
+    {
+      "qid": "FI0228",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "438857",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0081",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "58626.40",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0004",
+      "company": "Infosys Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "cost of technical sub-contractors"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "12232",
+      "candidate_unit": "INR crore",
+      "agreement": true,
+      "bound_value": "INR 12232 crore",
+      "row_label": "Cost of technical sub-contractors",
+      "citation": "p.13, Consolidated Statement of Profit and Loss, table 1"
+    },
+    {
+      "qid": "FI0247",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "margin",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "revenue from operations"
+      ],
+      "bound": 1,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": "INR 3281.4 million",
+      "row_label": "Profit after tax",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0127",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "15220.31",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0205",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "7622.0",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 35 million",
+      "row_label": "Finance costs",
+      "citation": "p.216, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0117",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "72009.59",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0222",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "revenue from operations"
+      ],
+      "bound": 0,
+      "unbound": [
+        "revenue from operations"
+      ],
+      "candidate": "315784",
+      "candidate_unit": "INR million",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0170",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "307581.6",
+      "candidate_unit": "crore",
+      "agreement": true,
+      "bound_value": "307581.6 crore",
+      "row_label": "Total Income",
+      "citation": "p.213, Financial Statements, table 2"
+    },
+    {
+      "qid": "FI0235",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "273282",
+      "candidate_unit": "INR million",
+      "agreement": false,
+      "bound_value": "INR 57965.0 million",
+      "row_label": "Total income",
+      "citation": "p.282, Sun Pharmaceutical Industries Limited   |   Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0057",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1147502.29",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0086",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest earned"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1615855367",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "13 crore",
+      "row_label": "Interest earned",
+      "citation": "p.413, Integrated Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0099",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "258340.58",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0103",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "242200.24",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0129",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "23260.82",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0133",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "49241.00",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0069",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "5.50",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0051",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "6621530751",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "477539.07 crore",
+      "row_label": "Borrowings",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0130",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "25204.89",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0072",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "6.504",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0085",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "149808.10",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0124",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "8996.34",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0096",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "120858.23",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0058",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1335060.22",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0101",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "195836.29",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0065",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "diluted earnings per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "diluted earnings per share"
+      ],
+      "candidate": "78.89",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0155",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "60812.3",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0137",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "22139.09",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0095",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "114812.65",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0142",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "49015.47",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0080",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "50728.83",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0139",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "32199.64",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0048",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "basic earnings per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "basic earnings per share"
+      ],
+      "candidate": "79.25",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0153",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "44108.71",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0143",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "58485.31",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0131",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "29509.90",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0145",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "10215.92",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0089",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest expended"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1498081008",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "15 crore",
+      "row_label": "Interest expended",
+      "citation": "p.413, Integrated Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0126",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "12296.49",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0056",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "923140.93",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0094",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "98972.05",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0118",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "86842.22",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0152",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "36961.35",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0167",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total assets"
+      ],
+      "candidate": "63136.81",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0171",
+      "company": "HDFC Bank Limited",
+      "operation": "ratio",
+      "engages_channel": true,
+      "metrics": [
+        "profit for the year",
+        "total assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year",
+        "total assets"
+      ],
+      "candidate": null,
+      "candidate_unit": null,
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0156",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2075.75",
+      "candidate_unit": "crore",
+      "agreement": true,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0160",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "7550.08",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0125",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "10751.72",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0164",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "11919.66",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0163",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "15061.83",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0149",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "21078.14",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0158",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "3593.30",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0113",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "40094.86",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0159",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "provisions and contingencies"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "5927.49",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "2075.75 crore",
+      "row_label": "Provisions and contingencies",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0087",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest earned"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2583405755",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "13 crore",
+      "row_label": "Interest earned",
+      "citation": "p.413, Integrated Annual Report 2023-24, table 1"
+    },
+    {
+      "qid": "FI0134",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other income"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other income"
+      ],
+      "candidate": "492409994",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0064",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "depreciation and amortization expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "depreciation and amortization expenses"
+      ],
+      "candidate": "57.58",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0106",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "443728.29",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0144",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "70895.31",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0077",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "32629.93",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0050",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "borrowings"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "2067655655",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "477539.07 crore",
+      "row_label": "Borrowings",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0073",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "15.50",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0120",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "non-controlling interests"
+      ],
+      "bound": 0,
+      "unbound": [
+        "non-controlling interests"
+      ],
+      "candidate": "860.26",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0059",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "1559217.44",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0093",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "80241.35",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0169",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "192800.4",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "307581.6 crore",
+      "row_label": "Total Income",
+      "citation": "p.213, Financial Statements, table 2"
+    },
+    {
+      "qid": "FI0123",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "other equity"
+      ],
+      "bound": 0,
+      "unbound": [
+        "other equity"
+      ],
+      "candidate": "4368333979",
+      "candidate_unit": "INR crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0067",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "4.00",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0082",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "55978.66",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0083",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "55743.53",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0078",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "36166.74",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0071",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "dividend per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "dividend per share"
+      ],
+      "candidate": "7.50",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0140",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit before tax"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit before tax"
+      ],
+      "candidate": "36607.15",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0046",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "advances"
+      ],
+      "bound": 0,
+      "unbound": [
+        "advances"
+      ],
+      "candidate": "1600585.9",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0062",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "23797862764",
+      "candidate_unit": "INR crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0047",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "advances"
+      ],
+      "bound": 0,
+      "unbound": [
+        "advances"
+      ],
+      "candidate": "2484861.5",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0116",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "64879.57",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0063",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "depreciation and amortization expenses"
+      ],
+      "bound": 0,
+      "unbound": [
+        "depreciation and amortization expenses"
+      ],
+      "candidate": "82.58",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0105",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "391826.66",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0111",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "27591.52",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0049",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "basic earnings per share"
+      ],
+      "bound": 0,
+      "unbound": [
+        "basic earnings per share"
+      ],
+      "candidate": "85.83",
+      "candidate_unit": "",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0084",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "finance cost"
+      ],
+      "bound": 0,
+      "unbound": [
+        "finance cost"
+      ],
+      "candidate": "74743.32",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0168",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "total assets"
+      ],
+      "bound": 0,
+      "unbound": [
+        "total assets"
+      ],
+      "candidate": "75579.83",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0055",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "deposits"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "788770.64",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "157259.22 crore",
+      "row_label": "Deposits",
+      "citation": "p.448, Direct Subsidiary, table 1"
+    },
+    {
+      "qid": "FI0147",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "profit for the year"
+      ],
+      "bound": 0,
+      "unbound": [
+        "profit for the year"
+      ],
+      "candidate": "14549.66",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    },
+    {
+      "qid": "FI0119",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "net interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "108532.48",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "22395.68 crore",
+      "row_label": "Net interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0092",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "69305.96",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0097",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "interest income"
+      ],
+      "bound": 1,
+      "unbound": [],
+      "candidate": "127753.12",
+      "candidate_unit": "crore",
+      "agreement": false,
+      "bound_value": "48469.91 crore",
+      "row_label": "Interest income",
+      "citation": "p.197, Financial Statements, table 1"
+    },
+    {
+      "qid": "FI0102",
+      "company": "HDFC Bank Limited",
+      "operation": "lookup",
+      "engages_channel": false,
+      "metrics": [
+        "investments"
+      ],
+      "bound": 0,
+      "unbound": [
+        "investments"
+      ],
+      "candidate": "214463.34",
+      "candidate_unit": "crore",
+      "agreement": null,
+      "bound_value": null,
+      "row_label": null,
+      "citation": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "arms": {},
+  "questions_in_gold": 188,
+  "operating_threshold": null,
+  "tau": "0.005",
+  "resamples": 10000,
+  "hypotheses": {
+    "verdicts": {
+      "H1": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and B5; not enough to test this",
+        "rationale": "cross-modality disagreement vs same-model self-consistency, at matched cost"
+      },
+      "H4": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and H; not enough to test this",
+        "rationale": "cross-model channels vs the same model on both channels - the direct test of D1"
+      },
+      "H3": {
+        "testable": false,
+        "reason": "only 0 question(s) were answered by both A and G; not enough to test this",
+        "rationale": "with vs without the deterministic verifier"
+      },
+      "H2": {
+        "testable": false,
+        "reason": "one stratum has too few questions: reasoning_caused=0, retrieval_caused=0",
+        "rationale": "detection should be far better on reasoning-caused errors"
+      }
+    },
+    "family_wise_correction": {},
+    "note": "Holm-Bonferroni across the tested family. Five hypotheses at alpha 0.05 each carries roughly a one-in-four chance of a spurious 'supported'. Untestable hypotheses are excluded from the correction and reported as untestable."
+  },
+  "run_id": "qu-llm_20260829T181529Z",
+  "threshold_source": "NOT SET - precision/recall/FPR/FNR are omitted rather than computed at an unrecorded threshold",
+  "generated_at": "2026-08-31T20:41:06+00:00"
+}
